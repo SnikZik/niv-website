@@ -57,7 +57,9 @@ function niv_register_cpts() {
 		'menu_icon'    => 'dashicons-networking',
 		'menu_position'=> 22,
 		'supports'     => array( 'title', 'thumbnail', 'revisions' ),
-		'rewrite'      => array( 'slug' => 'אזורי-שירות', 'with_front' => false ),
+		// slug נפרד מ-service_area כדי למנוע התנגשות rewrite (שניהם על 'אזורי-שירות' יצרו קונפליקט).
+		// URL: /מנעולן/{שירות}-ב{אזור}/ ; עמוד האזור נשאר /אזורי-שירות/מנעולן-ב{אזור}/.
+		'rewrite'      => array( 'slug' => 'מנעולן', 'with_front' => false ),
 		'show_in_rest' => true,
 	) );
 }
