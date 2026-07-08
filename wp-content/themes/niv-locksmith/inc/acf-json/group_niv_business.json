@@ -1,0 +1,48 @@
+{
+	"key": "group_niv_business",
+	"title": "הגדרות עסק — ניב",
+	"fields": [
+		{ "key": "field_niv_biz_name", "label": "שם העסק", "name": "biz_name", "type": "text", "default_value": "ניב המנעולן" },
+		{ "key": "field_niv_biz_phone_display", "label": "טלפון לתצוגה", "name": "biz_phone_display", "type": "text", "default_value": "050-8307269", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_phone_e164", "label": "טלפון בפורמט בינלאומי (tel:)", "name": "biz_phone_e164", "type": "text", "default_value": "+972508307269", "instructions": "משמש לכפתורי חיוג ולסכמה.", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_wa", "label": "וואטסאפ (בינלאומי)", "name": "biz_wa", "type": "text", "default_value": "+972508307269", "instructions": "ברירת מחדל = מספר הטלפון", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_email", "label": "אימייל", "name": "biz_email", "type": "email", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_city", "label": "עיר ראשית", "name": "biz_city", "type": "text", "default_value": "ירושלים", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_area_text", "label": "טקסט אזור שירות", "name": "biz_area_text", "type": "text", "default_value": "ירושלים והסביבה", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_hours", "label": "שעות פעילות", "name": "biz_hours", "type": "repeater", "layout": "table", "instructions": "אם 24/7 — סמנו 'זמין 24 שעות' בשורה אחת. אחרת מלאו ימים.", "button_label": "הוספת שורה", "sub_fields": [
+			{ "key": "field_niv_hours_day", "label": "יום", "name": "day", "type": "text", "wrapper": { "width": "34" } },
+			{ "key": "field_niv_hours_from", "label": "משעה", "name": "from", "type": "time_picker", "display_format": "H:i", "return_format": "H:i", "wrapper": { "width": "22" } },
+			{ "key": "field_niv_hours_to", "label": "עד שעה", "name": "to", "type": "time_picker", "display_format": "H:i", "return_format": "H:i", "wrapper": { "width": "22" } },
+			{ "key": "field_niv_hours_is24", "label": "זמין 24 שעות", "name": "is_24", "type": "true_false", "ui": 1, "wrapper": { "width": "22" } }
+		] },
+		{ "key": "field_niv_biz_emergency", "label": "טקסט זמינות/חירום", "name": "biz_emergency", "type": "text", "instructions": "טעון אישור לקוח. אם לא 24/7 — 'מענה טלפוני מהיר'.", "default_value": "זמינים 24/7" },
+		{ "key": "field_niv_biz_logo", "label": "לוגו", "name": "biz_logo", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "NEEDS_CLIENT_INPUT — PNG/SVG שקוף", "wrapper": { "width": "34" } },
+		{ "key": "field_niv_biz_hero_image", "label": "תמונת הירו (בית)", "name": "biz_hero_image", "type": "image", "return_format": "array", "preview_size": "medium", "instructions": "תמונת אמת של ניב/עבודה. לא סטוק.", "wrapper": { "width": "33" } },
+		{ "key": "field_niv_biz_og", "label": "תמונת שיתוף ברירת מחדל", "name": "biz_og", "type": "image", "return_format": "array", "preview_size": "medium", "wrapper": { "width": "33" } },
+		{ "key": "field_niv_biz_gmaps", "label": "קישור Google Maps", "name": "biz_gmaps", "type": "url", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_waze", "label": "קישור Waze", "name": "biz_waze", "type": "url", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_cta_primary", "label": "טקסט CTA ראשי", "name": "biz_cta_primary", "type": "text", "default_value": "חייגו עכשיו", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_cta_secondary", "label": "טקסט CTA משני", "name": "biz_cta_secondary", "type": "text", "default_value": "שלחו WhatsApp", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_biz_trust", "label": "תגי אמון", "name": "biz_trust", "type": "repeater", "layout": "table", "button_label": "הוספת תג", "sub_fields": [
+			{ "key": "field_niv_trust_icon", "label": "אייקון", "name": "icon", "type": "select", "choices": { "clock": "שעון", "lock": "מנעול", "key": "מפתח", "shield": "מגן", "home": "בית" }, "default_value": "shield", "wrapper": { "width": "30" } },
+			{ "key": "field_niv_trust_label", "label": "טקסט", "name": "label", "type": "text", "wrapper": { "width": "70" } }
+		] },
+		{ "key": "field_niv_biz_license", "label": "מספר רישיון/הסמכה", "name": "biz_license", "type": "text", "instructions": "רק אם קיים בפועל. משאירים ריק אם אין." },
+		{ "key": "field_niv_biz_social", "label": "רשתות חברתיות", "name": "biz_social", "type": "repeater", "layout": "table", "button_label": "הוספת קישור", "sub_fields": [
+			{ "key": "field_niv_social_net", "label": "רשת", "name": "network", "type": "text", "wrapper": { "width": "30" } },
+			{ "key": "field_niv_social_url", "label": "קישור", "name": "url", "type": "url", "wrapper": { "width": "70" } }
+		] },
+		{ "key": "field_niv_biz_gtm", "label": "GTM Container ID", "name": "biz_gtm", "type": "text", "placeholder": "GTM-XXXXXXX", "wrapper": { "width": "34" } },
+		{ "key": "field_niv_biz_gads_call", "label": "Google Ads — לייבל המרת חיוג", "name": "biz_gads_conv_call", "type": "text", "wrapper": { "width": "33" } },
+		{ "key": "field_niv_biz_gads_form", "label": "Google Ads — לייבל המרת טופס", "name": "biz_gads_conv_form", "type": "text", "wrapper": { "width": "33" } }
+	],
+	"location": [ [ { "param": "options_page", "operator": "==", "value": "niv-business" } ] ],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"active": true,
+	"show_in_rest": 0,
+	"modified": 1720000000
+}

@@ -1,0 +1,79 @@
+/* ==========================================================================
+   ניב המנעולן — Design Tokens
+   מתורגם ישירות מספר המותג (docs/00-brand-extract.md). מקור אמת יחיד לצבע/פונט.
+   ========================================================================== */
+
+:root {
+  /* --- צבעים ראשיים --- */
+  --niv-red: #C0392B;          /* אדום המנעול — CTA / פעולה בלבד */
+  --niv-red-hover: #A93226;    /* אדום כהה יותר ל-hover */
+  --niv-charcoal: #24211F;     /* פחם עמוק — טקסט, סקשן כהה */
+
+  /* --- צבעים משלימים --- */
+  --niv-orange: #F26B49;       /* ניצוץ כתום — הדגשה חמה */
+  --niv-stone: #C6A16B;        /* אבן ירושלמית — אקסנט (לא כטקסט על לבן) */
+  --niv-iron: #6E6A63;         /* ברזל — טקסט משני, אייקונים */
+
+  /* --- נייטרלים --- */
+  --niv-metal: #AFAAA1;        /* אפור מתכת */
+  --niv-silver: #E7E4DE;       /* כסף בהיר */
+  --niv-sand: #F4F2ED;         /* חול */
+  --niv-cream: #FBFAF7;        /* שמנת / לבן */
+  --niv-white: #FFFFFF;
+
+  /* --- תפקידים סמנטיים --- */
+  --niv-bg: var(--niv-cream);
+  --niv-bg-alt: var(--niv-sand);
+  --niv-bg-dark: var(--niv-charcoal);
+  --niv-text: var(--niv-charcoal);
+  --niv-text-muted: var(--niv-iron);
+  --niv-text-on-dark: var(--niv-cream);
+  --niv-border: var(--niv-silver);
+  --niv-cta: var(--niv-red);
+  --niv-cta-text: #FFFFFF;
+
+  /* --- טיפוגרפיה --- */
+  --niv-font-head: "Frank Ruhl Libre", "Times New Roman", serif;
+  --niv-font-body: "Assistant", "Segoe UI", system-ui, sans-serif;
+
+  /* סולם טיפוגרפי (clamp — רספונסיבי, בלי CLS) */
+  --niv-fs-h1: clamp(2rem, 5vw, 3.25rem);
+  --niv-fs-h2: clamp(1.5rem, 3.5vw, 2.25rem);
+  --niv-fs-h3: clamp(1.25rem, 2.5vw, 1.6rem);
+  --niv-fs-lead: clamp(1.1rem, 2vw, 1.375rem);
+  --niv-fs-body: 1.0625rem;   /* ~17px, קריא בנייד */
+  --niv-fs-small: 0.9375rem;
+  --niv-lh-body: 1.7;
+  --niv-lh-head: 1.2;
+
+  /* --- מרווחים (מרחב לבן נדיב — עקרון מותג) --- */
+  --niv-space-xs: 0.5rem;
+  --niv-space-sm: 1rem;
+  --niv-space-md: 1.75rem;
+  --niv-space-lg: 3rem;
+  --niv-space-xl: 5rem;
+  --niv-container: 1160px;
+  --niv-container-narrow: 760px;
+
+  /* --- רדיוסים / צללים (עדינים, לא "startup") --- */
+  --niv-radius: 10px;
+  --niv-radius-lg: 16px;
+  --niv-shadow: 0 2px 8px rgba(36, 33, 31, 0.08);
+  --niv-shadow-md: 0 6px 20px rgba(36, 33, 31, 0.12);
+
+  /* --- CTA דביק בנייד --- */
+  --niv-sticky-h: 64px;
+
+  /* --- מעברים --- */
+  --niv-ease: 180ms ease;
+}
+
+/* כיבוד העדפת תנועה מופחתת — נגישות */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

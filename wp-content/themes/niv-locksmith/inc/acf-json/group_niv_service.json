@@ -1,0 +1,39 @@
+{
+	"key": "group_niv_service",
+	"title": "שדות שירות",
+	"fields": [
+		{ "key": "field_niv_s_primary_kw", "label": "מילת מפתח ראשית", "name": "primary_keyword", "type": "text", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_secondary_kw", "label": "מילות מפתח משניות", "name": "secondary_keywords", "type": "textarea", "rows": 3, "instructions": "שורה לכל ביטוי", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_hero_title", "label": "כותרת הירו", "name": "hero_title", "type": "text", "instructions": "ריק = כותרת העמוד", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_hero_sub", "label": "תת־כותרת הירו", "name": "hero_subtitle", "type": "text", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_short", "label": "תיאור קצר (לכרטיס)", "name": "short_desc", "type": "textarea", "rows": 2, "maxlength": 160 },
+		{ "key": "field_niv_s_problem", "label": "מתי קוראים לניב (הבעיה)", "name": "problem_desc", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic" },
+		{ "key": "field_niv_s_solution", "label": "איך מטפלים (הפתרון)", "name": "solution_desc", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic" },
+		{ "key": "field_niv_s_scenarios", "label": "מקרים נפוצים", "name": "scenarios", "type": "repeater", "layout": "table", "button_label": "הוספת מקרה", "sub_fields": [
+			{ "key": "field_niv_s_scenario", "label": "מקרה", "name": "scenario", "type": "text" }
+		] },
+		{ "key": "field_niv_s_factors", "label": "גורמים למחיר", "name": "price_factors", "type": "repeater", "layout": "table", "instructions": "בלי מחיר סופי — רק מה משפיע", "button_label": "הוספת גורם", "sub_fields": [
+			{ "key": "field_niv_s_factor", "label": "גורם", "name": "factor", "type": "text", "wrapper": { "width": "40" } },
+			{ "key": "field_niv_s_impact", "label": "השפעה", "name": "impact", "type": "text", "wrapper": { "width": "60" } }
+		] },
+		{ "key": "field_niv_s_time", "label": "טקסט זמן משוער", "name": "estimated_time_text", "type": "text", "instructions": "רק אם סופק ע\"י הלקוח" },
+		{ "key": "field_niv_s_faq", "label": "שאלות נפוצות", "name": "faq", "type": "repeater", "layout": "block", "button_label": "הוספת שאלה", "sub_fields": [
+			{ "key": "field_niv_s_faq_q", "label": "שאלה", "name": "q", "type": "text" },
+			{ "key": "field_niv_s_faq_a", "label": "תשובה", "name": "a", "type": "textarea", "rows": 3 }
+		] },
+		{ "key": "field_niv_s_related_s", "label": "שירותים קשורים", "name": "related_services", "type": "relationship", "post_type": [ "service" ], "max": 3, "return_format": "object", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_related_a", "label": "אזורים קשורים", "name": "related_areas", "type": "relationship", "post_type": [ "service_area" ], "return_format": "object", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_s_schema_type", "label": "סוג שירות לסכמה", "name": "schema_service_type", "type": "text", "default_value": "Locksmith" },
+		{ "key": "field_niv_s_seo_title", "label": "SEO title", "name": "seo_title", "type": "text", "instructions": "55–60 תווים. ריק = תבנית אוטומטית.", "maxlength": 65 },
+		{ "key": "field_niv_s_meta", "label": "Meta description", "name": "meta_description", "type": "textarea", "rows": 2, "instructions": "130–145 תווים", "maxlength": 155 },
+		{ "key": "field_niv_s_canonical", "label": "Canonical URL", "name": "canonical_url", "type": "url", "instructions": "ריק = קבוע אוטומטית" }
+	],
+	"location": [ [ { "param": "post_type", "operator": "==", "value": "service" } ] ],
+	"menu_order": 0,
+	"position": "acf_after_title",
+	"style": "default",
+	"label_placement": "top",
+	"active": true,
+	"show_in_rest": 0,
+	"modified": 1720000000
+}

@@ -1,0 +1,34 @@
+{
+	"key": "group_niv_sap",
+	"title": "שדות שירות × אזור",
+	"fields": [
+		{ "key": "field_niv_sap_service", "label": "שירות", "name": "service_ref", "type": "post_object", "post_type": [ "service" ], "return_format": "id", "ui": 1, "required": 1, "wrapper": { "width": "50" } },
+		{ "key": "field_niv_sap_area", "label": "אזור", "name": "area_ref", "type": "post_object", "post_type": [ "service_area" ], "return_format": "id", "ui": 1, "required": 1, "wrapper": { "width": "50" } },
+		{ "key": "field_niv_sap_primary_kw", "label": "מילת מפתח ראשית", "name": "primary_keyword", "type": "text", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_sap_h1", "label": "H1", "name": "h1", "type": "text", "instructions": "ריק = כותרת העמוד", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_sap_hero", "label": "טקסט הירו", "name": "hero_text", "type": "text" },
+		{ "key": "field_niv_sap_intro", "label": "אינטרו ייחודי (חובה)", "name": "unique_intro", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic", "required": 1, "instructions": "40+ מילים ייחודיות. בלי זה העמוד יוחזר לטיוטה (שער thin-content)." },
+		{ "key": "field_niv_sap_local", "label": "הקשר מקומי", "name": "local_context", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic" },
+		{ "key": "field_niv_sap_specific", "label": "פסקת שירות", "name": "service_specific", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic" },
+		{ "key": "field_niv_sap_faq", "label": "שאלות נפוצות", "name": "faq", "type": "repeater", "layout": "block", "button_label": "הוספת שאלה", "sub_fields": [
+			{ "key": "field_niv_sap_faq_q", "label": "שאלה", "name": "q", "type": "text" },
+			{ "key": "field_niv_sap_faq_a", "label": "תשובה", "name": "a", "type": "textarea", "rows": 3 }
+		] },
+		{ "key": "field_niv_sap_links", "label": "קישורים פנימיים", "name": "internal_links", "type": "repeater", "layout": "table", "button_label": "הוספת קישור", "sub_fields": [
+			{ "key": "field_niv_sap_link_label", "label": "טקסט", "name": "label", "type": "text", "wrapper": { "width": "40" } },
+			{ "key": "field_niv_sap_link_url", "label": "קישור", "name": "link", "type": "link", "return_format": "array", "wrapper": { "width": "60" } }
+		] },
+		{ "key": "field_niv_sap_seo_title", "label": "SEO title", "name": "seo_title", "type": "text", "maxlength": 65 },
+		{ "key": "field_niv_sap_meta", "label": "Meta description", "name": "meta_description", "type": "textarea", "rows": 2, "maxlength": 155 },
+		{ "key": "field_niv_sap_canonical", "label": "Canonical URL", "name": "canonical_url", "type": "url" },
+		{ "key": "field_niv_sap_index", "label": "סטטוס אינדוקס", "name": "index_status", "type": "select", "choices": { "index": "index (ייחודי ומלא)", "noindex": "noindex", "draft": "טיוטה" }, "default_value": "noindex", "instructions": "index רק כשהתוכן ייחודי ומלא" }
+	],
+	"location": [ [ { "param": "post_type", "operator": "==", "value": "service_area_page" } ] ],
+	"menu_order": 0,
+	"position": "acf_after_title",
+	"style": "default",
+	"label_placement": "top",
+	"active": true,
+	"show_in_rest": 0,
+	"modified": 1720000000
+}

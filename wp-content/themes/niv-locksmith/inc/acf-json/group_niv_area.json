@@ -1,0 +1,30 @@
+{
+	"key": "group_niv_area",
+	"title": "שדות אזור שירות",
+	"fields": [
+		{ "key": "field_niv_a_name", "label": "שם האזור", "name": "area_name", "type": "text", "instructions": "בלי 'מנעולן ב' — רק שם, למשל 'גבעת זאב'", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_a_type", "label": "סוג אזור", "name": "area_type", "type": "select", "choices": { "city": "עיר", "neighborhood": "שכונה", "surrounding": "יישוב סמוך" }, "default_value": "neighborhood", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_a_parent", "label": "אזור אב", "name": "parent_area", "type": "post_object", "post_type": [ "service_area" ], "return_format": "object", "ui": 1, "wrapper": { "width": "50" } },
+		{ "key": "field_niv_a_nearby", "label": "אזורים סמוכים", "name": "nearby_areas", "type": "relationship", "post_type": [ "service_area" ], "return_format": "object", "wrapper": { "width": "50" } },
+		{ "key": "field_niv_a_intro", "label": "אינטרו מקומי (ייחודי)", "name": "local_intro", "type": "wysiwyg", "media_upload": 0, "toolbar": "basic", "instructions": "טקסט ייחודי לאזור — לא לשכפל בין אזורים" },
+		{ "key": "field_niv_a_avail", "label": "טקסט זמינות באזור", "name": "availability_text", "type": "text" },
+		{ "key": "field_niv_a_access", "label": "הערות גישה/חניה", "name": "access_notes", "type": "text", "instructions": "אופציונלי" },
+		{ "key": "field_niv_a_services", "label": "שירותים זמינים באזור", "name": "services_available", "type": "relationship", "post_type": [ "service" ], "return_format": "object" },
+		{ "key": "field_niv_a_faq", "label": "שאלות נפוצות", "name": "faq", "type": "repeater", "layout": "block", "button_label": "הוספת שאלה", "sub_fields": [
+			{ "key": "field_niv_a_faq_q", "label": "שאלה", "name": "q", "type": "text" },
+			{ "key": "field_niv_a_faq_a", "label": "תשובה", "name": "a", "type": "textarea", "rows": 3 }
+		] },
+		{ "key": "field_niv_a_seo_title", "label": "SEO title", "name": "seo_title", "type": "text", "maxlength": 65 },
+		{ "key": "field_niv_a_meta", "label": "Meta description", "name": "meta_description", "type": "textarea", "rows": 2, "maxlength": 155 },
+		{ "key": "field_niv_a_canonical", "label": "Canonical URL", "name": "canonical_url", "type": "url" },
+		{ "key": "field_niv_a_schema_area", "label": "areaServed לסכמה", "name": "schema_area_served", "type": "text" }
+	],
+	"location": [ [ { "param": "post_type", "operator": "==", "value": "service_area" } ] ],
+	"menu_order": 0,
+	"position": "acf_after_title",
+	"style": "default",
+	"label_placement": "top",
+	"active": true,
+	"show_in_rest": 0,
+	"modified": 1720000000
+}

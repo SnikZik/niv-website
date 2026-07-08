@@ -1,0 +1,236 @@
+/* ==========================================================================
+   ניב המנעולן — main.css
+   RTL, phone-first, מרחב לבן נדיב. אדום = CTA בלבד (עקרון מותג).
+   תלוי ב-tokens.css.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+	margin: 0;
+	font-family: var(--niv-font-body);
+	font-size: var(--niv-fs-body);
+	line-height: var(--niv-lh-body);
+	color: var(--niv-text);
+	background: var(--niv-bg);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--niv-red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4 {
+	font-family: var(--niv-font-head);
+	line-height: var(--niv-lh-head);
+	color: var(--niv-charcoal);
+	margin: 0 0 .5em;
+	font-weight: 700;
+}
+h1 { font-size: var(--niv-fs-h1); font-weight: 900; }
+h2 { font-size: var(--niv-fs-h2); }
+h3 { font-size: var(--niv-fs-h3); }
+p { margin: 0 0 1em; }
+
+.niv-container { max-width: var(--niv-container); margin-inline: auto; padding-inline: 1.25rem; }
+.niv-narrow { max-width: var(--niv-container-narrow); margin-inline: auto; }
+.niv-muted { color: var(--niv-text-muted); }
+.niv-section { padding-block: var(--niv-space-xl); }
+.niv-section--alt { background: var(--niv-bg-alt); }
+.niv-section--dark { background: var(--niv-bg-dark); color: var(--niv-text-on-dark); }
+.niv-section--dark h2, .niv-section--dark h3 { color: var(--niv-cream); }
+.niv-section__head { text-align: center; max-width: 640px; margin-inline: auto; margin-bottom: var(--niv-space-lg); }
+.niv-section__head p { color: var(--niv-text-muted); font-size: var(--niv-fs-lead); }
+
+/* --- Skip link (נגישות) --- */
+.niv-skip-link {
+	position: absolute; right: -9999px; top: 0; z-index: 1000;
+	background: var(--niv-charcoal); color: #fff; padding: .75rem 1.25rem; border-radius: 0 0 var(--niv-radius) 0;
+}
+.niv-skip-link:focus { right: 0; }
+
+/* --- כפתורים --- */
+.niv-btn {
+	display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+	font-family: var(--niv-font-body); font-weight: 700; font-size: 1.0625rem;
+	padding: .9rem 1.6rem; border-radius: var(--niv-radius); border: 2px solid transparent;
+	cursor: pointer; transition: background var(--niv-ease), transform var(--niv-ease);
+	min-height: 48px; text-decoration: none; line-height: 1;
+}
+.niv-btn:hover { text-decoration: none; transform: translateY(-1px); }
+.niv-btn__icon { display: inline-flex; }
+/* CTA ראשי — אדום המנעול */
+.niv-btn--call { background: var(--niv-red); color: #fff; box-shadow: var(--niv-shadow-md); }
+.niv-btn--call:hover { background: var(--niv-red-hover); color: #fff; }
+/* WhatsApp — משני, קו מתאר */
+.niv-btn--wa { background: transparent; color: var(--niv-charcoal); border-color: var(--niv-charcoal); }
+.niv-btn--wa:hover { background: var(--niv-charcoal); color: #fff; }
+.niv-btn--sm { padding: .6rem 1.1rem; font-size: 1rem; min-height: 42px; }
+.niv-btn--lg { padding: 1.1rem 2.2rem; font-size: 1.2rem; }
+.niv-btn--disabled { opacity: .5; pointer-events: none; }
+.niv-btn--ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+.niv-btn--ghost-light:hover { background: #fff; color: var(--niv-charcoal); }
+.niv-btn-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+/* --- Header --- */
+.niv-header { position: sticky; top: 0; z-index: 100; background: var(--niv-cream); border-bottom: 1px solid var(--niv-border); }
+.niv-header__inner { display: flex; align-items: center; gap: 1rem; min-height: 68px; }
+.niv-logo { display: inline-flex; align-items: center; }
+.niv-logo__text { font-family: var(--niv-font-head); font-size: 1.5rem; font-weight: 500; color: var(--niv-charcoal); }
+.niv-logo__text strong { font-weight: 900; color: var(--niv-red); }
+.niv-logo__text--footer { color: #fff; font-size: 1.4rem; }
+.niv-logo__text--footer strong { color: var(--niv-orange); }
+.niv-nav { margin-inline-start: auto; }
+.niv-nav__menu { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; align-items: center; }
+.niv-nav__menu a { color: var(--niv-charcoal); font-weight: 600; }
+.niv-nav__menu a:hover { color: var(--niv-red); text-decoration: none; }
+.niv-nav__toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; padding: .5rem; cursor: pointer; }
+.niv-nav__toggle span { width: 24px; height: 2px; background: var(--niv-charcoal); display: block; transition: var(--niv-ease); }
+.niv-header__cta { display: flex; align-items: center; gap: .5rem; }
+.niv-header__phone-label { font-size: var(--niv-fs-small); color: var(--niv-text-muted); }
+
+/* --- Hero --- */
+.niv-hero { position: relative; background: var(--niv-charcoal); color: var(--niv-cream); overflow: hidden; }
+.niv-hero__media { position: absolute; inset: 0; }
+.niv-hero__media img { width: 100%; height: 100%; object-fit: cover; opacity: .35; }
+.niv-hero__inner { position: relative; padding-block: clamp(3rem, 8vw, 6rem); }
+.niv-hero__content { max-width: 640px; }
+.niv-hero h1 { color: #fff; margin-bottom: .4em; }
+.niv-hero__sub { font-size: var(--niv-fs-lead); color: var(--niv-silver); margin-bottom: 1.5rem; }
+.niv-hero .niv-btn-row { margin-bottom: 1.25rem; }
+.niv-hero__note { font-size: var(--niv-fs-small); color: var(--niv-metal); }
+
+/* --- Trust bar --- */
+.niv-trust { display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: center; padding-block: 1.5rem; }
+.niv-trust__item { display: flex; align-items: center; gap: .5rem; font-weight: 600; color: var(--niv-charcoal); }
+.niv-trust__item svg { color: var(--niv-red); flex: none; }
+.niv-hero .niv-trust__item { color: var(--niv-cream); }
+.niv-hero .niv-trust__item svg { color: var(--niv-orange); }
+
+/* --- Service cards --- */
+.niv-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+.niv-card {
+	background: var(--niv-white); border: 1px solid var(--niv-border); border-radius: var(--niv-radius-lg);
+	padding: 1.5rem; transition: box-shadow var(--niv-ease), transform var(--niv-ease); display: flex; flex-direction: column;
+}
+.niv-card:hover { box-shadow: var(--niv-shadow-md); transform: translateY(-2px); }
+.niv-card__icon { color: var(--niv-red); margin-bottom: .75rem; }
+.niv-card h3 { margin-bottom: .35em; }
+.niv-card h3 a { color: var(--niv-charcoal); }
+.niv-card h3 a:hover { color: var(--niv-red); text-decoration: none; }
+.niv-card p { color: var(--niv-text-muted); font-size: var(--niv-fs-small); margin-bottom: 1rem; }
+.niv-card__link { margin-top: auto; font-weight: 700; color: var(--niv-red); }
+
+/* --- Why / features --- */
+.niv-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.niv-feature { text-align: center; }
+.niv-feature__icon { display: inline-flex; padding: 1rem; border-radius: 50%; background: var(--niv-sand); color: var(--niv-red); margin-bottom: .75rem; }
+.niv-section--dark .niv-feature__icon { background: rgba(255,255,255,.08); color: var(--niv-orange); }
+.niv-feature h3 { font-size: 1.2rem; }
+.niv-feature p { color: var(--niv-text-muted); font-size: var(--niv-fs-small); }
+.niv-section--dark .niv-feature p { color: var(--niv-silver); }
+
+/* --- Areas grid --- */
+.niv-areas { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: .75rem; }
+.niv-area-chip {
+	display: flex; align-items: center; gap: .5rem; padding: .85rem 1rem; background: var(--niv-white);
+	border: 1px solid var(--niv-border); border-radius: var(--niv-radius); color: var(--niv-charcoal); font-weight: 600;
+}
+.niv-area-chip:hover { border-color: var(--niv-red); color: var(--niv-red); text-decoration: none; }
+.niv-area-chip svg { color: var(--niv-stone); flex: none; }
+
+/* --- Content prose --- */
+.niv-prose { max-width: var(--niv-container-narrow); margin-inline: auto; }
+.niv-prose h2 { margin-top: 1.6em; }
+.niv-prose ul, .niv-prose ol { padding-inline-start: 1.4em; margin-bottom: 1em; }
+.niv-prose li { margin-bottom: .4em; }
+
+/* --- Price factors --- */
+.niv-factors { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+.niv-factors li { display: flex; gap: .75rem; padding: 1rem 1.25rem; background: var(--niv-sand); border-radius: var(--niv-radius); }
+.niv-factors b { color: var(--niv-charcoal); }
+
+/* --- FAQ --- */
+.niv-faq { max-width: var(--niv-container-narrow); margin-inline: auto; }
+.niv-faq__item { border-bottom: 1px solid var(--niv-border); }
+.niv-faq__q { margin: 0; font-family: var(--niv-font-body); font-size: 1.1rem; }
+.niv-faq__btn {
+	width: 100%; text-align: start; background: none; border: 0; padding: 1.1rem 0; cursor: pointer;
+	display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+	font-weight: 700; color: var(--niv-charcoal); font-size: 1.1rem;
+}
+.niv-faq__chevron { width: 12px; height: 12px; border-inline-end: 2px solid var(--niv-red); border-bottom: 2px solid var(--niv-red); transform: rotate(45deg); transition: transform var(--niv-ease); flex: none; }
+.niv-faq__btn[aria-expanded="true"] .niv-faq__chevron { transform: rotate(-135deg); }
+.niv-faq__a { padding-bottom: 1.1rem; color: var(--niv-text-muted); }
+.niv-faq__a p:last-child { margin-bottom: 0; }
+
+/* --- CTA strip --- */
+.niv-cta-strip { background: var(--niv-red); color: #fff; text-align: center; }
+.niv-cta-strip h2 { color: #fff; }
+.niv-cta-strip .niv-btn--call { background: #fff; color: var(--niv-red); }
+.niv-cta-strip .niv-btn--call:hover { background: var(--niv-charcoal); color: #fff; }
+.niv-cta-strip .niv-btn-row { justify-content: center; }
+
+/* --- Breadcrumbs --- */
+.niv-breadcrumbs { padding-block: 1rem; font-size: var(--niv-fs-small); }
+.niv-breadcrumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: 0; }
+.niv-breadcrumbs li:not(:last-child)::after { content: "‹"; margin-inline-start: .4rem; color: var(--niv-metal); }
+.niv-breadcrumbs a { color: var(--niv-text-muted); }
+.niv-breadcrumbs [aria-current="page"] { color: var(--niv-charcoal); font-weight: 600; }
+
+/* --- Forms --- */
+.niv-form { display: grid; gap: 1rem; max-width: 520px; }
+.niv-form__field { display: grid; gap: .35rem; }
+.niv-form label { font-weight: 600; color: var(--niv-charcoal); }
+.niv-form input, .niv-form select, .niv-form textarea {
+	padding: .8rem 1rem; border: 1px solid var(--niv-metal); border-radius: var(--niv-radius);
+	font-family: inherit; font-size: 1rem; background: #fff;
+}
+.niv-form input:focus, .niv-form select:focus, .niv-form textarea:focus { outline: 2px solid var(--niv-red); outline-offset: 1px; border-color: var(--niv-red); }
+.niv-form__error { color: var(--niv-red); font-size: var(--niv-fs-small); }
+.niv-form [aria-invalid="true"] { border-color: var(--niv-red); }
+
+/* --- Footer --- */
+.niv-footer { background: var(--niv-charcoal); color: var(--niv-silver); padding-block: var(--niv-space-lg) var(--niv-space-md); margin-top: var(--niv-space-xl); }
+.niv-footer__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 2rem; }
+.niv-footer__title { font-size: 1.1rem; color: #fff; margin-bottom: 1rem; }
+.niv-footer__list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.niv-footer__list a { color: var(--niv-silver); }
+.niv-footer__list a:hover { color: #fff; }
+.niv-footer__brand p { color: var(--niv-metal); margin-block: .75rem 1.25rem; }
+.niv-footer__bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: var(--niv-space-md); padding-top: 1.25rem; font-size: var(--niv-fs-small); color: var(--niv-metal); }
+
+/* --- Sticky CTA (נייד) --- */
+.niv-sticky-cta { display: none; }
+@media (max-width: 860px) {
+	.niv-sticky-cta {
+		display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0;
+		position: fixed; inset-inline: 0; bottom: 0; z-index: 200; height: var(--niv-sticky-h);
+		background: var(--niv-charcoal); box-shadow: 0 -2px 12px rgba(0,0,0,.25);
+	}
+	.niv-sticky-cta__btn { display: flex; align-items: center; justify-content: center; gap: .5rem; color: #fff; font-weight: 700; text-decoration: none; }
+	.niv-sticky-cta__btn--call { background: var(--niv-red); }
+	.niv-sticky-cta__btn--wa { background: #1f1c1a; }
+	.niv-sticky-cta__btn:hover { text-decoration: none; }
+	body { padding-bottom: var(--niv-sticky-h); } /* לא חוסם תוכן */
+}
+
+/* --- Responsive nav --- */
+@media (max-width: 860px) {
+	.niv-nav__toggle { display: flex; }
+	.niv-nav__menu {
+		position: absolute; inset-inline: 0; top: 100%; flex-direction: column; gap: 0;
+		background: var(--niv-cream); border-bottom: 1px solid var(--niv-border); padding: .5rem 1.25rem;
+		display: none;
+	}
+	.niv-nav__menu.is-open { display: flex; }
+	.niv-nav__menu li { width: 100%; border-bottom: 1px solid var(--niv-border); }
+	.niv-nav__menu li:last-child { border-bottom: 0; }
+	.niv-nav__menu a { display: block; padding: .85rem 0; }
+	.niv-header__phone-label { display: none; }
+	.niv-footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+	.niv-footer__grid { grid-template-columns: 1fr; }
+	.niv-header__cta .niv-btn { padding-inline: 1rem; }
+}
