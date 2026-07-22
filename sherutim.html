@@ -818,6 +818,51 @@
 .n6 .cway .btn{width:100%;justify-content:center}
 @media(max-width:640px){.n6 .cways{grid-template-columns:1fr}.n6 .phero h1{font-size:27px}}
 
+
+/* ===== v20: big hero + new sticky bar + round badges (leemafteah-inspired) ===== */
+.n6 .bighero{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:560px;text-align:center}
+.n6 .bighero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.n6 .bighero__ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,16,14,.55),rgba(18,16,14,.72))}
+.n6 .bighero__c{position:relative;z-index:2;max-width:680px;padding:64px 22px 84px;color:#fff}
+.n6 .bighero h1{color:#fff;font-size:40px;line-height:1.12;margin-bottom:6px}
+.n6 .bighero h1 span{display:block;color:#FFD9D4;font-size:22px;font-weight:700;margin-top:8px}
+.n6 .bighero__sub{color:#EDE6DD;font-size:17.5px;line-height:1.6;margin:14px auto 22px;max-width:560px}
+.n6 .bchips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:24px}
+.n6 .bchip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px);border-radius:999px;padding:9px 18px;font-size:14.5px;font-weight:700;color:#fff}
+.n6 .bchip svg{color:#7FD6A2;flex:none}
+.n6 .bctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.n6 .bctas .pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:800;padding:16px 30px;font-size:17px}
+.n6 .pill--call{background:var(--red);color:#fff;box-shadow:0 10px 26px rgba(181,52,42,.45)}
+.n6 .pill--call:hover{background:var(--red2)}
+.n6 .pill--waghost{border:2px solid rgba(255,255,255,.75);color:#fff}
+.n6 .pill--waghost:hover{border-color:#7FD6A2;color:#7FD6A2}
+.n6 .bprice{margin-top:18px;font-size:15px;color:#EDE6DD}
+.n6 .bprice b{color:#fff;font-size:16.5px}
+/* round trust badges overlapping hero bottom */
+.n6 .badges{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:760px;margin:-52px auto 0;padding:0 16px}
+.n6 .badge{aspect-ratio:1;border-radius:50%;background:#fff;border:4px solid #fff;outline:2px solid var(--line);box-shadow:0 10px 26px rgba(32,29,26,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;padding:8px}
+.n6 .badge svg{color:var(--red)}
+.n6 .badge b{font-size:12.5px;line-height:1.2;color:var(--ink);font-weight:800}
+.n6 .badge b em{display:block;font-style:normal;font-weight:600;color:var(--iron);font-size:11px}
+/* new bottom bar: red band + big number + floating WA */
+.n6 .smob{display:none;position:fixed;bottom:0;inset-inline:0;z-index:200}
+.n6 .smob .bar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;background:var(--red);color:#fff;padding:10px 90px 12px 14px;text-align:center}
+.n6 .smob .bar small{font-size:13.5px;font-weight:700;color:#FFD9D4}
+.n6 .smob .bar b{font-size:24px;font-weight:800;letter-spacing:.5px;direction:ltr}
+.n6 .smob .wafloat{position:absolute;inset-inline-start:14px;bottom:14px;width:58px;height:58px;border-radius:50%;background:#0A7536;border:3px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+@media(max-width:980px){ .n6 .smob{display:block} }
+@media(max-width:900px){
+  .n6 .bighero{min-height:86svh}
+  .n6 .bighero__c{padding:46px 20px 92px}
+  .n6 .bighero h1{font-size:31px}
+  .n6 .bighero h1 span{font-size:18px}
+  .n6 .bctas{flex-direction:column;align-items:stretch}
+  .n6 .badges{margin-top:-58px;gap:8px;padding:0 12px}
+  .n6 .badge b{font-size:11.5px}
+  .n6 .badge b em{font-size:10px}
+  .n6 .n6pagepad{padding-bottom:86px}
+}
+
 </style>
 </head>
 <body>
@@ -878,11 +923,9 @@
 
   
 <div class="smob">
-    <a class="c" href="tel:+972508307269"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>חייגו עכשיו</a>
-    <a class="w" href="https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>WhatsApp</a>
+    <a class="wafloat" href="https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91" target="_blank" rel="noopener" aria-label="שלחו WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg></a>
+    <a class="bar" href="tel:+972508307269"><small>נתקעתם בחוץ? חייגו עכשיו!</small><b>050-8307269</b></a>
   </div>
-
-
 </div>
 <script>
 document.querySelectorAll('.faq__q').forEach(function(b){b.addEventListener('click',function(){var open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',(!open).toString());var a=b.nextElementSibling;if(a){ if(open){a.style.maxHeight=null;a.style.paddingBottom=null;} else {a.style.paddingBottom='18px';a.style.maxHeight=(a.scrollHeight+26)+'px';} }var s=b.querySelector('.s');if(s)s.textContent=open?'+':'\u2212';});});
