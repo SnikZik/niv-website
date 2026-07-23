@@ -9,7 +9,7 @@ footer=re.search(r'<footer class="ft">.*?</footer>',src,re.S).group(0)
 flt=re.search(r'<div class="float">.*?</div>\s*(?=<div class="smob">)',src,re.S).group(0)
 smob=re.search(r'<div class="smob">.*?</div>\s*(?=</div>)',src,re.S).group(0)
 js=re.search(r'<script>.*?</script>',src,re.S).group(0)
-hero1=re.search(r'src="(data:[^"]+)" alt="מנעולן ליד דלת בירושלים',src).group(1)
+hero1=re.search(r'class="bighero__bg" src="(data:[^"]+)"',src).group(1)
 hero2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src).group(1)
 BASE='https://snikzik.github.io/niv-website'
 WAURL='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
@@ -51,7 +51,44 @@ art_css='''
 '''
 style=style.replace('</style>',art_css+'\n</style>')
 
-def article(a):
+
+PIDX=json.load(open('/Users/s/niv-locksmith/products_index.json',encoding='utf-8'))
+ART_STRIPS={
+ 'delet-nitreka':('צילינדרים ומנעולים מהקטלוג',['מנעולים מכניים','מנעולים חבויים אמריקאיים','מנעול חכם Yale Linus L2','מנעולים אלקטרומכניים']),
+ 'tzilinder-matay':('צילינדרים ומנעולים מהקטלוג',['מנעולים מכניים','מנעולים חבויים אמריקאיים','מנעולים אלקטרומכניים','מנעול חכם Yale Linus L2']),
+ 'kama-ole-manulan':('מהקטלוג שלי, מחיר סגור בטלפון',['מנעולים מכניים','כספת ביתית קטנה','מנעול חכם Yale Linus L2','מחזיר דלת הידראולי DC140']),
+ 'tzilinder-mugan-mul-ragil':('מנעולים וצילינדרים מהקטלוג',['מנעולים מכניים','מנעולים חבויים אמריקאיים','מנעולים אלקטרומכניים','מנעולי פבלוק']),
+ 'manul-hacham-madrich':('מנעולים חכמים מהקטלוג',['מנעול חכם Yale Linus L2','ערכת Linus L2 + קודן חכם','ערכת Linus L2 + קודן טביעת אצבע','קודן חכם Yale']),
+ 'mamad-takua':('פרזול ופתרונות לדלתות כבדות',['ידית AH200 על שלט Grade 4','מחזיר דלת הידראולי DC340','ידית מנוף AH200 על רוזטה עגולה','מנעולים מכניים']),
+ 'checklist-maavar-dira':('שדרוגים נפוצים במעבר דירה',['מנעולים מכניים','מנעול חכם Yale Linus L2','כספת ביתית קטנה','מנעולים חבויים אמריקאיים']),
+ 'manulan-oketz':('מוצרים שאני מתקין במחיר סגור',['מנעולים מכניים','מנעול חכם Yale Linus L2','כספת ביתית בינונית','מחזיר דלת הידראולי DC140']),
+ 'rav-bariach-kashe':('פרזול ומנעולים מהקטלוג',['מנעולים מכניים','ידית מנוף AH200 על רוזטה עגולה','מנעולים חבויים אמריקאיים','מחזיר דלת הידראולי DC200']),
+ 'delet-lo-nisgeret':('מחזירים ופרזול מהקטלוג',['מחזיר דלת הידראולי DC140','מחזיר דלת הידראולי DC200','ידית מנוף AH200 על רוזטה עגולה','ידיות TESA לדלתות פנים']),
+}
+ADV_ROT=[
+ ('linear-gradient(135deg,#3B1273,#6D28D9)','שולחים צילום, מקבלים מחיר','צלמו את הדלת או המנעול, שלחו לי בוואטסאפ, ותוך כמה דקות תדעו בדיוק כמה זה עולה. עוד לפני שיצאתי אליכם.','שלחו צילום עכשיו'),
+ ('linear-gradient(135deg,#0C4A6E,#0369A1)','בלי מוקדנים, מדברים ישר איתי','אין מוקד ואין תיווך. מי שעונה לטלפון הוא מי שמגיע אליכם, עם הציוד ועם המחיר שנסגר בשיחה.','חייגו 050-8307269'),
+ ('linear-gradient(135deg,#134E4A,#0F766E)','פותח בלי נזק לדלת','כלי עבודה מקצועיים ושיטות פתיחה עדינות. הדלת נשארת שלמה והמנעול ברוב המקרים ממשיך לעבוד.','דברו איתי'),
+ ('linear-gradient(135deg,#78350F,#B45309)','המחיר נסגר בטלפון, לא בשטח','מה שסיכמנו בשיחה זה מה שתשלמו. בלי תוספות מפתיעות ובלי ״נראה כשאגיע״.','קבלו מחיר עכשיו'),
+ ('linear-gradient(135deg,#312E81,#4338CA)','מנעולן מקומי, תוך 20 דקות אצלכם','אני עובד רק בירושלים והסביבה, ולכן מגיע מהר ומכיר כל סוג דלת בעיר.','חייגו עכשיו'),
+]
+CAM_IC='<span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>'
+def art_strip(slug,idx):
+    if slug not in ART_STRIPS: return ''
+    head,names=ART_STRIPS[slug]
+    cards=''
+    for n in names:
+        p=PIDX.get(n)
+        if not p: continue
+        cards+=f'<a class="pcard" href="{p["slug"]}.html"><span class="pcard__img"><img src="img/products/{p["img"]}.jpg" alt="{n}" loading="lazy"></span><b>{n}</b><span class="ask">לעמוד המוצר ›</span></a>'
+    g,btitle,btext,bcta=ADV_ROT[idx%len(ADV_ROT)]
+    href='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91' if idx%len(ADV_ROT) in (0,2) else 'tel:+972508307269'
+    tb=' target="_blank" rel="noopener"' if 'wa.me' in href else ''
+    adv=f'<section class="adv" style="background:{g}">{CAM_IC}<b>{btitle}</b><p>{btext}</p><a href="{href}"{tb}>{bcta}</a></section>'
+    strip=f'<section class="sec sec--white" style="background:#F6F3FB"><div class="wrap"><div class="sh sh--c"><h2>{head}</h2><p>מהקטלוג שלי, עם ייעוץ והתקנה. המחיר נסגר בטלפון.</p></div><div class="pgrid" style="grid-template-columns:repeat(4,1fr)">{cards}</div></div></section>'
+    return strip+adv
+
+def article(a,ai=0):
     body_html=a["body"]
     faq_ld=[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":ans}} for q,ans in a.get("faq",[])]
     graph=[
@@ -89,6 +126,7 @@ def article(a):
     {body_html}
   </article>
   {faq_sec}
+  {art_strip(a['slug'],ai)}
   <section class="sec sec--white"><div class="wrap">
     <div class="sh"><h2>עוד מדריכים</h2></div>
     <div class="bgrid relarts">{rel}</div>
@@ -108,8 +146,8 @@ def article(a):
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from articles_data import ARTICLES
 banned=["לסיכום","ראשית","שנית","בנוסף לכך","יתרה מזאת","חשוב לציין","במסגרת","על מנת","כמו כן","יש לציין"]
-for a in ARTICLES:
-    html=article(a)
+for ai,a in enumerate(ARTICLES):
+    html=article(a,ai)
     bad=[w for w in banned if w in html]
     t=re.sub(r'<script.*?</script>','',html,flags=re.S); t=re.sub(r'<style.*?</style>','',t,flags=re.S); t=re.sub(r'<[^>]+>',' ',t)
     open('/Users/s/niv-locksmith/'+a["slug"]+'.html','w',encoding='utf-8').write(html)

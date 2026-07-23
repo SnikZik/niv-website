@@ -74,3 +74,12 @@
 - אזורי שירות: כל שכונות ירושלים, גבעת זאב, מבשרת ציון, מעלה אדומים
 - זמן הגעה: בדרך כלל כ-20 דקות בתוך ירושלים
 - מחירים: פריצת דלת מ-300₪, החלפת צילינדר מ-300₪, המחיר נסגר בטלפון מראש
+- [איך יודעים שצריך להחליף צילינדר](https://snikzik.github.io/niv-website/tzilinder-matay.html)
+- [כמה עולה מנעולן בירושלים](https://snikzik.github.io/niv-website/kama-ole-manulan.html)
+- [צילינדר מוגן מול רגיל](https://snikzik.github.io/niv-website/tzilinder-mugan-mul-ragil.html)
+- [מנעול חכם, מדריך קנייה](https://snikzik.github.io/niv-website/manul-hacham-madrich.html)
+- [דלת ממ״ד תקועה, מה עושים](https://snikzik.github.io/niv-website/mamad-takua.html)
+- [צ׳קליסט מנעולים במעבר דירה](https://snikzik.github.io/niv-website/checklist-maavar-dira.html)
+- [איך לא ליפול על מנעולן עוקץ](https://snikzik.github.io/niv-website/manulan-oketz.html)
+- [רב בריח נפתח קשה](https://snikzik.github.io/niv-website/rav-bariach-kashe.html)
+- [הדלת לא נסגרת טוב](https://snikzik.github.io/niv-website/delet-lo-nisgeret.html)
