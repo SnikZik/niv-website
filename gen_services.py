@@ -152,7 +152,7 @@ def page(slug,d):
       <div class="hchecks">{checks}</div>
       <p class="updated">מאת ניב, מנעולן מוסמך · עודכן ביולי 2026</p>
     </div>
-    <div class="shero__img"><img src="{hero1}" alt="{dp['svc_type']} בירושלים, ניב המנעולן ליד דלת עם צילינדר"></div>
+    <div class="shero__img"><img src="img/{slug}.jpg" alt="{dp['svc_type']} בירושלים, ניב המנעולן" loading="eager"></div>
   </div></section>
   <section class="sec sec--white"><div class="wrap narrow">
     <div class="defbox"><h2>{dp["def_h"]}</h2><p>{dp["def"]}</p></div>
