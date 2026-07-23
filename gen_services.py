@@ -75,8 +75,34 @@ WA='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentC
 CK='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'
 WAURL='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 BASE='https://snikzik.github.io/niv-website'
+CAM='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg>'
+SHIELD='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>'
+COIN='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 15V9h4a2 2 0 0 1 0 4H9"/></svg>'
+HOMEI='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5M5 9.5V21h14V9.5"/></svg>'
+HEART='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 21C7 16.5 3 13.3 3 9.3A4.3 4.3 0 0 1 7.3 5c1.9 0 3.5 1 4.7 2.6C13.2 6 14.8 5 16.7 5A4.3 4.3 0 0 1 21 9.3c0 4-4 7.2-9 11.7Z"/></svg>'
 
 S=json.load(open('/Users/s/niv-locksmith/services_data.json',encoding='utf-8'))
+PHB='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>'
+CALLA='<a href="tel:+972508307269">חייגו לניב 050-8307269</a>'
+WAA='<a href="'+WAURL+'" target="_blank" rel="noopener">שלחו צילום עכשיו</a>'
+ADV={
+ 'A':('purple',CAM,'שולחים צילום, מקבלים מחיר','צלמו את הדלת או המנעול, שלחו לי בוואטסאפ, ותוך כמה דקות תדעו בדיוק כמה זה עולה.',WAA),
+ 'B':('blue',PHB,'מי שעונה לטלפון הוא מי שמגיע','בלי מוקד, בלי קבלני משנה ובלי הפתעות. סוגרים איתי מחיר בשיחה, ואני זה שדופק בדלת.',CALLA),
+ 'C':('teal',SHIELD,'פותח בזהירות, בלי נזק','ברוב המקרים הדלת נשארת שלמה לגמרי. המטרה שלי שתיכנסו הביתה בלי להחליף כלום.',CALLA),
+ 'D':('amber',COIN,'המחיר נסגר בטלפון, לא בשטח','לפני שאני יוצא אתם יודעים בדיוק כמה זה עולה. מה שסוכם בשיחה הוא מה שמשולם בסוף.',CALLA),
+ 'E':('indigo',HOMEI,'מקומי שמכיר כל שכונה','אני עובד רק בירושלים והסביבה. מכיר את הדלתות של כל שכונה, ולכן מגיע מהר ומוכן.',CALLA),
+ 'F':('rose',HEART,'רוב הלקוחות מגיעים בהמלצה','שכן ממליץ לשכן, לקוח מביא לקוח. ככה אני עובד בירושלים כבר שנים, בלי פרסום רועש.',CALLA),
+}
+ADVMAP={'pritzat-dlatot':'C','tzilinder':'F','tikun-dlatot':'D','mamad':'C','ksafot':'F','manul-hacham':'A',
+ 'mahzirei-delet':'D','electromagnet':'E','yadiyot-bahala':'B','pladelet':'E','rav-bariach':'C','manulan-herum':'B',
+ 'tikun-mamad':'D','kivun-dlatot-pnim':'C','dlatot-hutz':'E','hatkanat-mamad':'B','hatkanat-ksafot':'F',
+ 'yadiot-ledelet':'D','mafteah-shavur':'C','hatkanat-manulim':'A'}
+try:
+    from services_new import NEW
+    for k,v in NEW.items():
+        dp=v.pop('deep'); S[k]=v; DEEP[k]=dp
+except ImportError:
+    pass
 
 def schema(slug,d,dp):
     url=f'{BASE}/{slug}.html'
@@ -106,6 +132,9 @@ def page(slug,d):
     faq="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf{i}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf{i}">{a}</div></div>' for i,(q,a) in enumerate(d["faq"],1))
     rel="".join(f'<a class="scard" href="/{s2}.html"><h3>{t}</h3><p>{p}</p><span class="scard__l">{l} ›</span></a>' for s2,t,p,l in d["related"])
     revs="".join(f'<div class="tcard"><p class="tcard__q">{T[k][0]}</p><div class="tcard__w">{T[k][1]}, <span>{T[k][2]}</span></div></div>' for k in dp["reviews"])
+    revcols='repeat(3,1fr)' if len(dp["reviews"])>=3 else '1fr 1fr'
+    advk=ADVMAP.get(slug,'C'); ac,ai,at,ax,acta=ADV[advk]
+    advb=f'<section class="adv adv--{ac}"><span class="ic">{ai}</span><b>{at}</b><p>{ax}</p>{acta}</section>' 
     main=f'''
   <nav class="bc" aria-label="פירורי לחם"><div class="wrap">
     <a href="/">בית</a><span aria-hidden="true">›</span><a href="/">שירותים</a><span aria-hidden="true">›</span><b>{d["h1"]}</b>
@@ -156,6 +185,7 @@ def page(slug,d):
     <ul>{facts}</ul>
     <p class="m">{d["price_close"]}</p>
   </div></section>
+  {advb}
   <section class="about"><div class="wrap"><div class="about__in">
     <div class="about__img"><img src="{hero2}" alt="ניב, מנעולן בירושלים, עובד על מנגנון של דלת"></div>
     <div>
@@ -167,7 +197,8 @@ def page(slug,d):
   </div></div></section>
   <section class="sec sec--white" style="background:#EFF6F1"><div class="wrap">
     <div class="sh sh--c"><h2>מה לקוחות סיפרו</h2></div>
-    <div class="svcrev">{revs}</div>
+    <div class="svcrev" style="grid-template-columns:{revcols}">{revs}</div>
+    <p style="text-align:center;color:var(--iron);font-size:14px;margin-top:16px">ביקורות מלקוחות אמיתיים של ניב. עזרתי גם לכם? אשמח לביקורת ב-Google.</p>
   </div></section>
   <section class="band2">
     <b>{dp["table"][0][0]} {dp["table"][0][1]}</b>
@@ -184,6 +215,7 @@ def page(slug,d):
   </div></section>
   <section class="sec sec--sand"><div class="wrap narrow" style="text-align:center">
     <h2 style="font-size:22px;margin-bottom:14px">{d["areas_h"]}</h2>
+    <div style="margin:0 0 18px;border-radius:14px;overflow:hidden;box-shadow:var(--sh)"><iframe loading="lazy" title="אזור השירות של ניב המנעולן בירושלים" src="https://www.google.com/maps?q=%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&output=embed&z=12" style="border:0;width:100%;height:300px;display:block"></iframe></div>
     <p style="color:var(--iron);font-size:15px;line-height:1.8">פסגת זאב · רמות · גילה · תלפיות · קטמון · בית הכרם · קריית יובל · הר חומה · ארנונה · בקעה · נווה יעקב · וגם גבעת זאב, מבשרת ציון ומעלה אדומים</p>
   </div></section>
   <section class="sec fcta" style="text-align:center;padding:52px 22px">
