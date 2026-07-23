@@ -107,7 +107,7 @@ def page(cat_slug,cat,prod,idx,all_prods):
     faqs=[fq[idx%5],fq[(idx+2)%5],fq[(idx+4)%5]]
     faqh="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="pf{j}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="pf{j}">{a}</div></div>' for j,(q,a) in enumerate(faqs,1))
     rel=[x for x in all_prods if x['name']!=name][:4]
-    relh="".join(f'<a class="pcard" href="mutzar-{slugify(x["name"])}.html"><span class="tag">{x.get("tag","")}</span><b>{x["name"]}</b><p>{x["desc"]}</p><span class="ask">לעמוד המוצר ›</span></a>' for x in rel)
+    relh="".join(f'<a class="pcard" href="mutzar-{slugify(x["name"])}.html"><span class="pcard__img"><img src="img/products/{img_for_final(cat_slug,x.get("tag",""),x["name"])}.jpg" alt="{x["name"]}" loading="lazy"></span><span class="tag">{x.get("tag","")}</span><b>{x["name"]}</b><p>{x["desc"]}</p><span class="ask">לעמוד המוצר ›</span></a>' for x in rel)
     title=f'{name} | {cat["h1"]} | ניב המנעולן'[:65]
     meta=(f'{name}, {desc} ייעוץ, אספקה והתקנה בירושלים על ידי ניב המנעולן. המחיר נסגר בטלפון. חייגו 050-8307269.')[:160]
     ld={"@context":"https://schema.org","@graph":[

@@ -1038,6 +1038,19 @@ a.pcard{text-decoration:none}
 }
 @media(max-width:560px){ .n6 .pgrid{grid-template-columns:1fr} }
 
+
+/* ===== v18: compact product cards, mobile 2-col ===== */
+.n6 .pcard__img{height:112px}
+@media(max-width:900px){
+  .n6 .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important}
+  .n6 .pcard{padding:12px;gap:5px}
+  .n6 .pcard__img{margin:-12px -12px 8px;height:92px}
+  .n6 .pcard b{font-size:13px;line-height:1.3}
+  .n6 .pcard p{font-size:11.5px;line-height:1.45}
+  .n6 .pcard .ask{font-size:12px}
+}
+
 </style>
 </head>
 <body>

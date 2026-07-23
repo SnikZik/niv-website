@@ -1031,3 +1031,27 @@
 @media(max-width:560px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr !important} }
 .n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px}
 .n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ===== v18: compact product cards, mobile 2-col ===== */
+.pcard__img{height:112px}
+@media(max-width:900px){
+  .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important}
+  .pcard{padding:12px;gap:5px}
+  .pcard__img{margin:-12px -12px 8px;height:92px}
+  .pcard b{font-size:13px;line-height:1.3}
+  .pcard p{font-size:11.5px;line-height:1.45}
+  .pcard .ask{font-size:12px}
+}
+
+/* ===== v18b: n6-prefixed override ===== */
+.n6 .pcard__img{height:112px}
+@media(max-width:900px){
+  .n6 .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important}
+  .n6 .pcard{padding:12px;gap:5px}
+  .n6 .pcard__img{margin:-12px -12px 8px;height:92px}
+  .n6 .pcard b{font-size:13px;line-height:1.3}
+  .n6 .pcard p{font-size:11.5px;line-height:1.45}
+  .n6 .pcard .ask{font-size:12px}
+}

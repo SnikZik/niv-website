@@ -22,6 +22,18 @@ BASE='https://snikzik.github.io/niv-website'
 W='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
 cat_css='''
+/* ===== v18: compact product cards, mobile 2-col ===== */
+.n6 .pcard__img{height:112px}
+@media(max-width:900px){
+  .n6 .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important}
+  .n6 .pcard{padding:12px;gap:5px}
+  .n6 .pcard__img{margin:-12px -12px 8px;height:92px}
+  .n6 .pcard b{font-size:13px;line-height:1.3}
+  .n6 .pcard p{font-size:11.5px;line-height:1.45}
+  .n6 .pcard .ask{font-size:12px}
+}
+
 /* ===== catalog ===== */
 .n6 .bc{background:#fff;border-bottom:1px solid var(--line);font-size:13.5px;padding:8px 0}
 .n6 .bc .wrap{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
