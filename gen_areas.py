@@ -63,7 +63,13 @@ style2=style.replace('</style>',area_css+'\n</style>')
 def page(i,slug,d):
     revs=REVROT[i%5]; advc,advt,advx=ADVROT[i%5][0],ADVROT[i%5][1],ADVROT[i%5][2]
     revh="".join(f'<div class="tcard"><p class="tcard__q">{T[k][0]}</p><div class="tcard__w">{T[k][1]}, <span>{T[k][2]}</span></div></div>' for k in revs)
-    svc="".join(f'<a href="{s2}.html">{t} ב{d["b"]}</a>' for s2,t in SVC_LINKS)
+    import os as _os
+    def _svc(s2,t):
+        local=f'{s2}-{slug.replace("manulan-","")}'
+        if _os.path.exists(f'/Users/s/niv-locksmith/{local}.html'):
+            return f'<a href="{local}.html">{t} ב{d["b"]}</a>'
+        return f'<a href="{s2}.html">{t} בירושלים</a>'
+    svc="".join(_svc(s2,t) for s2,t in SVC_LINKS)
     near="".join(f'<a href="{s2}.html">מנעולן ב{n}</a>' for s2,n in d["nearby"])
     faq="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="af{j}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="af{j}">{a}</div></div>' for j,(q,a) in enumerate(d["faq"],1))
     blocks="".join(f'<h2>{h}</h2><p>{t}</p>' for h,t in d["local"])
