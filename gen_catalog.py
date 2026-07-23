@@ -2,6 +2,11 @@
 import re,json,sys
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from catalog_data import CATS
+try:
+    from catalog_data2 import CATS2
+    CATS={**CATS,**CATS2}
+except ImportError:
+    pass
 
 src=open('/Users/s/niv-locksmith/index.html',encoding='utf-8').read()
 style=re.search(r'<style>.*?</style>',src,re.S).group(0)

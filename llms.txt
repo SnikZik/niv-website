@@ -28,6 +28,12 @@
 - [קטלוג כספות](https://snikzik.github.io/niv-website/katalog-ksafot.html)
 - [קטלוג מחזירי דלת](https://snikzik.github.io/niv-website/katalog-mahzirei-delet.html)
 - [קטלוג בקרת כניסה](https://snikzik.github.io/niv-website/katalog-bakarat-knisa.html)
+- [קטלוג מנעולים חשמליים](https://snikzik.github.io/niv-website/katalog-manulim-hashmaliim.html)
+- [קטלוג ידיות בהלה](https://snikzik.github.io/niv-website/katalog-yadiyot-bahala.html)
+- [קטלוג אבטחה חכמה](https://snikzik.github.io/niv-website/katalog-avtacha-hachama.html)
+- [קטלוג פרזול אדריכלי](https://snikzik.github.io/niv-website/katalog-parzol-adrichali.html)
+- [קטלוג פותחי דלתות](https://snikzik.github.io/niv-website/katalog-potchei-dlatot.html)
+- [קטלוג מוצרים לבתי מלון](https://snikzik.github.io/niv-website/katalog-batei-malon.html)
 
 ## עובדות מפתח
 - טלפון: 050-8307269, עונה ניב עצמו, בלי מוקד
