@@ -15,6 +15,14 @@
 - [דלת פלדלת](https://snikzik.github.io/niv-website/pladelet.html): התקנה כולל משקוף
 - [רב בריח](https://snikzik.github.io/niv-website/rav-bariach.html): תיקון והחלפת מנגנונים
 - [מנעולן חירום 24/7](https://snikzik.github.io/niv-website/manulan-herum.html): הגעה כ-20 דקות בירושלים
+- [תיקון דלת ממ״ד](https://snikzik.github.io/niv-website/tikun-mamad.html): מנגנוני ממ״ד, מ-350₪
+- [התקנת דלת ממ״ד](https://snikzik.github.io/niv-website/hatkanat-mamad.html): לפי תקן, מ-650₪
+- [כיוון דלתות פנים](https://snikzik.github.io/niv-website/kivun-dlatot-pnim.html): מ-250₪
+- [התקנת דלתות חוץ](https://snikzik.github.io/niv-website/dlatot-hutz.html): חצר ומחסן
+- [התקנת כספות](https://snikzik.github.io/niv-website/hatkanat-ksafot.html): כולל עיגון, מ-499₪
+- [החלפת ידיות](https://snikzik.github.io/niv-website/yadiot-ledelet.html): מ-250₪
+- [חילוץ מפתח שבור](https://snikzik.github.io/niv-website/mafteah-shavur.html): מ-250₪, 24/7
+- [התקנת מנעולים](https://snikzik.github.io/niv-website/hatkanat-manulim.html): כל הסוגים
 
 ## עובדות מפתח
 - טלפון: 050-8307269, עונה ניב עצמו, בלי מוקד

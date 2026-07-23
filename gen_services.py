@@ -11,7 +11,7 @@ footer=re.search(r'<footer class="ft">.*?</footer>',src,re.S).group(0)
 flt=re.search(r'<div class="float">.*?</div>\s*(?=<div class="smob">)',src,re.S).group(0)
 smob=re.search(r'<div class="smob">.*?</div>\s*(?=</div>)',src,re.S).group(0)
 js=re.search(r'<script>.*?</script>',src,re.S).group(0)
-hero1=re.search(r'src="(data:[^"]+)" alt="מנעולן ליד דלת בירושלים',src).group(1)
+hero1=re.search(r'class="bighero__bg" src="(data:[^"]+)"',src).group(1)
 hero2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src).group(1)
 
 # service-page CSS (split hero with image + deep + reviews)
