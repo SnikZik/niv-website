@@ -126,7 +126,7 @@ def page(slug,d):
     checks="".join(f'<div class="hcheck">{CK}{c}</div>' for c in d["checks"])
     probs="".join(f'<div class="prob"><span class="prob__d" aria-hidden="true"></span><div><b>{t}</b><p>{p}</p></div></div>' for t,p in d["situations"])
     steps="".join(f'<div class="step2"><b>{t}</b><p>{p}</p></div>' for t,p in d["steps"])
-    facts="".join(f'<li><b>{t}</b> — {p}</li>' for t,p in d["factors"])
+    facts="".join(f'<li><b>{t}</b>: {p}</li>' for t,p in d["factors"])
     deep="".join(f'<h2>{h}</h2><p>{p}</p>' for h,p in dp["blocks"])
     trows="".join(f'<div class="prow"><span class="prow__s">{a}</span><span class="prow__p">{b}</span></div>' for a,b in dp["table"])
     faq="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf{i}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf{i}">{a}</div></div>' for i,(q,a) in enumerate(d["faq"],1))
