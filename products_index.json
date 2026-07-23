@@ -1,0 +1,817 @@
+{
+ "מנעולים מכניים": {
+  "slug": "mutzar-mnaolim-mkniim",
+  "img": "generic",
+  "cat": "katalog-manulim"
+ },
+ "מנעולים חבויים אמריקאיים": {
+  "slug": "mutzar-mnaolim-chboiim-amrikaiim",
+  "img": "generic",
+  "cat": "katalog-manulim"
+ },
+ "מנעולים אלקטרומכניים": {
+  "slug": "mutzar-mnaolim-alktromkniim",
+  "img": "generic",
+  "cat": "katalog-manulim"
+ },
+ "מנעולי תליה Yale Smart2": {
+  "slug": "mutzar-mnaoli-tlih-yale-smart2",
+  "img": "padlock-2",
+  "cat": "katalog-manulim"
+ },
+ "מנעולי פבלוק": {
+  "slug": "mutzar-mnaoli-pblok",
+  "img": "padlock-2",
+  "cat": "katalog-manulim"
+ },
+ "מנעול תלי קומבינציה 23": {
+  "slug": "mutzar-mnaol-tli-kombintzih-23",
+  "img": "padlock-2",
+  "cat": "katalog-manulim"
+ },
+ "מנעול תלי קומבינציה 28": {
+  "slug": "mutzar-mnaol-tli-kombintzih-28",
+  "img": "padlock",
+  "cat": "katalog-manulim"
+ },
+ "מנעול נסיעות בתקן TSA משולב כבל": {
+  "slug": "mutzar-mnaol-nsiaot-btkn-tsa-msholb-kbl",
+  "img": "travel",
+  "cat": "katalog-manulim"
+ },
+ "רתקים": {
+  "slug": "mutzar-rtkim",
+  "img": "padlock",
+  "cat": "katalog-manulim"
+ },
+ "מנעולי תלי פליז 20-60 מ״מ": {
+  "slug": "mutzar-mnaoli-tli-pliz-20-60-mm",
+  "img": "padlock-brass",
+  "cat": "katalog-manulim"
+ },
+ "מנעול אופניים U דירוג Gold Secure": {
+  "slug": "mutzar-mnaol-aopniim-u-dirog-gold-secure",
+  "img": "bike",
+  "cat": "katalog-manulim"
+ },
+ "מנעול אופניים שרשרת Gold Secure": {
+  "slug": "mutzar-mnaol-aopniim-shrshrt-gold-secure",
+  "img": "bike",
+  "cat": "katalog-manulim"
+ },
+ "מנעול אופניים כבל קוד": {
+  "slug": "mutzar-mnaol-aopniim-kbl-kod",
+  "img": "bike",
+  "cat": "katalog-manulim"
+ },
+ "כספת ביתית מיני": {
+  "slug": "mutzar-kspt-bitit-mini",
+  "img": "safe-2",
+  "cat": "katalog-ksafot"
+ },
+ "כספת ביתית קטנה": {
+  "slug": "mutzar-kspt-bitit-ktnh",
+  "img": "safe-3",
+  "cat": "katalog-ksafot"
+ },
+ "כספת ביתית בינונית": {
+  "slug": "mutzar-kspt-bitit-binonit",
+  "img": "safe-3",
+  "cat": "katalog-ksafot"
+ },
+ "כספת גבוהה": {
+  "slug": "mutzar-kspt-gbohh",
+  "img": "safe-3",
+  "cat": "katalog-ksafot"
+ },
+ "כספת High Security ביתית": {
+  "slug": "mutzar-kspt-high-security-bitit",
+  "img": "safe-2",
+  "cat": "katalog-ksafot"
+ },
+ "כספת High Security גבוהה": {
+  "slug": "mutzar-kspt-high-security-gbohh",
+  "img": "safe-3",
+  "cat": "katalog-ksafot"
+ },
+ "כספת High Security טביעת אצבע": {
+  "slug": "mutzar-kspt-high-security-tbiat-atzba",
+  "img": "safe",
+  "cat": "katalog-ksafot"
+ },
+ "כספת Maximum Security ביתית": {
+  "slug": "mutzar-kspt-maximum-security-bitit",
+  "img": "safe-3",
+  "cat": "katalog-ksafot"
+ },
+ "כספת Maximum Security גבוהה": {
+  "slug": "mutzar-kspt-maximum-security-gbohh",
+  "img": "safe-2",
+  "cat": "katalog-ksafot"
+ },
+ "כספת חכמה": {
+  "slug": "mutzar-kspt-chkmh",
+  "img": "safe",
+  "cat": "katalog-ksafot"
+ },
+ "כספת מוגנת אש ביתית": {
+  "slug": "mutzar-kspt-mognt-ash-bitit",
+  "img": "safe-fire",
+  "cat": "katalog-ksafot"
+ },
+ "כספת מוגנת אש 53 ק״ג": {
+  "slug": "mutzar-kspt-mognt-ash-53-kg",
+  "img": "safe-fire",
+  "cat": "katalog-ksafot"
+ },
+ "כספת למחשב נייד": {
+  "slug": "mutzar-kspt-lmchshb-niid",
+  "img": "safe-2",
+  "cat": "katalog-ksafot"
+ },
+ "כספת מכנית חבויה": {
+  "slug": "mutzar-kspt-mknit-chboih",
+  "img": "safe-2",
+  "cat": "katalog-ksafot"
+ },
+ "מחזיר דלת הידראולי DC110": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc110",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC120": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc120",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC140": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc140",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC200": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc200",
+  "img": "closer-3",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC300": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc300",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC340": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc340",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC347": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc347",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC500": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc500",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC700": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc700",
+  "img": "closer-3",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר DC700G-CM / FM / FT": {
+  "slug": "mutzar-mchzir-dc700g-cm-fm-ft",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת סמוי DC850": {
+  "slug": "mutzar-mchzir-dlt-smoi-dc850",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת סמוי DC870": {
+  "slug": "mutzar-mchzir-dlt-smoi-dc870",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת הידראולי DC826": {
+  "slug": "mutzar-mchzir-dlt-hidraoli-dc826",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר דלת סדרה 300": {
+  "slug": "mutzar-mchzir-dlt-sdrh-300",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר רצפתי DC450 / DC450EA": {
+  "slug": "mutzar-mchzir-rtzpti-dc450-dc450ea",
+  "img": "closer-floor",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר רצפתי DC475 / DC477": {
+  "slug": "mutzar-mchzir-rtzpti-dc475-dc477",
+  "img": "closer-floor",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר לשער DC630G": {
+  "slug": "mutzar-mchzir-lshar-dc630g",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר NORTON 7500": {
+  "slug": "mutzar-mchzir-norton-7500",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר NORTON 8541": {
+  "slug": "mutzar-mchzir-norton-8541",
+  "img": "closer-3",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מחזיר NORTON סדרה 7970": {
+  "slug": "mutzar-mchzir-norton-sdrh-7970",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "סגר הידראולי NORTON 8000": {
+  "slug": "mutzar-sgr-hidraoli-norton-8000",
+  "img": "closer",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מתאם סגירה ROCKWOOD 1700 / 2600": {
+  "slug": "mutzar-mtam-sgirh-rockwood-1700-2600",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מתאם סגירה ABLOY G461": {
+  "slug": "mutzar-mtam-sgirh-abloy-g461",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מתאם סגירה JPM 914000": {
+  "slug": "mutzar-mtam-sgirh-jpm-914000",
+  "img": "closer-2",
+  "cat": "katalog-mahzirei-delet"
+ },
+ "מנעול אלקטרוני SMARTair i-max": {
+  "slug": "mutzar-mnaol-alktroni-smartair-i-max",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול אלקטרוני עם קודן i-max": {
+  "slug": "mutzar-mnaol-alktroni-am-kodn-i-max",
+  "img": "keypad-2",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "SMARTair i-minimal": {
+  "slug": "mutzar-smartair-i-minimal",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול אלקטרוני i-volution": {
+  "slug": "mutzar-mnaol-alktroni-i-volution",
+  "img": "generic",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "כרטיסי SMARTair": {
+  "slug": "mutzar-krtisi-smartair",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "קוראי קיר SMARTair": {
+  "slug": "mutzar-korai-kir-smartair",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "תוכנת ניהול SMARTair": {
+  "slug": "mutzar-toknt-nihol-smartair",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול תלייה אלקטרוני i-gate": {
+  "slug": "mutzar-mnaol-tliih-alktroni-i-gate",
+  "img": "padlock",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "צילינדר Aperio C100": {
+  "slug": "mutzar-tzilindr-aperio-c100",
+  "img": "cylinder",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "ידית אלקטרונית Aperio H100": {
+  "slug": "mutzar-idit-alktronit-aperio-h100",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול אלקטרוני Aperio L100": {
+  "slug": "mutzar-mnaol-alktroni-aperio-l100",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול לוקר Aperio KL100": {
+  "slug": "mutzar-mnaol-lokr-aperio-kl100",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "קורא קיר Aperio DR100": {
+  "slug": "mutzar-kora-kir-aperio-dr100",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "רכזת תקשורת Aperio": {
+  "slug": "mutzar-rkzt-tkshort-aperio",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "טכנולוגיות Aperio RFID": {
+  "slug": "mutzar-tknologiot-aperio-rfid",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מפתחות בנייד Incedo": {
+  "slug": "mutzar-mptchot-bniid-incedo",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "כרטיסים ותגים Incedo": {
+  "slug": "mutzar-krtisim-otgim-incedo",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "קורא קווי Incedo": {
+  "slug": "mutzar-kora-kooi-incedo",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מודול קורא דלת Incedo": {
+  "slug": "mutzar-modol-kora-dlt-incedo",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "בקר אשכול Incedo": {
+  "slug": "mutzar-bkr-ashkol-incedo",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "בקר יישומים / בקר מתאם": {
+  "slug": "mutzar-bkr-iishomim-bkr-mtam",
+  "img": "access-3",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול ארון שרתים KS200": {
+  "slug": "mutzar-mnaol-aron-shrtim-ks200",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "מנעול ארונית": {
+  "slug": "mutzar-mnaol-aronit",
+  "img": "access",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "i-max מנעול אלקטרוני": {
+  "slug": "mutzar-i-max-mnaol-alktroni",
+  "img": "generic",
+  "cat": "katalog-bakarat-knisa"
+ },
+ "נגדי חשמלי Effeff 118F ProFix 1/2": {
+  "slug": "mutzar-ngdi-chshmli-effeff-118f-profix-1-2",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול חשמלי Effeff 112": {
+  "slug": "mutzar-mnaol-chshmli-effeff-112",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול אוניברסלי זעיר Effeff 118 N.C": {
+  "slug": "mutzar-mnaol-aonibrsli-zair-effeff-118-n-c",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "Effeff 138 N.O פתוח בכשל": {
+  "slug": "mutzar-effeff-138-n-o-ptoch-bkshl",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "Effeff 128 עם השהיה": {
+  "slug": "mutzar-effeff-128-am-hshhih",
+  "img": "electric",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "Effeff 118/128/138 ProFix להתקנה סמויה": {
+  "slug": "mutzar-effeff-118-128-138-profix-lhtknh-smoih",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול חשמלי Effeff 131": {
+  "slug": "mutzar-mnaol-chshmli-effeff-131",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול חשמלי Effeff 142U": {
+  "slug": "mutzar-mnaol-chshmli-effeff-142u",
+  "img": "electric",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "סדרות Effeff 14/24/34 ו-17/27/37": {
+  "slug": "mutzar-sdrot-effeff-14-24-34-o-17-27-37",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול חשמלי Effeff 8037": {
+  "slug": "mutzar-mnaol-chshmli-effeff-8037",
+  "img": "electric",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "בריח ממונע Effeff 843G לשערים": {
+  "slug": "mutzar-brich-mmona-effeff-843g-lsharim",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "בריח חשמלי סמוי SOCA SL-100": {
+  "slug": "mutzar-brich-chshmli-smoi-soca-sl-100",
+  "img": "electric-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "בריח חשמלי SOCA SL-165B למשטח": {
+  "slug": "mutzar-brich-chshmli-soca-sl-165b-lmshtch",
+  "img": "electric",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "בריח SOCA SL-167B לדלת זכוכית": {
+  "slug": "mutzar-brich-soca-sl-167b-ldlt-zkokit",
+  "img": "generic",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מגנט SOCA GL-200/220 חיצוני": {
+  "slug": "mutzar-mgnt-soca-gl-200-220-chitzoni",
+  "img": "magnet",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מגנטים SOCA SL-180R/200/220": {
+  "slug": "mutzar-mgntim-soca-sl-180r-200-220",
+  "img": "magnet",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "SECURITRON M32/M62/M82 מוגני מים": {
+  "slug": "mutzar-securitron-m32-m62-m82-mogni-mim",
+  "img": "magnet-2",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "SECURITRON MM15 ענק 1,814 ק״ג": {
+  "slug": "mutzar-securitron-mm15-ank-1-814-kg",
+  "img": "magnet",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "מנעול חבוי 101": {
+  "slug": "mutzar-mnaol-chboi-101",
+  "img": "generic",
+  "cat": "katalog-manulim-hashmaliim"
+ },
+ "ידית בהלה ACCENTRA 7100": {
+  "slug": "mutzar-idit-bhlh-accentra-7100",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7110": {
+  "slug": "mutzar-idit-bhlh-accentra-7110",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7120": {
+  "slug": "mutzar-idit-bhlh-accentra-7120",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7130": {
+  "slug": "mutzar-idit-bhlh-accentra-7130",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7200": {
+  "slug": "mutzar-idit-bhlh-accentra-7200",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7210": {
+  "slug": "mutzar-idit-bhlh-accentra-7210",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידית בהלה ACCENTRA 7220": {
+  "slug": "mutzar-idit-bhlh-accentra-7220",
+  "img": "panic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "ידיות הפעלה חיצוניות סדרה 7000": {
+  "slug": "mutzar-idiot-hpalh-chitzoniot-sdrh-7000",
+  "img": "generic",
+  "cat": "katalog-yadiyot-bahala"
+ },
+ "מנעול חכם Yale Linus L2": {
+  "slug": "mutzar-mnaol-chkm-yale-linus-l2",
+  "img": "smart-2",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "ערכת Linus L2 + קודן חכם": {
+  "slug": "mutzar-arkt-linus-l2-kodn-chkm",
+  "img": "keypad",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "ערכת Linus L2 + קודן טביעת אצבע": {
+  "slug": "mutzar-arkt-linus-l2-kodn-tbiat-atzba",
+  "img": "keypad-2",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "ערכת Linus L2 + קורא קרבה Yale DOT": {
+  "slug": "mutzar-arkt-linus-l2-kora-krbh-yale-dot",
+  "img": "smart",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "קודן חכם Yale": {
+  "slug": "mutzar-kodn-chkm-yale",
+  "img": "keypad",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "קודן טביעת אצבע": {
+  "slug": "mutzar-kodn-tbiat-atzba",
+  "img": "keypad-2",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "Yale DOT קורא קרבה": {
+  "slug": "mutzar-yale-dot-kora-krbh",
+  "img": "smart",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "מגשר אינטרנט": {
+  "slug": "mutzar-mgshr-aintrnt",
+  "img": "smart",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "סוללה נטענת Linus L2": {
+  "slug": "mutzar-sollh-ntant-linus-l2",
+  "img": "smart-2",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "מטען חוטי ENTR": {
+  "slug": "mutzar-mtan-choti-entr",
+  "img": "smart",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "פעמון חכם + רמקול פנימי": {
+  "slug": "mutzar-pamon-chkm-rmkol-pnimi",
+  "img": "doorbell",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "פעמון חכם": {
+  "slug": "mutzar-pamon-chkm",
+  "img": "doorbell",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "רמקול פנימי לפעמון": {
+  "slug": "mutzar-rmkol-pnimi-lpamon",
+  "img": "doorbell",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "מצלמת אבטחה ביתית חכמה": {
+  "slug": "mutzar-mtzlmt-abtchh-bitit-chkmh",
+  "img": "camera",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "מצלמה חיצונית חכמה": {
+  "slug": "mutzar-mtzlmh-chitzonit-chkmh",
+  "img": "camera",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "פאנל טעינה סולארי": {
+  "slug": "mutzar-panl-tainh-solari",
+  "img": "generic",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "עינית דיגיטלית לדלת": {
+  "slug": "mutzar-ainit-digitlit-ldlt",
+  "img": "peephole",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "עינית מקליטה 4.5 אינץ׳ HD": {
+  "slug": "mutzar-ainit-mklith-4-5-aintz-hd",
+  "img": "peephole",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "מנעול חכם לארון ומגירה": {
+  "slug": "mutzar-mnaol-chkm-laron-omgirh",
+  "img": "smart-2",
+  "cat": "katalog-avtacha-hachama"
+ },
+ "ידית מנוף AH200 על רוזטה עגולה": {
+  "slug": "mutzar-idit-mnof-ah200-al-rozth-agolh",
+  "img": "handle-2",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית מנוף AH200 על רוזטה אובאלית": {
+  "slug": "mutzar-idit-mnof-ah200-al-rozth-aobalit",
+  "img": "handle",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית AH200 על שלט Grade 4": {
+  "slug": "mutzar-idit-ah200-al-shlt-grade-4",
+  "img": "handle",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידיות TESA לדלתות פנים": {
+  "slug": "mutzar-idiot-tesa-ldltot-pnim",
+  "img": "generic",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית אנטי מיקרוביאלית TESA": {
+  "slug": "mutzar-idit-anti-mikrobialit-tesa",
+  "img": "handle-2",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית משיכה ישרה ABLOY INOXI 137": {
+  "slug": "mutzar-idit-mshikh-ishrh-abloy-inoxi-137",
+  "img": "handle-2",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית משיכה מוסטת ABLOY INOXI 138": {
+  "slug": "mutzar-idit-mshikh-mostt-abloy-inoxi-138",
+  "img": "handle",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידיות נירוסטה ABLOY INOXI": {
+  "slug": "mutzar-idiot-nirosth-abloy-inoxi",
+  "img": "generic",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ידית שקועה Rockwood BF97L": {
+  "slug": "mutzar-idit-shkoah-rockwood-bf97l",
+  "img": "handle-2",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "סט ידיות Yale N-1 עם רוזטות": {
+  "slug": "mutzar-st-idiot-yale-n-1-am-roztot",
+  "img": "generic",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "פלטת דחיפה + ידית משיכה": {
+  "slug": "mutzar-pltt-dchiph-idit-mshikh",
+  "img": "handle-2",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ציר McKinney T4A3386": {
+  "slug": "mutzar-tzir-mckinney-t4a3386",
+  "img": "hinge",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ציר McKinney TA2895": {
+  "slug": "mutzar-tzir-mckinney-ta2895",
+  "img": "hinge",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ציר McKinney TA314/TA714": {
+  "slug": "mutzar-tzir-mckinney-ta314-ta714",
+  "img": "hinge",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ציר מעביר מתח McKinney TA2714": {
+  "slug": "mutzar-tzir-mabir-mtch-mckinney-ta2714",
+  "img": "hinge",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "ציר ספר נירוסטה Yale": {
+  "slug": "mutzar-tzir-spr-nirosth-yale",
+  "img": "hinge",
+  "cat": "katalog-parzol-adrichali"
+ },
+ "פותח דלת אוטומטי ASSA ABLOY SW60": {
+  "slug": "mutzar-potch-dlt-aotomti-assa-abloy-sw60",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "חיישן יציאה ללא מגע ES-80": {
+  "slug": "mutzar-chiishn-itziah-lla-mga-es-80",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "חיישן יציאה ללא מגע SI-68": {
+  "slug": "mutzar-chiishn-itziah-lla-mga-si-68",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "MAGIC SWITCH CHROMA": {
+  "slug": "mutzar-magic-switch-chroma",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "חיישן פתיחה EAGLE ARTEK": {
+  "slug": "mutzar-chiishn-ptichh-eagle-artek",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "חיישן בטיחות 4SAFE": {
+  "slug": "mutzar-chiishn-btichot-4safe",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "אביזר בטיחות FLATSCAN": {
+  "slug": "mutzar-abizr-btichot-flatscan",
+  "img": "sensor",
+  "cat": "katalog-potchei-dlatot"
+ },
+ "מנעול אלקטרוני i-minimal": {
+  "slug": "mutzar-mnaol-alktroni-i-minimal",
+  "img": "generic",
+  "cat": "katalog-batei-malon"
+ },
+ "מנעול אלקטרוני Spy Design": {
+  "slug": "mutzar-mnaol-alktroni-spy-design",
+  "img": "hotel-2",
+  "cat": "katalog-batei-malon"
+ },
+ "מנעול חבוי לחדר מלון": {
+  "slug": "mutzar-mnaol-chboi-lchdr-mlon",
+  "img": "hotel-2",
+  "cat": "katalog-batei-malon"
+ },
+ "SparKey": {
+  "slug": "mutzar-sparkey",
+  "img": "access",
+  "cat": "katalog-batei-malon"
+ },
+ "SparKey Service": {
+  "slug": "mutzar-sparkey-service",
+  "img": "access",
+  "cat": "katalog-batei-malon"
+ },
+ "מפתחות וירטואליים בנייד": {
+  "slug": "mutzar-mptchot-oirtoaliim-bniid",
+  "img": "generic",
+  "cat": "katalog-batei-malon"
+ },
+ "צילינדר SMARTair של TESA": {
+  "slug": "mutzar-tzilindr-smartair-shl-tesa",
+  "img": "smartair",
+  "cat": "katalog-batei-malon"
+ },
+ "קורא קיר / קורא עם קודן": {
+  "slug": "mutzar-kora-kir-kora-am-kodn",
+  "img": "keypad",
+  "cat": "katalog-batei-malon"
+ },
+ "חסכן אנרגיה": {
+  "slug": "mutzar-chskn-anrgih",
+  "img": "hotel",
+  "cat": "katalog-batei-malon"
+ },
+ "חסכן אנרגיה חכם": {
+  "slug": "mutzar-chskn-anrgih-chkm",
+  "img": "smart",
+  "cat": "katalog-batei-malon"
+ },
+ "כספת Compact": {
+  "slug": "mutzar-kspt-compact",
+  "img": "safe",
+  "cat": "katalog-batei-malon"
+ },
+ "כספת Laptop": {
+  "slug": "mutzar-kspt-laptop",
+  "img": "safe-3",
+  "cat": "katalog-batei-malon"
+ },
+ "כספת Top Open": {
+  "slug": "mutzar-kspt-top-open",
+  "img": "safe-2",
+  "cat": "katalog-batei-malon"
+ },
+ "כספת Wide": {
+  "slug": "mutzar-kspt-wide",
+  "img": "safe",
+  "cat": "katalog-batei-malon"
+ },
+ "כספת TESA": {
+  "slug": "mutzar-kspt-tesa",
+  "img": "safe-3",
+  "cat": "katalog-batei-malon"
+ },
+ "מנעול לוקר עם קודן": {
+  "slug": "mutzar-mnaol-lokr-am-kodn",
+  "img": "keypad",
+  "cat": "katalog-batei-malon"
+ },
+ "מנעול ממונע ללוקר": {
+  "slug": "mutzar-mnaol-mmona-llokr",
+  "img": "access-3",
+  "cat": "katalog-batei-malon"
+ },
+ "מחזיר דלת DC175": {
+  "slug": "mutzar-mchzir-dlt-dc175",
+  "img": "closer",
+  "cat": "katalog-batei-malon"
+ },
+ "פותח דלת אוטומטי SW60": {
+  "slug": "mutzar-potch-dlt-aotomti-sw60",
+  "img": "sensor",
+  "cat": "katalog-batei-malon"
+ }
+}

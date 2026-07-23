@@ -2,6 +2,8 @@
 import re,json,sys
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from catalog_data import CATS
+import json as _json
+PIDX=_json.load(open('/Users/s/niv-locksmith/products_index.json',encoding='utf-8'))
 try:
     from catalog_data2 import CATS2
     CATS={**CATS,**CATS2}
@@ -40,6 +42,9 @@ cat_css='''
 .n6 .pcard p{color:var(--iron);font-size:13.5px;margin:0;line-height:1.5}
 .n6 .pcard .tag{align-self:flex-start;background:var(--sand);border-radius:999px;font-size:11.5px;font-weight:700;color:var(--iron);padding:3px 10px}
 .n6 .pcard .ask{margin-top:auto;padding-top:8px;font-size:13px;font-weight:800;color:var(--red)}
+.n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px;display:block}
+.n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+a.pcard{text-decoration:none}
 .n6 .catgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .n6 .ccard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:6px}
 .n6 .ccard b{font-size:17px}
@@ -100,7 +105,12 @@ def shell(slug,title,meta,h1,intro,main,ld):
 
 banned=["לסיכום","ראשית,","שנית","בנוסף לכך","יתרה מזאת","חשוב לציין","במסגרת","על מנת","כמו כן","יש לציין"]
 for slug,d in CATS.items():
-    cards="".join(f'<div class="pcard"><span class="tag">{p.get("tag","")}</span><b>{p["name"]}</b><p>{p["desc"]}</p><a class="ask" href="tel:+972508307269">להתייעצות על הדגם ›</a></div>' for p in d["products"])
+    def card(p):
+        pi=PIDX.get(p["name"])
+        if pi:
+            return f'<a class="pcard" href="{pi["slug"]}.html"><span class="pcard__img"><img src="img/products/{pi["img"]}.jpg" alt="{p["name"]}" loading="lazy"></span><span class="tag">{p.get("tag","")}</span><b>{p["name"]}</b><p>{p["desc"]}</p><span class="ask">לעמוד המוצר ›</span></a>'
+        return f'<div class="pcard"><span class="tag">{p.get("tag","")}</span><b>{p["name"]}</b><p>{p["desc"]}</p><a class="ask" href="tel:+972508307269">להתייעצות על הדגם ›</a></div>'
+    cards="".join(card(p) for p in d["products"])
     revs="".join(f'<div class="revbox"><h3>{r["h"]}</h3><p>{r["t"]}</p><p class="src">{r["src"]}</p></div>' for r in d["reviews"])
     blocks="".join(f'<h2>{h}</h2><p>{t}</p>' for h,t in d["blocks"])
     faq="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="cf{i}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="cf{i}">{a}</div></div>' for i,(q,a) in enumerate(d["faq"],1))
