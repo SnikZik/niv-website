@@ -69,6 +69,9 @@ def img_for(cat_slug, tag, name):
     return 'generic'
 
 def img_for_final(cat_slug,tag,name):
+    rp=f'real/{slugify(name)}'
+    if os.path.exists(f'/Users/s/niv-locksmith/img/products/{rp}.jpg'):
+        return rp
     return pick(img_for(cat_slug,tag,name),name)
 
 # category-level content pools (3 sections × variants)
