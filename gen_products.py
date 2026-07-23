@@ -4,6 +4,7 @@ sys.path.insert(0,'/Users/s/niv-locksmith')
 from catalog_data import CATS
 from catalog_data2 import CATS2
 ALL={**CATS,**CATS2}
+RICH=json.load(open('/Users/s/niv-locksmith/products_rich.json',encoding='utf-8'))
 BASE='https://snikzik.github.io/niv-website'
 W='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
@@ -97,7 +98,12 @@ def page(cat_slug,cat,prod,idx,all_prods):
     pslug='mutzar-'+slugify(name)
     img=img_for_final(cat_slug,tag,name)
     p=POOLS['default']; fq=FAQ_POOL['default']
-    why=p['why'][idx%3]; fit=p['fit'][(idx+1)%3]; inst=p['install'][(idx+2)%3]
+    R=RICH.get(name)
+    if R:
+        why=R['long']; fit=R['fit']; inst=R['install']; sku=R['sku']
+        specs_html='<ul style="margin:14px 0 0;padding-inline-start:20px">'+''.join(f'<li style="font-size:15px;line-height:1.65;margin-bottom:5px">{x}</li>' for x in R['specs'])+'</ul>'
+    else:
+        why=p['why'][idx%3]; fit=p['fit'][(idx+1)%3]; inst=p['install'][(idx+2)%3]; sku=''; specs_html=''
     faqs=[fq[idx%5],fq[(idx+2)%5],fq[(idx+4)%5]]
     faqh="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="pf{j}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="pf{j}">{a}</div></div>' for j,(q,a) in enumerate(faqs,1))
     rel=[x for x in all_prods if x['name']!=name][:4]
@@ -105,7 +111,7 @@ def page(cat_slug,cat,prod,idx,all_prods):
     title=f'{name} | {cat["h1"]} | ניב המנעולן'[:65]
     meta=(f'{name}, {desc} ייעוץ, אספקה והתקנה בירושלים על ידי ניב המנעולן. המחיר נסגר בטלפון. חייגו 050-8307269.')[:160]
     ld={"@context":"https://schema.org","@graph":[
-     {"@type":"Product","name":name,"description":desc,"image":f'{BASE}/img/products/{img}.jpg',
+     {"@type":"Product","name":name,"description":desc,"sku":RICH.get(name,{}).get("sku",""),"image":f'{BASE}/img/products/{img}.jpg',
       "brand":{"@type":"Brand","name":tag if tag and tag[0].isascii() else "ניב המנעולן"},
       "offers":{"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"ILS","price":"0","description":"המחיר נמסר בשיחת התאמה, כולל התקנה"},
       "seller":{"@type":"Locksmith","name":"ניב המנעולן","telephone":"+972508307269"}},
@@ -135,6 +141,7 @@ def page(cat_slug,cat,prod,idx,all_prods):
   <section class="phero" style="padding-bottom:24px"><div class="wrap">
     <span style="display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;color:var(--red);font-weight:800;font-size:13px;padding:5px 14px;margin-bottom:12px">{tag}</span>
     <h1 style="font-size:30px">{name}</h1>
+    {'<p style="color:var(--iron);font-size:13.5px;margin-top:6px">מק״ט: <b style="color:var(--ink)">'+sku+'</b></p>' if sku else ''}
     <p style="font-size:17px;color:var(--iron);max-width:640px;line-height:1.65">{desc}</p>
   </div></section>
   <section class="sec sec--white" style="padding:34px 0 10px"><div class="wrap narrow">
@@ -151,6 +158,7 @@ def page(cat_slug,cat,prod,idx,all_prods):
     </div>
   </div></section>
   <div class="content" style="padding-top:20px">
+    {'<h2>מפרט עיקרי</h2>'+specs_html if specs_html else ''}
     <h2>התאמה לדלת ולצורך שלכם</h2><p>{fit}</p>
     <h2>אספקה והתקנה בירושלים</h2><p>{inst}</p>
   </div>
