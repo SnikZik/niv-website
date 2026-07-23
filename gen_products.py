@@ -113,7 +113,7 @@ def page(cat_slug,cat,prod,idx,all_prods):
     ld={"@context":"https://schema.org","@graph":[
      {"@type":"Product","name":name,"description":desc,"sku":RICH.get(name,{}).get("sku",""),"image":f'{BASE}/img/products/{img}.jpg',
       "brand":{"@type":"Brand","name":tag if tag and tag[0].isascii() else "ניב המנעולן"},
-      "offers":{"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"ILS","price":"0","description":"המחיר נמסר בשיחת התאמה, כולל התקנה"},
+
       "seller":{"@type":"Locksmith","name":"ניב המנעולן","telephone":"+972508307269"}},
      {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]},
      {"@type":"BreadcrumbList","itemListElement":[

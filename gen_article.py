@@ -69,12 +69,12 @@ def article(a):
     ]
     if faq_ld: graph.append({"@type":"FAQPage","mainEntity":faq_ld})
     ld='<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@graph":graph},ensure_ascii=False)+'</script>'
-    rel="".join(f'<div class="bpost"><div class="k">{k}</div><h3><a href="/{s}.html">{t}</a></h3><p>{p}</p><a class="l" href="/{s}.html">לקריאה ›</a></div>' for s,k,t,p in a["related_articles"])
+    rel="".join(f'<div class="bpost"><div class="k">{k}</div><h3><a href="{s}.html">{t}</a></h3><p>{p}</p><a class="l" href="{s}.html">לקריאה ›</a></div>' for s,k,t,p in a["related_articles"])
     faq_html="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="af{i}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="af{i}">{ans}</div></div>' for i,(q,ans) in enumerate(a.get("faq",[]),1))
     faq_sec=f'<section class="sec sec--sand"><div class="wrap"><div class="sh sh--c"><h2>שאלות נפוצות</h2></div><div class="faq">{faq_html}</div></div></section>' if faq_html else ''
     main=f'''
   <nav class="bc" aria-label="פירורי לחם"><div class="wrap">
-    <a href="/">בית</a><span aria-hidden="true">›</span><a href="/">מדריכים</a><span aria-hidden="true">›</span><b>{a["h1"]}</b>
+    <a href="index.html">בית</a><span aria-hidden="true">›</span><a href="madrichim.html">מדריכים</a><span aria-hidden="true">›</span><b>{a["h1"]}</b>
   </div></nav>
   <section class="ahero"><div class="wrap">
     <span class="k">{a["cat"]}</span>

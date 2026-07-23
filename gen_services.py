@@ -130,14 +130,14 @@ def page(slug,d):
     deep="".join(f'<h2>{h}</h2><p>{p}</p>' for h,p in dp["blocks"])
     trows="".join(f'<div class="prow"><span class="prow__s">{a}</span><span class="prow__p">{b}</span></div>' for a,b in dp["table"])
     faq="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf{i}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf{i}">{a}</div></div>' for i,(q,a) in enumerate(d["faq"],1))
-    rel="".join(f'<a class="scard" href="/{s2}.html"><h3>{t}</h3><p>{p}</p><span class="scard__l">{l} ›</span></a>' for s2,t,p,l in d["related"])
+    rel="".join(f'<a class="scard" href="{s2}.html"><h3>{t}</h3><p>{p}</p><span class="scard__l">{l} ›</span></a>' for s2,t,p,l in d["related"])
     revs="".join(f'<div class="tcard"><p class="tcard__q">{T[k][0]}</p><div class="tcard__w">{T[k][1]}, <span>{T[k][2]}</span></div></div>' for k in dp["reviews"])
     revcols='repeat(3,1fr)' if len(dp["reviews"])>=3 else '1fr 1fr'
     advk=ADVMAP.get(slug,'C'); ac,ai,at,ax,acta=ADV[advk]
     advb=f'<section class="adv adv--{ac}"><span class="ic">{ai}</span><b>{at}</b><p>{ax}</p>{acta}</section>' 
     main=f'''
   <nav class="bc" aria-label="פירורי לחם"><div class="wrap">
-    <a href="/">בית</a><span aria-hidden="true">›</span><a href="/">שירותים</a><span aria-hidden="true">›</span><b>{d["h1"]}</b>
+    <a href="index.html">בית</a><span aria-hidden="true">›</span><a href="index.html">שירותים</a><span aria-hidden="true">›</span><b>{d["h1"]}</b>
   </div></nav>
   <section class="shero"><div class="shero__in">
     <div>
@@ -150,7 +150,7 @@ def page(slug,d):
       <div class="pchip"><b>{d["price"]}</b><span>{d["price_note"]}</span></div>
       <p class="shero__sub" style="margin-top:14px">{d["sub"]}</p>
       <div class="hchecks">{checks}</div>
-      <p class="updated">מאת ניב, מנעולן מוסמך · עודכן ביולי 2026</p>
+      <p class="updated">מאת ניב, מנעולן מקצועי · עודכן ביולי 2026</p>
     </div>
     <div class="shero__img"><img src="img/{slug}.jpg" alt="{dp['svc_type']} בירושלים, ניב המנעולן" loading="eager"></div>
   </div></section>

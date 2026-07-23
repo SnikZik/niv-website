@@ -1,0 +1,1408 @@
+{
+ "audit_date": "2026-07-23",
+ "files_scanned": 235,
+ "broken_links": [
+  {
+   "file": "delet-nitreka.html",
+   "href": "tzilinder-matay.html",
+   "issue": "missing_target"
+  },
+  {
+   "file": "delet-nitreka.html",
+   "href": "tzilinder-matay.html",
+   "issue": "missing_target"
+  },
+  {
+   "file": "delet-nitreka.html",
+   "href": "kama-ole-manulan.html",
+   "issue": "missing_target"
+  },
+  {
+   "file": "delet-nitreka.html",
+   "href": "kama-ole-manulan.html",
+   "issue": "missing_target"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/hatkanat-manulim.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/mahzirei-delet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/yadiyot-bahala.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "electromagnet.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/ksafot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/hatkanat-manulim.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/tikun-mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/hatkanat-ksafot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "href": "/dlatot-hutz.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/yadiot-ledelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/hatkanat-manulim.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "ksafot.html",
+   "href": "/manulan-herum.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/manulan-herum.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/yadiyot-bahala.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/electromagnet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "mamad.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/electromagnet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manul-hacham.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "manulan-herum.html",
+   "href": "/ksafot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/rav-bariach.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pladelet.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "href": "/ksafot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "rav-bariach.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "href": "/pladelet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/hatkanat-mamad.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tikun-mamad.html",
+   "href": "/rav-bariach.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/pritzat-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/rav-bariach.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "tzilinder.html",
+   "href": "/manul-hacham.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/kivun-dlatot-pnim.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/tzilinder.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "href": "/yadiyot-bahala.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/mahzirei-delet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/electromagnet.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/tikun-dlatot.html",
+   "issue": "absolute_path"
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "href": "/manulan-herum.html",
+   "issue": "absolute_path"
+  }
+ ],
+ "bad_titles": [
+  {
+   "file": "hazharat-negishut.html",
+   "len": 26,
+   "title": "הצהרת נגישות | ניב המנעולן",
+   "issue": "length"
+  },
+  {
+   "file": "katalog-yadiyot-bahala.html",
+   "len": 38,
+   "title": "קטלוג ידיות בהלה | ניב המנעולן ירושלים",
+   "issue": "length"
+  },
+  {
+   "file": "madrichim.html",
+   "len": 37,
+   "title": "מדריכי מנעולנות | ניב המנעולן ירושלים",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-baka.html",
+   "len": 38,
+   "title": "מנעולן בבקעה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-geula.html",
+   "len": 39,
+   "title": "מנעולן בגאולה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-gilo.html",
+   "len": 38,
+   "title": "מנעולן בגילה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-katamon.html",
+   "len": 39,
+   "title": "מנעולן בקטמון | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-malha.html",
+   "len": 38,
+   "title": "מנעולן במלחה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-rehavia.html",
+   "len": 39,
+   "title": "מנעולן ברחביה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "manulan-romema.html",
+   "len": 39,
+   "title": "מנעולן ברוממה | ניב המנעולן 050-8307269",
+   "issue": "length"
+  },
+  {
+   "file": "mediniyut-pratiut.html",
+   "len": 28,
+   "title": "מדיניות פרטיות | ניב המנעולן",
+   "issue": "length"
+  },
+  {
+   "file": "mutzar-kspt-chkmh.html",
+   "len": 37,
+   "title": "כספת חכמה | קטלוג כספות | ניב המנעולן",
+   "issue": "length"
+  },
+  {
+   "file": "mutzar-kspt-gbohh.html",
+   "len": 38,
+   "title": "כספת גבוהה | קטלוג כספות | ניב המנעולן",
+   "issue": "length"
+  },
+  {
+   "file": "mutzar-rtkim.html",
+   "len": 35,
+   "title": "רתקים | קטלוג מנעולים | ניב המנעולן",
+   "issue": "length"
+  },
+  {
+   "file": "sherutim.html",
+   "len": 36,
+   "title": "שירותי מנעולן בירושלים | ניב המנעולן",
+   "issue": "length"
+  }
+ ],
+ "bad_metas": [],
+ "banned_words": [],
+ "banned_words_checked_false_positives": [
+  {
+   "file": "katalog-ksafot.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  },
+  {
+   "file": "katalog-yadiyot-bahala.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  },
+  {
+   "file": "manulan-french-hill.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  },
+  {
+   "file": "manulan-pisgat-zeev.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-es-80.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  },
+  {
+   "file": "mutzar-kora-kooi-incedo.html",
+   "word": "ראשית",
+   "context_verdict": "adjective meaning 'main' (e.g. כניסה ראשית), not the AI discourse word"
+  }
+ ],
+ "dashes": [],
+ "missing_canonical": [],
+ "json_ld_errors": [],
+ "wordcount_fails": [
+  {
+   "file": "katalog-avtacha-hachama.html",
+   "words": 1164,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-bakarat-knisa.html",
+   "words": 1173,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-batei-malon.html",
+   "words": 1166,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-ksafot.html",
+   "words": 1171,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-mahzirei-delet.html",
+   "words": 1176,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-parzol-adrichali.html",
+   "words": 1170,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-potchei-dlatot.html",
+   "words": 1185,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog-yadiyot-bahala.html",
+   "words": 1196,
+   "required": 1200,
+   "category": "catalog"
+  },
+  {
+   "file": "katalog.html",
+   "words": 567,
+   "required": 1200,
+   "category": "catalog"
+  }
+ ],
+ "sitemap_missing": [],
+ "sitemap_extra": [],
+ "h1_issues": [],
+ "phone_inconsistencies": [
+  {
+   "file": "index.html",
+   "phone": "050-0000000",
+   "note": "form input placeholder attribute only, not a contact number"
+  },
+  {
+   "file": "tzor-kesher.html",
+   "phone": "050-0000000",
+   "note": "form input placeholder attribute only, not a contact number"
+  }
+ ],
+ "price_inconsistencies": [],
+ "schema_gaps": [
+  {
+   "file": "mutzar-* (all 163 product pages)",
+   "issue": "Offer price is \"0\" placeholder in Product JSON-LD; sku and Offer exist, but price=0 can trigger misleading 'free' rich results",
+   "count": 163
+  }
+ ],
+ "llms_broken": [],
+ "heading_colon_dash": [
+  {
+   "file": "mutzar-brich-chshmli-smoi-soca-sl-100.html",
+   "tag": "h1",
+   "heading": "בריח חשמלי סמוי SOCA SL-100",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-chshmli-smoi-soca-sl-100.html",
+   "tag": "h2",
+   "heading": "שאלות על בריח חשמלי סמוי SOCA SL-100",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-chshmli-smoi-soca-sl-100.html",
+   "tag": "h2",
+   "heading": "רוצים את בריח חשמלי סמוי SOCA SL-100?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-chshmli-soca-sl-165b-lmshtch.html",
+   "tag": "h1",
+   "heading": "בריח חשמלי SOCA SL-165B למשטח",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-chshmli-soca-sl-165b-lmshtch.html",
+   "tag": "h2",
+   "heading": "שאלות על בריח חשמלי SOCA SL-165B למשטח",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-chshmli-soca-sl-165b-lmshtch.html",
+   "tag": "h2",
+   "heading": "רוצים את בריח חשמלי SOCA SL-165B למשטח?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-soca-sl-167b-ldlt-zkokit.html",
+   "tag": "h1",
+   "heading": "בריח SOCA SL-167B לדלת זכוכית",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-soca-sl-167b-ldlt-zkokit.html",
+   "tag": "h2",
+   "heading": "שאלות על בריח SOCA SL-167B לדלת זכוכית",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-brich-soca-sl-167b-ldlt-zkokit.html",
+   "tag": "h2",
+   "heading": "רוצים את בריח SOCA SL-167B לדלת זכוכית?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-es-80.html",
+   "tag": "h1",
+   "heading": "חיישן יציאה ללא מגע ES-80",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-es-80.html",
+   "tag": "h2",
+   "heading": "שאלות על חיישן יציאה ללא מגע ES-80",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-es-80.html",
+   "tag": "h2",
+   "heading": "רוצים את חיישן יציאה ללא מגע ES-80?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-si-68.html",
+   "tag": "h1",
+   "heading": "חיישן יציאה ללא מגע SI-68",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-si-68.html",
+   "tag": "h2",
+   "heading": "שאלות על חיישן יציאה ללא מגע SI-68",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-chiishn-itziah-lla-mga-si-68.html",
+   "tag": "h2",
+   "heading": "רוצים את חיישן יציאה ללא מגע SI-68?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-i-max-mnaol-alktroni.html",
+   "tag": "h1",
+   "heading": "i-max מנעול אלקטרוני",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-i-max-mnaol-alktroni.html",
+   "tag": "h2",
+   "heading": "שאלות על i-max מנעול אלקטרוני",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-i-max-mnaol-alktroni.html",
+   "tag": "h2",
+   "heading": "רוצים את i-max מנעול אלקטרוני?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mchzir-dc700g-cm-fm-ft.html",
+   "tag": "h1",
+   "heading": "מחזיר DC700G-CM / FM / FT",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mchzir-dc700g-cm-fm-ft.html",
+   "tag": "h2",
+   "heading": "שאלות על מחזיר DC700G-CM / FM / FT",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mchzir-dc700g-cm-fm-ft.html",
+   "tag": "h2",
+   "heading": "רוצים את מחזיר DC700G-CM / FM / FT?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgnt-soca-gl-200-220-chitzoni.html",
+   "tag": "h1",
+   "heading": "מגנט SOCA GL-200/220 חיצוני",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgnt-soca-gl-200-220-chitzoni.html",
+   "tag": "h2",
+   "heading": "שאלות על מגנט SOCA GL-200/220 חיצוני",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgnt-soca-gl-200-220-chitzoni.html",
+   "tag": "h2",
+   "heading": "רוצים את מגנט SOCA GL-200/220 חיצוני?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgntim-soca-sl-180r-200-220.html",
+   "tag": "h1",
+   "heading": "מגנטים SOCA SL-180R/200/220",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgntim-soca-sl-180r-200-220.html",
+   "tag": "h2",
+   "heading": "שאלות על מגנטים SOCA SL-180R/200/220",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mgntim-soca-sl-180r-200-220.html",
+   "tag": "h2",
+   "heading": "רוצים את מגנטים SOCA SL-180R/200/220?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-am-kodn-i-max.html",
+   "tag": "h1",
+   "heading": "מנעול אלקטרוני עם קודן i-max",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-am-kodn-i-max.html",
+   "tag": "h2",
+   "heading": "שאלות על מנעול אלקטרוני עם קודן i-max",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-am-kodn-i-max.html",
+   "tag": "h2",
+   "heading": "רוצים את מנעול אלקטרוני עם קודן i-max?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-minimal.html",
+   "tag": "h1",
+   "heading": "מנעול אלקטרוני i-minimal",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-minimal.html",
+   "tag": "h2",
+   "heading": "שאלות על מנעול אלקטרוני i-minimal",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-minimal.html",
+   "tag": "h2",
+   "heading": "רוצים את מנעול אלקטרוני i-minimal?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-volution.html",
+   "tag": "h1",
+   "heading": "מנעול אלקטרוני i-volution",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-volution.html",
+   "tag": "h2",
+   "heading": "שאלות על מנעול אלקטרוני i-volution",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-i-volution.html",
+   "tag": "h2",
+   "heading": "רוצים את מנעול אלקטרוני i-volution?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-smartair-i-max.html",
+   "tag": "h1",
+   "heading": "מנעול אלקטרוני SMARTair i-max",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-smartair-i-max.html",
+   "tag": "h2",
+   "heading": "שאלות על מנעול אלקטרוני SMARTair i-max",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-alktroni-smartair-i-max.html",
+   "tag": "h2",
+   "heading": "רוצים את מנעול אלקטרוני SMARTair i-max?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-tliih-alktroni-i-gate.html",
+   "tag": "h1",
+   "heading": "מנעול תלייה אלקטרוני i-gate",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-tliih-alktroni-i-gate.html",
+   "tag": "h2",
+   "heading": "שאלות על מנעול תלייה אלקטרוני i-gate",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-mnaol-tliih-alktroni-i-gate.html",
+   "tag": "h2",
+   "heading": "רוצים את מנעול תלייה אלקטרוני i-gate?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-sdrot-effeff-14-24-34-o-17-27-37.html",
+   "tag": "h1",
+   "heading": "סדרות Effeff 14/24/34 ו-17/27/37",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-sdrot-effeff-14-24-34-o-17-27-37.html",
+   "tag": "h2",
+   "heading": "שאלות על סדרות Effeff 14/24/34 ו-17/27/37",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-sdrot-effeff-14-24-34-o-17-27-37.html",
+   "tag": "h2",
+   "heading": "רוצים את סדרות Effeff 14/24/34 ו-17/27/37?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-smartair-i-minimal.html",
+   "tag": "h1",
+   "heading": "SMARTair i-minimal",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-smartair-i-minimal.html",
+   "tag": "h2",
+   "heading": "שאלות על SMARTair i-minimal",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-smartair-i-minimal.html",
+   "tag": "h2",
+   "heading": "רוצים את SMARTair i-minimal?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-st-idiot-yale-n-1-am-roztot.html",
+   "tag": "h1",
+   "heading": "סט ידיות Yale N-1 עם רוזטות",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-st-idiot-yale-n-1-am-roztot.html",
+   "tag": "h2",
+   "heading": "שאלות על סט ידיות Yale N-1 עם רוזטות",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  },
+  {
+   "file": "mutzar-st-idiot-yale-n-1-am-roztot.html",
+   "tag": "h2",
+   "heading": "רוצים את סט ידיות Yale N-1 עם רוזטות?",
+   "chars": [
+    "-"
+   ],
+   "note": "hyphen is part of a product model name (e.g. SL-100, ES-80, i-max), not stylistic punctuation"
+  }
+ ],
+ "forbidden_claims": [
+  {
+   "file": "dlatot-hutz.html",
+   "claim": "מנעולן מוסמך",
+   "context": " כולל התאמת משקוף ואיטום מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "electromagnet.html",
+   "claim": "מנעולן מוסמך",
+   "context": "גנטים שנחלשו או משתחררים מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "claim": "מנעולן מוסמך",
+   "context": "הדרכה מלאה על קוד וגיבוי מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "claim": "מנעולן מוסמך",
+   "context": " בדיקת אטימה מלאה במסירה מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "claim": "מנעולן מוסמך",
+   "context": " מדויק בלי לפצוע את הדלת מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "claim": "מנעולן מוסמך",
+   "context": " נקייה, בלי אבק ובלי נזק מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "ksafot.html",
+   "claim": "מנעולן מוסמך",
+   "context": "לאה, מה שבפנים נשאר שלכם מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "claim": "מנעולן מוסמך",
+   "context": ", כי מפתחות נשברים בלילה מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "claim": "מנעולן מוסמך",
+   "context": " והחלפה של מחזירים ישנים מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "mamad.html",
+   "claim": "מנעולן מוסמך",
+   "context": "ני אומר לכם לפני שנוגעים מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "manul-hacham.html",
+   "claim": "מנעולן מוסמך",
+   "context": "מלאה, כולל הוספת משתמשים מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "manulan-givat-mordechai.html",
+   "claim": "מנעולן מוסמך",
+   "context": " תקוע מחוץ לדירה בגבעת מרדכי? אני ניב, מנעולן מוסמך שמגיע לשכונה תוך כ-12 דקות ביום ובלילה. פותח דלתו"
+  },
+  {
+   "file": "manulan-herum.html",
+   "claim": "מנעולן מוסמך",
+   "context": " בטלפון, בלי הפתעות בשטח מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "odot.html",
+   "claim": "מנעולן מוסמך",
+   "context": " שהובטח. יש לך תעודות והסמכות? אני מנעולן מוסמך עם שנים של עבודה יומיומית בירושלים, ובעל עסק מורש"
+  },
+  {
+   "file": "pladelet.html",
+   "claim": "מנעולן מוסמך",
+   "context": "כיוון בריחים לנעילה חלקה מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "claim": "מנעולן מוסמך",
+   "context": "ים ישירות איתי, בלי מוקד מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "rav-bariach.html",
+   "claim": "מנעולן מוסמך",
+   "context": "כיוון בריחים לסגירה חלקה מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "claim": "מנעולן מוסמך",
+   "context": " חלקי חילוף נפוצים באוטו מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "tikun-mamad.html",
+   "claim": "מנעולן מוסמך",
+   "context": "יקונים נגמרים בביקור אחד מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "tzilinder.html",
+   "claim": "מנעולן מוסמך",
+   "context": "קצרה, בדרך כלל פחות משעה מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "claim": "מנעולן מוסמך",
+   "context": "ים ישנים ברוזטות מתאימות מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "claim": "מנעולן מוסמך",
+   "context": " ידיות שנתקעו או התרופפו מאת ניב, מנעולן מוסמך · עודכן ביולי 2026 "
+  }
+ ]
+}
