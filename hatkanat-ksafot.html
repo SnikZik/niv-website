@@ -1050,6 +1050,19 @@
   .n6 .about{padding:44px 0}
 }
 
+
+/* product strip on service/article pages */
+.n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px;display:block}
+.n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+.n6 .pgrid{display:grid;gap:14px}
+.n6 .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:7px;text-decoration:none}
+.n6 .pcard b{font-size:15px;color:var(--ink);line-height:1.35}
+.n6 .pcard p{color:var(--iron);font-size:13px;margin:0;line-height:1.5}
+.n6 .pcard .tag{align-self:flex-start;background:var(--sand);border-radius:999px;font-size:11px;font-weight:700;color:var(--iron);padding:3px 10px}
+.n6 .pcard .ask{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:800;color:var(--red)}
+@media(max-width:900px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important} }
+@media(max-width:560px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr !important} }
+
 </style>
 </head>
 <body>
@@ -1152,6 +1165,12 @@
   <section class="sec sec--sand"><div class="wrap">
     <div class="sh sh--c"><h2>שאלות על התקנת כספות</h2></div>
     <div class="faq"><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf1">איפה הכי נכון למקם כספת בבית?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf1">מקום מוסתר אבל נגיש לכם, ארון בגדים, פינת שירות או קיר פנימי. לא בחדר השינה הראשי בפינה הצפויה, שם גנבים מחפשים ראשון.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf2">כספת נשק חייבת עיגון?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf2">כן, לפי תנאי הרישוי כספת נשק חייבת להיות מעוגנת. אני מתקין לפי הדרישות ונותן לכם שקט מול המשטרה ברישוי.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf3">מה קורה אם נגמרת הסוללה של הקוד?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf3">יש התרעה מוקדמת, מפתח חירום מכני ונקודת חיבור לסוללה חיצונית. אני מדריך על שלושתם בהתקנה, אף אחד לא ננעל מחוץ לכספת שלו.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf4">כספת אש באמת עוזרת?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf4">כן, לניירת, תמונות ודיסקים. כספת אש שומרת טמפרטורה פנימית נמוכה בזמן שריפה. למי שיש מסמכים שאין להם עותק, זה שווה את ההפרש.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf5">אפשר להעביר כספת קיימת לדירה חדשה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf5">כן. אני משחרר את העיגון בזהירות, מעביר ומעגן מחדש בכתובת החדשה.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf6">הכספות מגיעות עם אחריות?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf6">כן, אחריות יצרן על הכספת ואחריות שלי על ההתקנה והעיגון.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf7">אתה גם פותח כספות שנתקעו?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf7">כן, זה שירות נפרד שלי. שכחתם קוד או שהמנגנון נתקע, אני פותח לפי סוג הכספת, ברוב המקרים בלי נזק.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf8">כמה זמן לוקחת התקנת כספת?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf8">התקנה ביתית סטנדרטית עם עיגון אורכת בין שעה לשעתיים, כולל ההדרכה. כספת גדולה או עיגון ברצפת בטון קשה יכולים לקחת מעט יותר, ואני אומר מראש.</div></div></div>
+  </div></section>
+  
+  <section class="sec sec--white" style="background:#F6F3FB"><div class="wrap">
+    <div class="sh sh--c"><h2>כספות מהקטלוג</h2><p>מהקטלוג שלי, עם ייעוץ והתקנה. המחיר נסגר בטלפון.</p></div>
+    <div class="pgrid" style="grid-template-columns:repeat(4,1fr)"><a class="pcard" href="mutzar-kspt-bitit-mini.html"><span class="pcard__img"><img src="img/products/safe-2.jpg" alt="כספת ביתית מיני" loading="lazy"></span><span class="tag">בסיס</span><b>כספת ביתית מיני</b><p>לדרכונים, מזומן קטן ומפתחות רזרבה. נכנסת לכל ארון ומתעגנת לקיר או למדף.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-kspt-bitit-ktnh.html"><span class="pcard__img"><img src="img/products/safe-3.jpg" alt="כספת ביתית קטנה" loading="lazy"></span><span class="tag">בסיס</span><b>כספת ביתית קטנה</b><p>המידה הפופולרית לדירות, מסמכים ותכשיטים, קוד אלקטרוני ומפתח חירום.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-kspt-bitit-binonit.html"><span class="pcard__img"><img src="img/products/safe-3.jpg" alt="כספת ביתית בינונית" loading="lazy"></span><span class="tag">משפחתי</span><b>כספת ביתית בינונית</b><p>מקום למסמכי הבית, מצלמה וחפצי ערך, מדף פנימי, מתאימה לעיגון רצפה.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-kspt-gbohh.html"><span class="pcard__img"><img src="img/products/safe-3.jpg" alt="כספת גבוהה" loading="lazy"></span><span class="tag">נפח</span><b>כספת גבוהה</b><p>כספת עומדת עם מדפים, לתיקיות מסמכים שלמות וציוד ערך. לבית משרד ולעסק.</p><span class="ask">לעמוד המוצר ›</span></a></div>
+    <p style="text-align:center;margin-top:18px"><a href="katalog-ksafot.html" style="color:var(--red);font-weight:800">לקטלוג קטלוג כספות המלא ›</a></p>
   </div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="sh sh--c"><h2>שירותים קשורים</h2></div>

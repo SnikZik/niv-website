@@ -1050,6 +1050,19 @@
   .n6 .about{padding:44px 0}
 }
 
+
+/* product strip on service/article pages */
+.n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px;display:block}
+.n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+.n6 .pgrid{display:grid;gap:14px}
+.n6 .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:7px;text-decoration:none}
+.n6 .pcard b{font-size:15px;color:var(--ink);line-height:1.35}
+.n6 .pcard p{color:var(--iron);font-size:13px;margin:0;line-height:1.5}
+.n6 .pcard .tag{align-self:flex-start;background:var(--sand);border-radius:999px;font-size:11px;font-weight:700;color:var(--iron);padding:3px 10px}
+.n6 .pcard .ask{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:800;color:var(--red)}
+@media(max-width:900px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important} }
+@media(max-width:560px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr !important} }
+
 </style>
 </head>
 <body>
@@ -1152,6 +1165,12 @@
   <section class="sec sec--sand"><div class="wrap">
     <div class="sh sh--c"><h2>שאלות על ידיות לדלת</h2></div>
     <div class="faq"><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf1">כל ידית מתאימה לכל דלת?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf1">לא. יש מידות שונות של מרחק בין הידית לצילינדר ועובי דלת. לכן אני מבקש צילום לפני, ומגיע עם ידיות שבאמת מתאימות לדלת שלכם.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf2">אפשר להחליף רק צד אחד של הידית?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf2">בדרך כלל מחליפים סט שלם, שני הצדדים מחוברים באותו פין. סט חדש מבטיח שהכל עובד יחד חלק.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf3">הידית החדשה תכסה את הסימנים של הישנה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf3">כן, אני בוחר רוזטות בגודל שמכסה את החורים והסימנים הישנים. הדלת נראית כאילו נולדה עם הידית החדשה.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf4">מה עדיף, ידית עם מנעול או בלי?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf4">לחדרי שינה ושירותים נוח מנעול תפוס-פנוי. לחדרי ילדים אני ממליץ בלי נעילה או עם פתיחת חירום מבחוץ.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf5">ידית הפלדלת שלי מתרופפת כל כמה חודשים, למה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf5">כנראה הברגה שנשחקה או ידית לא מקורית. מחליפים לידית פלדלת ייעודית עם חיזוק פנימי וזה נגמר.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf6">כמה זמן לוקחת החלפה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf6">ידית בודדת כ-30 דקות. סבב לכל הבית, שעה עד שעתיים.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf7">יש אחריות?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf7">כן, אחריות על הידית מהיצרן ועל העבודה שלי. ידית שהתרופפה אחרי החלפה שלי, אני חוזר ומתקן חינם.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf8">יש ידיות מיוחדות למבוגרים או לילדים?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf8">כן. למבוגרים יש ידיות מאריכות שדורשות פחות כוח, ולבתים עם ילדים ידיות עם קצה מעוגל שלא מכאיב. אני מביא דגמים מתאימים כשמספרים לי מי גר בבית.</div></div></div>
+  </div></section>
+  
+  <section class="sec sec--white" style="background:#F6F3FB"><div class="wrap">
+    <div class="sh sh--c"><h2>ידיות מהקטלוג</h2><p>מהקטלוג שלי, עם ייעוץ והתקנה. המחיר נסגר בטלפון.</p></div>
+    <div class="pgrid" style="grid-template-columns:repeat(4,1fr)"><a class="pcard" href="mutzar-idit-mnof-ah200-al-rozth-agolh.html"><span class="pcard__img"><img src="img/products/handle-2.jpg" alt="ידית מנוף AH200 על רוזטה עגולה" loading="lazy"></span><span class="tag">נירוסטה</span><b>ידית מנוף AH200 על רוזטה עגולה</b><p>הידית הנקייה לדלתות פנים איכותיות, נירוסטה מלאה על רוזטה עגולה דקה.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-idit-mnof-ah200-al-rozth-aobalit.html"><span class="pcard__img"><img src="img/products/handle.jpg" alt="ידית מנוף AH200 על רוזטה אובאלית" loading="lazy"></span><span class="tag">נירוסטה</span><b>ידית מנוף AH200 על רוזטה אובאלית</b><p>אותה ידית עם רוזטה אובאלית שמכסה סימני פרזול קודם, מושלמת לשדרוגים.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-idit-ah200-al-shlt-grade-4.html"><span class="pcard__img"><img src="img/products/handle.jpg" alt="ידית AH200 על שלט Grade 4" loading="lazy"></span><span class="tag">נירוסטה</span><b>ידית AH200 על שלט Grade 4</b><p>גרסת השלט המלא בדירוג העמידות הגבוה, לדלתות כניסה ושימוש מסחרי.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-idiot-tesa-ldltot-pnim.html"><span class="pcard__img"><img src="img/products/generic.jpg" alt="ידיות TESA לדלתות פנים" loading="lazy"></span><span class="tag">TESA</span><b>ידיות TESA לדלתות פנים</b><p>סדרת הידיות הספרדית המעוצבת, מבחר סגנונות לבתים עם קו עיצובי.</p><span class="ask">לעמוד המוצר ›</span></a></div>
+    <p style="text-align:center;margin-top:18px"><a href="katalog-parzol-adrichali.html" style="color:var(--red);font-weight:800">לקטלוג קטלוג פרזול אדריכלי המלא ›</a></p>
   </div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="sh sh--c"><h2>שירותים קשורים</h2></div>

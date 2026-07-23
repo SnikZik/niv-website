@@ -997,6 +997,19 @@
   .n6 .hd__in{padding:0 28px}
 }
 
+
+/* product strip on service/article pages */
+.n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px;display:block}
+.n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+.n6 .pgrid{display:grid;gap:14px}
+.n6 .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:7px;text-decoration:none}
+.n6 .pcard b{font-size:15px;color:var(--ink);line-height:1.35}
+.n6 .pcard p{color:var(--iron);font-size:13px;margin:0;line-height:1.5}
+.n6 .pcard .tag{align-self:flex-start;background:var(--sand);border-radius:999px;font-size:11px;font-weight:700;color:var(--iron);padding:3px 10px}
+.n6 .pcard .ask{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:800;color:var(--red)}
+@media(max-width:900px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important} }
+@media(max-width:560px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr !important} }
+
 </style>
 </head>
 <body>
@@ -1254,6 +1267,12 @@
   </div></div></section>
 
   <!-- FAQ (9) -->
+  
+  <section class="sec sec--white" style="background:#F6F3FB"><div class="wrap">
+    <div class="sh sh--c"><h2>מהקטלוג שלי</h2><p>מוצרים נבחרים עם ייעוץ והתקנה. לקטלוג המלא עם 160+ מוצרים.</p></div>
+    <div class="pgrid" style="grid-template-columns:repeat(4,1fr)"><a class="pcard" href="mutzar-mnaol-chkm-yale-linus-l2.html"><span class="pcard__img"><img src="img/products/smart-2.jpg" alt="מנעול חכם Yale Linus L2" loading="lazy"></span><span class="tag">מנעול</span><b>מנעול חכם Yale Linus L2</b><p>הדור השני של מנעול הדגל, נעילה אוטומטית, שליטה מהאפליקציה ושילוב בית חכם מלא.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-kspt-bitit-ktnh.html"><span class="pcard__img"><img src="img/products/safe-3.jpg" alt="כספת ביתית קטנה" loading="lazy"></span><span class="tag">בסיס</span><b>כספת ביתית קטנה</b><p>המידה הפופולרית לדירות, מסמכים ותכשיטים, קוד אלקטרוני ומפתח חירום.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-mchzir-dlt-hidraoli-dc140.html"><span class="pcard__img"><img src="img/products/closer.jpg" alt="מחזיר דלת הידראולי DC140" loading="lazy"></span><span class="tag">ASSA ABLOY</span><b>מחזיר דלת הידראולי DC140</b><p>כוח סגירה מתכוונן רחב, הבחירה הגמישה כשאותו דגם משרת כמה דלתות בבניין.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-rtkim.html"><span class="pcard__img"><img src="img/products/padlock.jpg" alt="רתקים" loading="lazy"></span><span class="tag">מחסן</span><b>רתקים</b><p>פרופיל פלדה שמסתיר את קשת המנעול מדיסק וחיתוך. החובה של כל מחסן, ביחד עם מנעול תלייה קשוי.</p><span class="ask">לעמוד המוצר ›</span></a></div>
+    <p style="text-align:center;margin-top:18px"><a href="katalog.html" style="color:var(--red);font-weight:800">לקטלוג המוצרים המלא ›</a></p>
+  </div></section>
   <section class="sec sec--sand"><div class="wrap">
     <div class="sh sh--c"><h2>שאלות שאני שומע כל יום</h2></div>
     <div class="faq">

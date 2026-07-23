@@ -1050,6 +1050,19 @@
   .n6 .about{padding:44px 0}
 }
 
+
+/* product strip on service/article pages */
+.n6 .pcard__img{margin:-20px -20px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:130px;display:block}
+.n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+.n6 .pgrid{display:grid;gap:14px}
+.n6 .pcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:7px;text-decoration:none}
+.n6 .pcard b{font-size:15px;color:var(--ink);line-height:1.35}
+.n6 .pcard p{color:var(--iron);font-size:13px;margin:0;line-height:1.5}
+.n6 .pcard .tag{align-self:flex-start;background:var(--sand);border-radius:999px;font-size:11px;font-weight:700;color:var(--iron);padding:3px 10px}
+.n6 .pcard .ask{margin-top:auto;padding-top:8px;font-size:12.5px;font-weight:800;color:var(--red)}
+@media(max-width:900px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr 1fr !important} }
+@media(max-width:560px){ .n6 .pgrid[style*="repeat(4"]{grid-template-columns:1fr !important} }
+
 </style>
 </head>
 <body>
@@ -1152,6 +1165,12 @@
   <section class="sec sec--sand"><div class="wrap">
     <div class="sh sh--c"><h2>שאלות על פריצת דלתות</h2></div>
     <div class="faq"><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf1">כמה זמן לוקח לפתוח דלת?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf1">ברוב המקרים כמה דקות מרגע שהגעתי. דלתות עם נעילה מורכבת יכולות לקחת יותר, ואני אומר לכם את זה מראש.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf2">הדלת תינזק?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf2">ברוב המקרים לא. אני פותח עם כלים ייעודיים לכל סוג מנעול. אם יש סיכון לנזק, אני אומר לכם לפני שאני מתחיל.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf3">אתה מגיע גם בלילה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf3">כן, אני זמין 24/7 כולל לילות, שבתות וחגים. דלת נעולה לא בוחרת שעה.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf4">צריך להוכיח שהדירה שלי?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf4">כן, אני מבקש תעודה מזהה או הוכחה אחרת שאתם גרים בנכס. זה מגן עליכם ועליי.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf5">מה עושים עד שאתה מגיע?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf5">לא מנסים לפתוח לבד ולא דוחפים כלום לצילינדר. זה כמעט תמיד מחמיר את המצב ומייקר את התיקון.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf6">אתה פותח גם תריסי גלילה ומנעולי ויטרינה?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf6">כן, לעסקים אני פותח גם מנעולי תריס, ויטרינות ודלתות אחוריות. קריאות עסק בשעות הבוקר מקבלות עדיפות, כי אני יודע שכל דקה סגורה עולה כסף.</div></div><div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="sf7">כמה עולה פריצת דלת בלילה או בשבת?<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="sf7">קריאת לילה או סוף שבוע מוסיפה בדרך כלל בין חמישים למאה שקל למחיר הבסיס, תלוי בשעה ובמיקום. את המחיר המדויק אני אומר בטלפון לפני שאני יוצא, גם בשלוש לפנות בוקר, והוא לא משתנה בשטח. אין ״נראה כשאגיע״, יש מספר סגור בשיחה.</div></div></div>
+  </div></section>
+  
+  <section class="sec sec--white" style="background:#F6F3FB"><div class="wrap">
+    <div class="sh sh--c"><h2>מנעולים וצילינדרים מהקטלוג</h2><p>מהקטלוג שלי, עם ייעוץ והתקנה. המחיר נסגר בטלפון.</p></div>
+    <div class="pgrid" style="grid-template-columns:repeat(4,1fr)"><a class="pcard" href="mutzar-mnaolim-mkniim.html"><span class="pcard__img"><img src="img/products/generic.jpg" alt="מנעולים מכניים" loading="lazy"></span><span class="tag">קלאסי</span><b>מנעולים מכניים</b><p>משפחת הבסיס, מנעולי לשון וקופסה לדלתות עץ ומתכת. פשוטים, אמינים, בלי סוללות ובלי תקלות חשמל.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-mnaolim-chboiim-amrikaiim.html"><span class="pcard__img"><img src="img/products/generic.jpg" alt="מנעולים חבויים אמריקאיים" loading="lazy"></span><span class="tag">נסתר</span><b>מנעולים חבויים אמריקאיים</b><p>מנעול שנעלם בתוך הדלת, נעילה חזקה בלי גוף בולט. פתרון אלגנטי לדלתות כניסה ומשרדים.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-mnaolim-alktromkniim.html"><span class="pcard__img"><img src="img/products/generic.jpg" alt="מנעולים אלקטרומכניים" loading="lazy"></span><span class="tag">חשמלי</span><b>מנעולים אלקטרומכניים</b><p>שילוב של מנעול מכני עם שליטה חשמלית, נפתח מאינטרקום או לחצן. הבסיס לכל בקרת כניסה.</p><span class="ask">לעמוד המוצר ›</span></a><a class="pcard" href="mutzar-mnaoli-tlih-yale-smart2.html"><span class="pcard__img"><img src="img/products/padlock-2.jpg" alt="מנעולי תליה Yale Smart2" loading="lazy"></span><span class="tag">חכם</span><b>מנעולי תליה Yale Smart2</b><p>מנעול תלייה שנפתח מהטלפון בבלוטות׳, בלי מפתח שהולך לאיבוד. שיתוף גישה מרחוק לבני משפחה.</p><span class="ask">לעמוד המוצר ›</span></a></div>
+    <p style="text-align:center;margin-top:18px"><a href="katalog-manulim.html" style="color:var(--red);font-weight:800">לקטלוג קטלוג מנעולים המלא ›</a></p>
   </div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="sh sh--c"><h2>שירותים קשורים</h2></div>
