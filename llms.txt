@@ -23,6 +23,11 @@
 - [החלפת ידיות](https://snikzik.github.io/niv-website/yadiot-ledelet.html): מ-250₪
 - [חילוץ מפתח שבור](https://snikzik.github.io/niv-website/mafteah-shavur.html): מ-250₪, 24/7
 - [התקנת מנעולים](https://snikzik.github.io/niv-website/hatkanat-manulim.html): כל הסוגים
+- [קטלוג מוצרים](https://snikzik.github.io/niv-website/katalog.html): מנעולים, כספות, מחזירים ובקרת כניסה
+- [קטלוג מנעולים](https://snikzik.github.io/niv-website/katalog-manulim.html)
+- [קטלוג כספות](https://snikzik.github.io/niv-website/katalog-ksafot.html)
+- [קטלוג מחזירי דלת](https://snikzik.github.io/niv-website/katalog-mahzirei-delet.html)
+- [קטלוג בקרת כניסה](https://snikzik.github.io/niv-website/katalog-bakarat-knisa.html)
 
 ## עובדות מפתח
 - טלפון: 050-8307269, עונה ניב עצמו, בלי מוקד
