@@ -4,6 +4,16 @@
 ## עמודים מרכזיים
 - [דף הבית](https://snikzik.github.io/niv-website/): מנעולן לדלתות בירושלים, כל השירותים והמחירון
 - [פריצת דלתות בירושלים](https://snikzik.github.io/niv-website/pritzat-dlatot.html): פתיחת דלתות נעולות בלי נזק, מ-300₪
+- [פריצת דלתות בפסגת זאב](https://snikzik.github.io/niv-website/pritzat-dlatot-pisgat-zeev.html)
+- [פריצת דלתות ברמות](https://snikzik.github.io/niv-website/pritzat-dlatot-ramot.html)
+- [פריצת דלתות בגבעת זאב](https://snikzik.github.io/niv-website/pritzat-dlatot-givat-zeev.html)
+- [פריצת דלתות במבשרת ציון](https://snikzik.github.io/niv-website/pritzat-dlatot-mevaseret.html)
+- [פריצת דלתות בגילה](https://snikzik.github.io/niv-website/pritzat-dlatot-gilo.html)
+- [פריצת דלתות בהר חומה](https://snikzik.github.io/niv-website/pritzat-dlatot-har-homa.html)
+- [פריצת דלתות בקטמון](https://snikzik.github.io/niv-website/pritzat-dlatot-katamon.html)
+- [פריצת דלתות בבית הכרם](https://snikzik.github.io/niv-website/pritzat-dlatot-beit-hakerem.html)
+- [פריצת דלתות בתלפיות](https://snikzik.github.io/niv-website/pritzat-dlatot-talpiot.html)
+- [פריצת דלתות במעלה אדומים](https://snikzik.github.io/niv-website/pritzat-dlatot-maale-adumim.html)
 - [החלפת צילינדר](https://snikzik.github.io/niv-website/tzilinder.html): צילינדר לכל דלת, מ-300₪
 - [תיקון דלתות](https://snikzik.github.io/niv-website/tikun-dlatot.html): כיוון, ידיות ומנגנונים, מ-350₪
 - [דלת ממ״ד](https://snikzik.github.io/niv-website/mamad.html): פריצה ותיקון מנגנוני ממ״ד

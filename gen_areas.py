@@ -18,6 +18,17 @@ PH='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentC
 WA='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>'
 CK='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'
 
+
+import json as _json
+_PIDX=_json.load(open('/Users/s/niv-locksmith/products_index.json',encoding='utf-8'))
+AREA_MIX=['מנעולים מכניים','מנעול חכם Yale Linus L2','כספת ביתית קטנה','מחזיר דלת הידראולי DC140']
+def AREA_STRIP(b):
+    cards=''
+    for n in AREA_MIX:
+        p=_PIDX.get(n)
+        if p: cards+=f'<a class="pcard" href="{p["slug"]}.html"><span class="pcard__img"><img src="img/products/{p["img"]}.jpg" alt="{n}" loading="lazy"></span><b>{n}</b><span class="ask">לעמוד המוצר ›</span></a>'
+    return f'<section class="sec sec--white" style="background:#F6F3FB"><div class="wrap"><div class="sh sh--c"><h2>מוצרים מהקטלוג שלי</h2><p>מנעולים, כספות ומחזירים עם ייעוץ והתקנה ב{b}. המחיר נסגר בטלפון.</p></div><div class="pgrid" style="grid-template-columns:repeat(4,1fr)">{cards}</div></div></section>'
+
 T={
  "yosi":("הייתה לנו בעיה במנעול העסק. ניב הגיע בזמן, פתר את התקלה במהירות ובמחיר הוגן. ממליץ בחום.","יוסי","ירושלים"),
  "oren":("ננעלתי מחוץ לבית באמצע הלילה. תוך פחות מ-20 דקות ניב היה אצלי, פתח את הדלת בלי נזק והחליף צילינדר חדש. שירות מהיר ואמין.","אורן","ירושלים"),
@@ -96,6 +107,7 @@ def page(i,slug,d):
       <p style="margin:0;font-size:16px">אני ניב, מנעולן מקומי שמגיע ל{d["b"]} בדרך כלל תוך {d["eta"]}. פותח דלתות בזהירות, מחליף צילינדרים ומתקן מנגנונים, זמין 24/7, והמחיר נסגר בטלפון לפני שאני יוצא. חייגו 050-8307269.</p>
     </div>
   </div></section>
+  {AREA_STRIP(d["b"])}
   <div class="content">{blocks}</div>
   <section class="emerg">
     <h2>נעולים בחוץ ב{d["b"]}?</h2>
