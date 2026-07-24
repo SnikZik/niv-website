@@ -1,0 +1,1053 @@
+{
+ "strip_position": [
+  {
+   "file": "index.html",
+   "idx": 5,
+   "ok": false
+  },
+  {
+   "file": "pritzat-dlatot.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "tzilinder.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "mamad.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "manul-hacham.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "ksafot.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "manulan-herum.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "pladelet.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "electromagnet.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "rav-bariach.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "tikun-mamad.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "idx": 4,
+   "ok": true
+  },
+  {
+   "file": "manulan-abu-gosh.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-arnona.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-baka.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-beit-hakerem.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-french-hill.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-geula.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-gilo.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-givat-mordechai.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-givat-shaul.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-givat-zeev.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-har-homa.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-har-nof.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-katamon.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-kiryat-menachem.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-kiryat-yovel.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-maale-adumim.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-malha.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-merkaz-hair.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-mevaseret.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-motza.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-nachlaot.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-neve-yaakov.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-old-city.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-pisgat-zeev.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-ramat-eshkol.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-ramat-sharet.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-ramat-shlomo.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-ramot.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-rehavia.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-romema.html",
+   "idx": 3,
+   "ok": true
+  },
+  {
+   "file": "manulan-talpiot.html",
+   "idx": 3,
+   "ok": true
+  }
+ ],
+ "strip_bad": [
+  {
+   "file": "index.html",
+   "issue": "strip index 5 out of range 3-4"
+  }
+ ],
+ "broken_links": [
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "tzilinder-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "tikun-dlatot-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "mamad-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "manul-hacham-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "mafteah-shavur-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "ksafot-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-beit-hakerem.html",
+   "href": "manulan-herum-beit-hakerem.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "tzilinder-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "tikun-dlatot-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "mamad-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "manul-hacham-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "mafteah-shavur-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "ksafot-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-gilo.html",
+   "href": "manulan-herum-gilo.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "tzilinder-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "tikun-dlatot-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "mamad-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "manul-hacham-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "mafteah-shavur-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "ksafot-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-givat-zeev.html",
+   "href": "manulan-herum-givat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "tzilinder-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "tikun-dlatot-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "mamad-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "manul-hacham-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "mafteah-shavur-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "ksafot-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-har-homa.html",
+   "href": "manulan-herum-har-homa.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "tzilinder-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "tikun-dlatot-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "mamad-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "manul-hacham-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "mafteah-shavur-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "ksafot-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-katamon.html",
+   "href": "manulan-herum-katamon.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "tzilinder-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "tikun-dlatot-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "mamad-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "manul-hacham-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "mafteah-shavur-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "ksafot-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-maale-adumim.html",
+   "href": "manulan-herum-maale-adumim.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "tzilinder-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "tikun-dlatot-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "mamad-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "manul-hacham-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "mafteah-shavur-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "ksafot-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-mevaseret.html",
+   "href": "manulan-herum-mevaseret.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "tzilinder-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "tikun-dlatot-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "mamad-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "manul-hacham-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "mafteah-shavur-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "ksafot-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-pisgat-zeev.html",
+   "href": "manulan-herum-pisgat-zeev.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "tzilinder-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "tikun-dlatot-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "mamad-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "manul-hacham-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "mafteah-shavur-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "ksafot-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-ramot.html",
+   "href": "manulan-herum-ramot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "tzilinder-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "tikun-dlatot-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "mamad-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "manul-hacham-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "mafteah-shavur-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "ksafot-talpiot.html"
+  },
+  {
+   "file": "pritzat-dlatot-talpiot.html",
+   "href": "manulan-herum-talpiot.html"
+  }
+ ],
+ "abs_links": [],
+ "banned": [
+  {
+   "file": "manulan-givat-zeev.html",
+   "word": "לאחרונה",
+   "context": "רית שאף אחד לא זוכר מתי נפתחה לאחרונה, כל אלה קריאות שגרתיות אצלי ב"
+  },
+  {
+   "file": "mutzar-idit-anti-mikrobialit-tesa.html",
+   "word": "לאחרונה",
+   "context": "משתתפים בוחרים בה יותר ויותר לאחרונה בעצם, פשוט כי זה הגיוני. אספק"
+  }
+ ],
+ "dashes": [],
+ "bad_titles": [
+  {
+   "file": "hazharat-negishut.html",
+   "len": 26,
+   "title": "הצהרת נגישות | ניב המנעולן",
+   "issue": "content 26 (need 40-65)"
+  },
+  {
+   "file": "katalog-yadiyot-bahala.html",
+   "len": 38,
+   "title": "קטלוג ידיות בהלה | ניב המנעולן ירושלים",
+   "issue": "content 38 (need 40-65)"
+  },
+  {
+   "file": "manulan-baka.html",
+   "len": 38,
+   "title": "מנעולן בבקעה | ניב המנעולן 050-8307269",
+   "issue": "content 38 (need 40-65)"
+  },
+  {
+   "file": "manulan-geula.html",
+   "len": 39,
+   "title": "מנעולן בגאולה | ניב המנעולן 050-8307269",
+   "issue": "content 39 (need 40-65)"
+  },
+  {
+   "file": "manulan-gilo.html",
+   "len": 38,
+   "title": "מנעולן בגילה | ניב המנעולן 050-8307269",
+   "issue": "content 38 (need 40-65)"
+  },
+  {
+   "file": "manulan-katamon.html",
+   "len": 39,
+   "title": "מנעולן בקטמון | ניב המנעולן 050-8307269",
+   "issue": "content 39 (need 40-65)"
+  },
+  {
+   "file": "manulan-malha.html",
+   "len": 38,
+   "title": "מנעולן במלחה | ניב המנעולן 050-8307269",
+   "issue": "content 38 (need 40-65)"
+  },
+  {
+   "file": "manulan-rehavia.html",
+   "len": 39,
+   "title": "מנעולן ברחביה | ניב המנעולן 050-8307269",
+   "issue": "content 39 (need 40-65)"
+  },
+  {
+   "file": "manulan-romema.html",
+   "len": 39,
+   "title": "מנעולן ברוממה | ניב המנעולן 050-8307269",
+   "issue": "content 39 (need 40-65)"
+  },
+  {
+   "file": "mediniyut-pratiut.html",
+   "len": 28,
+   "title": "מדיניות פרטיות | ניב המנעולן",
+   "issue": "content 28 (need 40-65)"
+  }
+ ],
+ "bad_metas": [],
+ "jsonld_errors": [],
+ "name_close": [
+  {
+   "our": "מנעולים מכניים",
+   "src": "מנעול ארונית"
+  },
+  {
+   "our": "מנעולים חבויים אמריקאיים",
+   "src": "מנעול חבוי 101"
+  },
+  {
+   "our": "מנעולים אלקטרומכניים",
+   "src": "בקר מתאם לתמיכה במנעולים אלקטרומכניים"
+  },
+  {
+   "our": "מנעולי תליה Yale Smart2",
+   "src": "מנעולי תליה ™Yale Smart2"
+  },
+  {
+   "our": "מנעולי תלי פליז 20-60 מ״מ",
+   "src": "מנעולי תלי פליז 20 מ\"מ"
+  },
+  {
+   "our": "מנעול אופניים U דירוג Gold Secure",
+   "src": "U מנעול אופניים - Gold Secure"
+  },
+  {
+   "our": "מנעול אופניים שרשרת Gold Secure",
+   "src": "U מנעול אופניים - Gold Secure"
+  },
+  {
+   "our": "מנעול אופניים כבל קוד",
+   "src": "מנעול אופניים - כבל קוד"
+  },
+  {
+   "our": "כספת מוגנת אש 53 ק״ג",
+   "src": "כספת מוגנת אש 53 ק\"ג"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC110",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC110"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC120",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC120"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC140",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC140"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC200",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC200"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC300",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC300"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC340",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC340"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC347",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC347"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC500",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC500"
+  },
+  {
+   "our": "מחזיר דלת הידראולי DC700",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC700"
+  },
+  {
+   "our": "מחזיר DC700G-CM / FM / FT",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC700G-CM"
+  },
+  {
+   "our": "מחזיר דלת סמוי DC850",
+   "src": "מחזיר דלת הידראולי סמוי DC850"
+  },
+  {
+   "our": "מחזיר דלת סמוי DC870",
+   "src": "מחזיר דלת הידראולי סמוי DC870"
+  },
+  {
+   "our": "מחזיר דלת סדרה 300",
+   "src": "מחזיר דלת הידראולי סדרה 300"
+  },
+  {
+   "our": "מחזיר רצפתי DC450 / DC450EA",
+   "src": "מחזיר דלת ריצפתי  DC450EA"
+  },
+  {
+   "our": "מחזיר רצפתי DC475 / DC477",
+   "src": "מחזיר דלת ריצפתי DC475"
+  },
+  {
+   "our": "מחזיר לשער DC630G",
+   "src": "מחזיר דלת לשער  DC630G"
+  },
+  {
+   "our": "מחזיר NORTON 7500",
+   "src": "מחזיר דלת הידראולי תוצרת NORTON דגם 7500"
+  },
+  {
+   "our": "מחזיר NORTON 8541",
+   "src": "מחזיר דלת הידראולי תוצרת NORTON דגם 8541"
+  },
+  {
+   "our": "מחזיר NORTON סדרה 7970",
+   "src": "מחזיר דלת הידראולי תוצרת NORTON סדרה 7970"
+  },
+  {
+   "our": "סגר הידראולי NORTON 8000",
+   "src": "סגר הידראולי תוצרת NORTON דגם 8000"
+  },
+  {
+   "our": "מתאם סגירה ROCKWOOD 1700 / 2600",
+   "src": "מתאם סגירה ROCKWOOD סדרה 2600"
+  },
+  {
+   "our": "מתאם סגירה ABLOY G461",
+   "src": "מתאם סגירה תוצרת ABLOY דגם G461"
+  },
+  {
+   "our": "מתאם סגירה JPM 914000",
+   "src": "מתאם סגירה תוצרת JPM דגם 914000"
+  },
+  {
+   "our": "מנעול אלקטרוני SMARTair i-max",
+   "src": "מנעול תליה  אלקטרוני SMARTair i-gate"
+  },
+  {
+   "our": "SMARTair i-minimal",
+   "src": "SMARTair i-minimal Electronic Lock"
+  },
+  {
+   "our": "מנעול תלייה אלקטרוני i-gate",
+   "src": "מנעול תליה  אלקטרוני SMARTair i-gate"
+  },
+  {
+   "our": "ידית אלקטרונית Aperio H100",
+   "src": "ידית אלקטרונית  Aperio H100"
+  },
+  {
+   "our": "מנעול לוקר Aperio KL100",
+   "src": "מנעול לוקר / ארונית  Aperio KL100"
+  },
+  {
+   "our": "קורא קיר Aperio DR100",
+   "src": "קורא קיר עם ממסרים Aperio DR100"
+  },
+  {
+   "our": "קורא קווי Incedo",
+   "src": "Incedo קורא קווי"
+  },
+  {
+   "our": "בקר יישומים / בקר מתאם",
+   "src": "בקר יישומים"
+  },
+  {
+   "our": "מנעול ארון שרתים KS200",
+   "src": "מנעול ארון שרתים מחווט KS200"
+  },
+  {
+   "our": "i-max מנעול אלקטרוני",
+   "src": "i-max  מנעול אלקטרוני"
+  },
+  {
+   "our": "נגדי חשמלי Effeff 118F ProFix 1/2",
+   "src": "נגדי חשמלי תוצרת  Effeff דגם 118F.13 ProFix® 2"
+  },
+  {
+   "our": "מנעול חשמלי Effeff 112",
+   "src": "מנעול חשמלי Effeff 131"
+  },
+  {
+   "our": "מנעול אוניברסלי זעיר Effeff 118 N.C",
+   "src": "מנעול אוניברסלי זעיר N.C Effeff 118"
+  },
+  {
+   "our": "Effeff 138 N.O פתוח בכשל",
+   "src": "מנעול חשמלי אוניברסלי זעיר N.O פתוח בכשל Effeff 138"
+  },
+  {
+   "our": "Effeff 128 עם השהיה",
+   "src": "תוצרת  Effeff 112"
+  },
+  {
+   "our": "Effeff 118/128/138 ProFix להתקנה סמויה",
+   "src": "מנעול חשמלי להתקנה סמויה Effeff 118®/ 128/138 ProFix® 1"
+  },
+  {
+   "our": "סדרות Effeff 14/24/34 ו-17/27/37",
+   "src": "מנעול חשמלי Effeff 14/24/34"
+  },
+  {
+   "our": "בריח ממונע Effeff 843G לשערים",
+   "src": "מנעול בריח ממונע Effeff  843G לאבטחת שערים"
+  },
+  {
+   "our": "בריח חשמלי SOCA SL-165B למשטח",
+   "src": "בריח חשמלי להתקנה על משטח SOCA SL-165B"
+  },
+  {
+   "our": "בריח SOCA SL-167B לדלת זכוכית",
+   "src": "בריח חשמלי להלבשה על דלת זכוכית SOCA SL-167B"
+  },
+  {
+   "our": "מגנט SOCA GL-200/220 חיצוני",
+   "src": "מנעול אלקטרו מגנטי להתקנה חיצונית SOCA GL-200/220"
+  },
+  {
+   "our": "מגנטים SOCA SL-180R/200/220",
+   "src": "מנעול אלקטרו מגנטי 150 ק\"ג להתקנה פנימית SOCA SL-180R"
+  },
+  {
+   "our": "SECURITRON M32/M62/M82 מוגני מים",
+   "src": "מנעול אלקטרו מגנטי אמריקאי מוגן מים 300 ק\"ג SECURITRON M32"
+  },
+  {
+   "our": "SECURITRON MM15 ענק 1,814 ק״ג",
+   "src": "מנעול אלקטרו מגנטי אמריקאי  1814 ק\"ג SECURITRON MM15"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7100",
+   "src": "ידית בהלה ACCENTRA™  7100"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7110",
+   "src": "ידית בהלה ACCENTRA™  7110"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7120",
+   "src": "ידית בהלה ACCENTRA™ 7120"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7130",
+   "src": "ידית בהלה ACCENTRA™  7130"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7200",
+   "src": "ידית בהלה ACCENTRA™  7200"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7210",
+   "src": "ידית בהלה ACCENTRA™  7210"
+  },
+  {
+   "our": "ידית בהלה ACCENTRA 7220",
+   "src": "ידית בהלה ACCENTRA™  7220"
+  },
+  {
+   "our": "ידיות הפעלה חיצוניות סדרה 7000",
+   "src": "ידיות הפעלה חיצוניות למנגנוני בהלה ™ ACCENTRA סדרה 7000"
+  },
+  {
+   "our": "מנעול חכם Yale Linus L2",
+   "src": "סוללה נטענת - Linus L2"
+  },
+  {
+   "our": "ערכת Linus L2 + קודן חכם",
+   "src": "סוללה נטענת - Linus L2"
+  },
+  {
+   "our": "ערכת Linus L2 + קודן טביעת אצבע",
+   "src": "ערכת מנעול חכם Linus™ L2 + קודן טביעת אצבע + מגשר אינטרנט מובנה +קורא קרבה Yale Dot + סוללה נטענת!"
+  },
+  {
+   "our": "ערכת Linus L2 + קורא קרבה Yale DOT",
+   "src": "מנעול חכם Linus™ L2  + קורא קירבה Yale® DOT + מגשר אינטרנט מובנה + סוללה נטענת"
+  },
+  {
+   "our": "קודן חכם Yale",
+   "src": "קודן חכם ®Yale"
+  },
+  {
+   "our": "Yale DOT קורא קרבה",
+   "src": "Yale® DOT"
+  },
+  {
+   "our": "סוללה נטענת Linus L2",
+   "src": "סוללה נטענת - Linus L2"
+  },
+  {
+   "our": "מטען חוטי ENTR",
+   "src": "מטען חוטי ®ENTR"
+  },
+  {
+   "our": "פעמון חכם + רמקול פנימי",
+   "src": "ערכת פעמון חכם + רמקול פנימי"
+  },
+  {
+   "our": "רמקול פנימי לפעמון",
+   "src": "רמקול פנימי לפעמון חכם"
+  },
+  {
+   "our": "מצלמת אבטחה ביתית חכמה",
+   "src": "מצלמה אבטחה ביתית חכמה"
+  },
+  {
+   "our": "עינית מקליטה 4.5 אינץ׳ HD",
+   "src": "עינית מקליטה \"4.5 HD, עם חיישן תנועה וסוללה נטענת"
+  },
+  {
+   "our": "מנעול חכם לארון ומגירה",
+   "src": "מנעול חכם לארון/מגירה"
+  },
+  {
+   "our": "ידית מנוף AH200 על רוזטה עגולה",
+   "src": "AH200 ידית מנוף/קבועה נירוסטה על רוזטה עגולה"
+  },
+  {
+   "our": "ידית מנוף AH200 על רוזטה אובאלית",
+   "src": "AH200 ידית מנוף/קבועה נירוסטה על רוזטה אובאלית"
+  },
+  {
+   "our": "ידית AH200 על שלט Grade 4",
+   "src": "AH200 ידית מנוף/קבועה נירוסטה על שלט Grade 4"
+  },
+  {
+   "our": "ידיות TESA לדלתות פנים",
+   "src": "ידית דלת פנים דגם פיקאסו"
+  },
+  {
+   "our": "ידית משיכה ישרה ABLOY INOXI 137",
+   "src": "ידית משיכה ישרה ABLOY® INOXI 137"
+  },
+  {
+   "our": "ידית משיכה מוסטת ABLOY INOXI 138",
+   "src": "ידית משיכה מוסטת ABLOY® INOXI 138"
+  },
+  {
+   "our": "ידיות נירוסטה ABLOY INOXI",
+   "src": "ידית נירוסטה ABLOY INOXI"
+  },
+  {
+   "our": "פלטת דחיפה + ידית משיכה",
+   "src": "פלטת דחיפה + פלטה וידית משיכה"
+  },
+  {
+   "our": "ציר McKinney T4A3386",
+   "src": "ציר דלת תוצרת McKinney דגם T4A3386"
+  },
+  {
+   "our": "ציר McKinney TA2895",
+   "src": "ציר דלת תוצרת McKinney דגם TA2895"
+  },
+  {
+   "our": "ציר McKinney TA314/TA714",
+   "src": "ציר דלת תוצרת McKinney דגם TA314/TA714"
+  },
+  {
+   "our": "ציר מעביר מתח McKinney TA2714",
+   "src": "ציר מעביר מתח תוצרת McKinney דגם TA2714"
+  },
+  {
+   "our": "חיישן יציאה ללא מגע ES-80",
+   "src": "חיישן יציאה אינפרא אדום ללא מגע ES-80"
+  },
+  {
+   "our": "חיישן יציאה ללא מגע SI-68",
+   "src": "חיישן יציאה אינפרא אדום ללא מגע SI-68"
+  },
+  {
+   "our": "MAGIC SWITCH CHROMA",
+   "src": "חיישן קרבה ללא מגע  MAGIC SWITCH CHROMA"
+  },
+  {
+   "our": "מפתחות וירטואליים בנייד",
+   "src": "מפתחות וירטואליים בטלפון הנייד"
+  },
+  {
+   "our": "צילינדר SMARTair של TESA",
+   "src": "צילינדר של ®SMARTair תוצרת TESA"
+  },
+  {
+   "our": "קורא קיר / קורא עם קודן",
+   "src": "קורא קיר עם קודן"
+  },
+  {
+   "our": "כספת Wide",
+   "src": "כספת wide"
+  },
+  {
+   "our": "כספת TESA",
+   "src": "כספת Tesa"
+  },
+  {
+   "our": "מחזיר דלת DC175",
+   "src": "מחזיר דלת הידראולי תוצרת ASSA ABLOY דגם DC175"
+  },
+  {
+   "our": "פותח דלת אוטומטי SW60",
+   "src": "פותח דלת אוטומטי ASSA ABLOY SW60"
+  }
+ ],
+ "name_nosource": [],
+ "phone_issues": [],
+ "preview": {
+  "home": {
+   "url": "https://nivlocksmith.ussl.co.il/",
+   "status": "200",
+   "title": "מנעולן לדלתות בירושלים | ניב המנעולן 050-8307269",
+   "is_locksmith": true
+  },
+  "pritzat-dlatot.html": {
+   "url": "https://nivlocksmith.ussl.co.il/pritzat-dlatot.html",
+   "status": "200",
+   "title": "פריצת דלתות בירושלים | ניב המנעולן 050-8307269"
+  },
+  "katalog-ksafot.html": {
+   "url": "https://nivlocksmith.ussl.co.il/katalog-ksafot.html",
+   "status": "200",
+   "title": "קטלוג כספות | ניב המנעולן ירושלים 050-8307269"
+  },
+  "manulan-rehavia.html": {
+   "url": "https://nivlocksmith.ussl.co.il/manulan-rehavia.html",
+   "status": "200",
+   "title": "מנעולן ברחביה | ניב המנעולן 050-8307269"
+  }
+ }
+}
