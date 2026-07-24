@@ -48,7 +48,7 @@ def shell(slug,title,meta,h1,intro,main,ld=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{meta}">
-<link rel="canonical" href="{BASE}/{slug}.html">
+<link rel="canonical" href="{BASE}/{slug}.html"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 {lds}
 {style}
 </head>

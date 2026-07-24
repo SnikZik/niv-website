@@ -227,7 +227,7 @@ def page(slug,d):
     </div>
   </section>'''
     ld=schema(slug,d,dp)
-    return f'<!doctype html>\n<html dir="rtl" lang="he">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{d["title"]}</title>\n<meta name="description" content="{d["meta"]}">\n<link rel="canonical" href="{BASE}/{slug}.html">\n{ld}\n{style}\n</head>\n<body>\n<div class="n6">\n{ub}\n{header}\n{main}\n{footer}\n{flt}\n{smob}\n</div>\n{js}\n</body>\n</html>'
+    return f'<!doctype html>\n<html dir="rtl" lang="he">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{d["title"]}</title>\n<meta name="description" content="{d["meta"]}">\n<link rel="canonical" href="{BASE}/{slug}.html"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">\n{ld}\n{style}\n</head>\n<body>\n<div class="n6">\n{ub}\n{header}\n{main}\n{footer}\n{flt}\n{smob}\n</div>\n{js}\n</body>\n</html>'
 
 banned=["לסיכום","ראשית","שנית","בנוסף לכך","יתרה מזאת","חשוב לציין","במסגרת","על מנת","כמו כן","יש לציין"]
 DROP=[("פריצת דלתות בירושלים","/pritzat-dlatot.html"),("החלפת צילינדר בירושלים","/tzilinder.html"),

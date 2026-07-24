@@ -164,7 +164,7 @@ def page(i,slug,d):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{d["title"]}</title>
 <meta name="description" content="{d["meta"]}">
-<link rel="canonical" href="{BASE}/{slug}.html">
+<link rel="canonical" href="{BASE}/{slug}.html"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 {lds}
 {style2}
 </head>
