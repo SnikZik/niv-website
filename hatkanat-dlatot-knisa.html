@@ -1116,6 +1116,18 @@
 /* v24: uniform media card size (img + video identical) */
 .n6 .vcard img,.n6 .vcard video{width:100%!important;aspect-ratio:3/4!important;max-height:none!important;object-fit:cover!important;display:block}
 
+
+/* v25: footer balanced + embossed logo */
+.n6 .ft{position:relative;overflow:hidden}
+.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
+.n6 .ft__g{position:relative;z-index:1}
+@media(min-width:901px){
+  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
+  .n6 .ft__brand{grid-column:auto!important}
+  .n6 .ft__brand p{max-width:300px}
+}
+@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
+
 </style>
 <style>
 .lp-hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}

@@ -1093,6 +1093,18 @@
 .n6 .float .fr{background:#6D28D9;color:#fff}
 .n6 .float .fr:hover{background:#5B21B6}
 
+
+/* v25: footer balanced + embossed logo */
+.n6 .ft{position:relative;overflow:hidden}
+.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
+.n6 .ft__g{position:relative;z-index:1}
+@media(min-width:901px){
+  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
+  .n6 .ft__brand{grid-column:auto!important}
+  .n6 .ft__brand p{max-width:300px}
+}
+@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
+
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
