@@ -70,6 +70,32 @@ def img_for(cat_slug, tag, name):
     if has('חיישן','flatscan','magic','eagle','פותח'): return 'sensor'
     return 'generic'
 
+_COMPL_ANCHOR=1
+
+COMPL={  # category -> complementary category slugs
+ 'katalog-manulim':['katalog-parzol-adrichali','katalog-avtacha-hachama'],
+ 'katalog-ksafot':['katalog-manulim','katalog-bakarat-knisa'],
+ 'katalog-mahzirei-delet':['katalog-parzol-adrichali','katalog-yadiyot-bahala'],
+ 'katalog-bakarat-knisa':['katalog-manulim-hashmaliim','katalog-potchei-dlatot'],
+ 'katalog-manulim-hashmaliim':['katalog-bakarat-knisa','katalog-potchei-dlatot'],
+ 'katalog-yadiyot-bahala':['katalog-parzol-adrichali','katalog-mahzirei-delet'],
+ 'katalog-avtacha-hachama':['katalog-manulim','katalog-bakarat-knisa'],
+ 'katalog-parzol-adrichali':['katalog-manulim','katalog-mahzirei-delet'],
+ 'katalog-potchei-dlatot':['katalog-bakarat-knisa','katalog-manulim-hashmaliim'],
+ 'katalog-batei-malon':['katalog-bakarat-knisa','katalog-avtacha-hachama'],
+}
+def compl_cards(cat_slug):
+    import hashlib as _h
+    out=[]
+    for cs in COMPL.get(cat_slug,[]):
+        c=ALL.get(cs)
+        if not c: continue
+        prods=c['products']
+        idx2=int(_h.md5(cs.encode()).hexdigest(),16)%len(prods)
+        x=prods[idx2]
+        out.append(f'<a class="pcard" href="mutzar-{slugify(x["name"])}.html"><span class="pcard__img"><img src="img/products/{img_for_final(cs,x.get("tag",""),x["name"])}.jpg" alt="{x["name"]}" loading="lazy"></span><b>{x["name"]}</b><span class="ask">לעמוד המוצר ›</span></a>')
+    return ''.join(out)
+
 def img_for_final(cat_slug,tag,name):
     rp=f'real/{slugify(name)}'
     if os.path.exists(f'/Users/s/niv-locksmith/img/products/{rp}.jpg'):
@@ -178,6 +204,10 @@ def page(cat_slug,cat,prod,idx,all_prods):
     {'<h2>מפרט עיקרי</h2>'+specs_html if specs_html else ''}
   </div>
   <section class="sec sec--sand"><div class="wrap narrow"><div class="sh sh--c"><h2>שאלות ותשובות על {name}</h2></div><div class="qa-open">{faqh_open}</div></div></section>
+  <section class="sec sec--sand"><div class="wrap">
+    <div class="sh sh--c"><h2>מוצרים משלימים</h2><p>מה שהולך טוב יחד עם {name}.</p></div>
+    <div class="pgrid" style="grid-template-columns:repeat(4,1fr)">{compl_cards(cat_slug)}</div>
+  </div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="sh sh--c"><h2>עוד מ{cat["h1"]}</h2></div>
     <div class="pgrid" style="grid-template-columns:repeat(4,1fr)">{relh}</div>

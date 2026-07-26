@@ -237,7 +237,8 @@ cards=[("pritzat-dlatot","פריצת דלתות","ננעלתם בחוץ, המפ�
 ("yadiyot-bahala","ידיות בהלה","יציאות חירום לפי תקן, לעסקים ומוסדות."),
 ("pladelet","דלת פלדלת + משקוף","התקנה והחלפה של פלדלת, כולל המשקוף."),
 ("rav-bariach","מנעול רב בריח","רב בריח שנתקע או התיישן בפלדלת."),
-("manulan-herum","מנעולן חירום 24/7","מגיע בדרך כלל תוך כ-20 דקות, יום ולילה.")]
+("manulan-herum","מנעולן חירום 24/7","מגיע בדרך כלל תוך כ-20 דקות, יום ולילה."),
+("hatkanat-dlatot-knisa","התקנת דלתות כניסה","דלת כניסה חדשה, כולל משקוף, מנעול והתקנה.")]
 scards="".join(f'<a class="scard scard--img" href="{s}.html"><span class="scard__img"><img src="img/{s}.jpg" alt="{t} בירושלים" loading="lazy"></span><span class="scard__b"><h3>{t}</h3><p>{p}</p><span class="scard__l">לעמוד השירות ›</span></span></a>' for s,t,p in cards)
 main=f'''
   <section class="sec sec--white" style="padding-top:34px"><div class="wrap">

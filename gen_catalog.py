@@ -58,6 +58,8 @@ cat_css='''
 .n6 .pcard__img img{width:100%;height:100%;object-fit:cover;display:block}
 a.pcard{text-decoration:none}
 .n6 .catgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.n6 .catprod{grid-template-columns:repeat(2,1fr)!important}
+@media(max-width:560px){.n6 .catprod{grid-template-columns:1fr 1fr!important;gap:10px}}
 .n6 .ccard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:6px}
 .n6 .ccard b{font-size:17px}
 .n6 .ccard p{color:var(--iron);font-size:13.5px;margin:0}
@@ -142,7 +144,7 @@ for slug,d in CATS.items():
   <div class="content"><p style="font-size:16.5px">{d["opening"]}</p></div>
   <section class="sec sec--sand" style="padding-top:30px"><div class="wrap">
     <div class="sh sh--c"><h2>הדגמים בקטלוג</h2><p>קטלוג להתרשמות והתייעצות. אני מתקין את כל המוצרים, המחיר נסגר בטלפון לפי הדלת שלכם.</p></div>
-    <div class="pgrid">{cards}</div>
+    <div class="pgrid catprod">{cards}</div>
   </div></section>
   <div class="content">{blocks}
   <h2>מה אומרים על המותגים המובילים</h2>{revs}</div>
