@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-import re,json
+import sys as _sys;_sys.path.insert(0,"/Users/s/niv-locksmith")
+from areas_data import AREAS
+import re,json as _json2,json
 
 src=open('/Users/s/niv-locksmith/index.html',encoding='utf-8').read()
 style=re.search(r'<style>.*?</style>',src,re.S).group(0)
@@ -245,17 +247,36 @@ shell("sherutim","שירותי מנעולן בירושלים | ניב המנעו
  "כל שירותי המנעולנות של ניב בירושלים: פריצת דלתות, צילינדרים, תיקון דלתות, ממ״ד, כספות, מנעולים חכמים, מחזירי דלת וידיות בהלה.",
  "שירותי מנעולן בירושלים","כל תקלת דלת ומנעול, בבית ובעסק. לחצו על שירות למחירים ופרטים.",main)
 
-# ---------- 8. areas hub ----------
-main='''
-  <div class="content">
-    <p>אני עובד בכל שכונות ירושלים וביישובים סביב העיר. אין תוספת ״אזור מרוחק״ בתוך ירושלים, והמחיר נסגר בטלפון מראש. בתוך העיר אני מגיע בדרך כלל תוך כ-20 דקות.</p>
-    <h2>שכונות ירושלים</h2>
-    <p>פסגת זאב · נווה יעקב · רמות · רמת שלמה · גבעה צרפתית · בית הכרם · קריית יובל · קריית מנחם · עיר גנים · גילה · הר חומה · תלפיות · ארנונה · בקעה · קטמון · רחביה · נחלאות · מרכז העיר · גאולה · רוממה · הר נוף · גבעת שאול · גבעת מרדכי · מלחה · רמת רחל</p>
-    <h2>יישובים בסביבה</h2>
-    <p>גבעת זאב · מבשרת ציון · מעלה אדומים · אבו גוש · הראל · מוצא</p>
-    <h2>למה מנעולן מקומי עדיף</h2>
-    <p>מנעולן שעובד בירושלים כל יום מכיר את סוגי הדלתות והבניינים בכל שכונה. פלדלת ישנה בקטמון מתנהגת אחרת מדלת חדשה בהר חומה, וזה משפיע על הדרך הנכונה לפתוח בזהירות. וכשאני קרוב, אני גם מגיע מהר.</p>
-  </div>'''+CTA
+# ---------- 8. areas hub (regional groups + banners) ----------
+_GROUPS=[
+ ('צפון ירושלים','#EAF1F7','#0C4A6E',['manulan-pisgat-zeev','manulan-neve-yaakov','manulan-ramot','manulan-ramat-shlomo','manulan-french-hill','manulan-ramat-eshkol']),
+ ('מרכז העיר והשכונות ההיסטוריות','#F5F0FA','#3B1273',['manulan-merkaz-hair','manulan-rehavia','manulan-nachlaot','manulan-geula','manulan-old-city']),
+ ('דרום העיר','#FAF3EB','#78350F',['manulan-gilo','manulan-har-homa','manulan-talpiot','manulan-arnona','manulan-baka','manulan-katamon']),
+ ('מערב העיר','#EDF7F4','#134E4A',['manulan-beit-hakerem','manulan-kiryat-yovel','manulan-kiryat-menachem','manulan-har-nof','manulan-givat-shaul','manulan-romema','manulan-givat-mordechai','manulan-ramat-sharet','manulan-malha']),
+ ('יישובים בסביבה','#EEF0FB','#312E81',['manulan-givat-zeev','manulan-mevaseret','manulan-maale-adumim','manulan-tzur-hadassah','manulan-abu-gosh','manulan-motza']),
+]
+_PIN='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>'
+_PINs='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>'
+_CAM='<span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>'
+_WA='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
+def _grp(title,bg,ac,slugs):
+    chips=''
+    for sl in slugs:
+        a=AREAS.get(sl)
+        if not a: continue
+        chips+=f'<a href="{sl}.html" style="display:flex;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-decoration:none;box-shadow:var(--sh)"><b style="color:var(--ink);font-size:15px">{a["b"]}</b><span style="color:{ac};font-size:12.5px;font-weight:700">{_PINs} הגעה {a["eta"]}</span></a>'
+    return f'<div style="background:{bg};border-radius:18px;padding:22px;margin-bottom:18px"><h3 style="display:flex;align-items:center;gap:8px;color:{ac};font-size:19px;margin-bottom:14px">{_PIN}{title}</h3><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px">{chips}</div></div>'
+_BAN=[('linear-gradient(135deg,#3B1273,#6D28D9)','שולחים צילום, מקבלים מחיר','צלמו את הדלת או המנעול, שלחו בוואטסאפ, ותוך כמה דקות יש מחיר סגור.',_WA,'שלחו צילום עכשיו'),
+('linear-gradient(135deg,#134E4A,#0F766E)','מנעולן מקומי, לא מוקד ארצי','מי שעונה לטלפון הוא מי שמגיע. אני מכיר כל שכונה וכל סוג דלת בעיר.','tel:+972508307269','חייגו 050-8307269')]
+def _ban(i):
+    g,t,p,href,cta=_BAN[i]; tb=' target="_blank" rel="noopener"' if 'wa.me' in href else ''
+    return f'<section class="adv" style="background:{g};border-radius:18px;margin:4px 0 18px">{_CAM}<b>{t}</b><p>{p}</p><a href="{href}"{tb}>{cta}</a></section>'
+_parts=[]
+for _i,(t,bg,ac,sl) in enumerate(_GROUPS):
+    _parts.append(_grp(t,bg,ac,sl))
+    if _i in (1,3): _parts.append(_ban(_i//2))
+main='<section class="sec sec--white"><div class="wrap"><div class="sh sh--c"><h2>עמודי השכונות והיישובים</h2><p>מידע מקומי, זמני הגעה ומחירים לכל אזור. לחצו על השכונה שלכם.</p></div><div style="max-width:980px;margin-inline:auto">'+''.join(_parts)+'</div></div></section><section class="sec sec--sand"><div class="wrap narrow content"><h2>למה מנעולן מקומי עדיף</h2><p>מנעולן שעובד בירושלים כל יום מכיר את סוגי הדלתות והבניינים בכל שכונה. פלדלת ישנה בקטמון מתנהגת אחרת מדלת חדשה בהר חומה, וזה משפיע על הדרך הנכונה לפתוח בזהירות. וכשאני קרוב, אני גם מגיע מהר, בדרך כלל תוך כ-20 דקות בתוך העיר.</p></div></section>'+CTA
+
 shell("azorei-sherut","אזורי שירות | מנעולן בירושלים והסביבה, ניב",
- "ניב המנעולן עובד בכל שכונות ירושלים, גבעת זאב, מבשרת ציון ומעלה אדומים. הגעה כ-20 דקות בתוך העיר, מחיר נסגר בטלפון. 050-8307269.",
+ "ניב המנעולן עובד בכל שכונות ירושלים, גבעת זאב, מבשרת ציון, מעלה אדומים וצור הדסה. הגעה כ-20 דקות בתוך העיר, מחיר נסגר בטלפון. 050-8307269.",
  "אזורי שירות","כל שכונות ירושלים והיישובים סביב. מגיע עד אליכם, מהר.",main)
