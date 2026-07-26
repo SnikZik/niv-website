@@ -1076,6 +1076,14 @@
   .n6 .pcard .ask{font-size:12px}
 }
 
+
+/* video / customer reviews */
+.n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:900px;margin:0 auto}
+.n6 .vcard{margin:0;background:#000;border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+.n6 .vcard video{width:100%;max-height:520px;display:block;background:#000;aspect-ratio:auto}
+.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:11px 14px;text-align:center}
+@media(max-width:640px){.n6 .vidgrid{grid-template-columns:1fr 1fr;gap:10px}.n6 .vcard video{max-height:360px}}
+
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
@@ -1197,6 +1205,7 @@
     <div style="margin:0 0 18px;border-radius:14px;overflow:hidden;box-shadow:var(--sh)"><iframe loading="lazy" title="אזור השירות של ניב המנעולן בירושלים" src="https://www.google.com/maps?q=%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D&output=embed&z=12" style="border:0;width:100%;height:300px;display:block"></iframe></div>
     <p style="color:var(--iron);font-size:15px;line-height:1.8">פסגת זאב · רמות · גילה · תלפיות · קטמון · בית הכרם · קריית יובל · הר חומה · ארנונה · בקעה · נווה יעקב · וגם גבעת זאב, מבשרת ציון ומעלה אדומים</p>
   </div></section>
+  <section class="sec sec--sand" id="vreviews"><div class="wrap"><div class="sh sh--c"><h2>לקוחות ממליצים</h2><p>ביקורת אמיתית מלקוח ועבודות שצולמו בשטח בירושלים.</p></div><div class="vidgrid"><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/review-1.jpg"><source src="video/review-1.mp4" type="video/mp4"></video><figcaption>ביקורת של לקוח, בזמן אמת</figcaption></figure><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/repair-shelter.jpg"><source src="video/repair-shelter.mp4" type="video/mp4"></video><figcaption>תיקון דלת מקלט</figcaption></figure></div></div></section>
   <section class="sec fcta" style="text-align:center;padding:52px 22px">
     <h2 style="font-size:28px;margin-bottom:10px">רוצים כספת בבית?</h2>
     <p style="margin-bottom:22px;font-size:17px">חייגו, תארו מה קרה, ותקבלו מחיר וזמן הגעה כבר בשיחה.</p>

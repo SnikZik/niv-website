@@ -1054,6 +1054,14 @@
 .n6 .herocta{margin-top:22px}
 .n6 .herocta .btn--call{background:var(--red);color:#fff;font-size:17px;padding:15px 30px;box-shadow:0 10px 30px rgba(176,40,31,.4)}
 @media(min-width:901px){.n6 .herocta{display:flex}.n6 .bighero .herocta{justify-content:center}}
+
+/* video / customer reviews */
+.n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:900px;margin:0 auto}
+.n6 .vcard{margin:0;background:#000;border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+.n6 .vcard video{width:100%;max-height:520px;display:block;background:#000;aspect-ratio:auto}
+.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:11px 14px;text-align:center}
+@media(max-width:640px){.n6 .vidgrid{grid-template-columns:1fr 1fr;gap:10px}.n6 .vcard video{max-height:360px}}
+
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
@@ -1350,6 +1358,7 @@
   </div></section>
 
   <!-- FINAL CTA -->
+  <section class="sec sec--sand" id="vreviews"><div class="wrap"><div class="sh sh--c"><h2>לקוחות ממליצים</h2><p>ביקורת אמיתית מלקוח ועבודות שצולמו בשטח בירושלים.</p></div><div class="vidgrid"><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/review-1.jpg"><source src="video/review-1.mp4" type="video/mp4"></video><figcaption>ביקורת של לקוח, בזמן אמת</figcaption></figure><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/lockout.jpg"><source src="video/lockout.mp4" type="video/mp4"></video><figcaption>פתיחת דלת נעולה</figcaption></figure><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/smart-1.jpg"><source src="video/smart-1.mp4" type="video/mp4"></video><figcaption>התקנת מנעול חכם לדלת</figcaption></figure><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/entrance-1.jpg"><source src="video/entrance-1.mp4" type="video/mp4"></video><figcaption>החלפת דלת כניסה</figcaption></figure></div></div></section>
   <section class="sec fcta" style="text-align:center;padding:58px 22px">
     <h2 style="font-size:30px;margin-bottom:10px">צריכים מנעולן בירושלים?</h2>
     <p style="margin-bottom:24px;font-size:17px">חייגו לניב, תארו מה קרה, ותקבלו הסבר ומחיר לפני שיוצאים אליכם.</p>
