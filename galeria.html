@@ -1059,7 +1059,7 @@
 .n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:900px;margin:0 auto}
 .n6 .vcard{margin:0;background:#000;border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
 .n6 .vcard video{width:100%;max-height:520px;display:block;background:#000;aspect-ratio:auto}
-.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:11px 14px;text-align:center}
+.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:12.5px;line-height:1.35;padding:8px 10px;text-align:center}
 @media(max-width:640px){.n6 .vidgrid{grid-template-columns:1fr 1fr;gap:10px}.n6 .vcard video{max-height:360px}}
 
 
@@ -1102,8 +1102,8 @@
 /* v23: video play overlay + no black */
 .n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;background:#111;display:block}
 .n6 .vcard{position:relative}
-.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
-.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 26px);inset-inline-start:calc(50% - 26px);width:52px;height:52px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 9px);inset-inline-start:calc(50% - 6px);border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
 .n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
 
 
@@ -1130,15 +1130,15 @@
 
 </style>
 <style>
-.n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:1140px;margin:0 auto;align-items:start}
+.n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;max-width:1080px;margin:0 auto;align-items:start}
 .n6 .vcard{margin:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--sh);position:relative}
-.n6 .vcard img,.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;display:block;background:#111}
-.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:11px 14px;text-align:center}
+.n6 .vcard img,.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:240px;object-fit:cover;display:block;background:#111}
+.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:12.5px;line-height:1.35;padding:8px 10px;text-align:center}
 .n6 .vcard--vid{background:#111}
-.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
-.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 26px);inset-inline-start:calc(50% - 26px);width:52px;height:52px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 9px);inset-inline-start:calc(50% - 6px);border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
 .n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
-@media(max-width:640px){.n6 .vidgrid{grid-template-columns:1fr 1fr;gap:10px}}
+@media(max-width:640px){.n6 .vidgrid{grid-template-columns:repeat(3,1fr);gap:8px}.n6 .vcard img,.n6 .vcard video{max-height:170px}}
 </style>
 </head>
 <body>
