@@ -1098,11 +1098,20 @@
 .n6 .introbox__img{width:100%!important;display:block;object-fit:cover}
 @media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}.n6 .introbox__img{height:180px!important}}
 
+
+/* v23: video play overlay + no black */
+.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;background:#111;display:block}
+.n6 .vcard{position:relative}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
+
 </style>
 <style>
 .lp-hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}
 .lp-hero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
-.lp-hero__ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,13,11,.35) 0%,rgba(15,13,11,.55) 55%,rgba(15,13,11,.9) 100%)}
+.lp-hero__ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,13,11,.15) 0%,rgba(15,13,11,.25) 45%,rgba(15,13,11,.85) 100%)}
+.lp-hero__top{position:absolute;top:16px;inset-inline-start:22px;z-index:3;background:var(--red);color:#fff;font-weight:800;font-size:13px;padding:6px 14px;border-radius:999px}
 .lp-hero__c{position:relative;z-index:2;color:#fff;max-width:1140px;margin-inline:auto;width:100%;padding:0 22px 44px}
 .lp-hero .kick{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:14px}
 .lp-hero h1{color:#fff;font-size:40px;line-height:1.12;max-width:720px;text-shadow:0 2px 16px rgba(0,0,0,.6)}
@@ -1156,13 +1165,12 @@
   <section class="lp-hero">
     <img class="lp-hero__bg" src="img/work/entrance-niv.jpg" alt="ניב מתקין דלת כניסה חדשה בירושלים">
     <div class="lp-hero__ov" aria-hidden="true"></div>
+    <span class="lp-hero__top">מותקנת אישית על ידי ניב</span>
     <div class="lp-hero__c">
-      <span class="kick">מותקנת אישית על ידי ניב</span>
       <h1>התקנת דלת כניסה בירושלים</h1>
-      <p>דלת שנתקעת, משקוף שהחליד, או פשוט בא לכם משהו חדש ויפה? אני מגיע, מפרק את הישנה ומתקין דלת שנסגרת חלק ונראית מצוין. מחיר סגור בטלפון, בלי הפתעות.</p>
+      <p>דלת חדשה שמותקנת נכון, נסגרת חלק ונראית מצוין. מחיר סגור בטלפון.</p>
       <div class="lp-cta">
         <a class="btn btn--call btn--lg" href="tel:+972508307269">חייגו עכשיו 050-8307269</a>
-        <a class="btn btn--wa btn--lg" href="https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91%2C%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%93%D7%9C%D7%AA%20%D7%9B%D7%A0%D7%99%D7%A1%D7%94" target="_blank" rel="noopener">שלחו צילום של הדלת</a>
       </div>
     </div>
   </section>
@@ -1170,8 +1178,8 @@
   <!-- 2. NIV -->
   <section class="lp-niv"><div class="lp-niv__in" style="grid-template-columns:1fr;max-width:760px;text-align:center"><div>
       <h2>נעים להכיר, אני ניב</h2>
-      <p>מנעולן מוסמך שעובד בירושלים, ומגיע בעצמו לכל עבודה. אין אצלי מוקד ואין קבלני משנה, מי שמדבר איתכם בטלפון הוא מי שמתקין לכם את הדלת.</p>
-      <p>אני מתקין דלתות כניסה כבר הרבה בתים בעיר, ואני לא עוזב עד שהדלת נסגרת ונעולה בדיוק כמו שצריך. <a href="tzuda-manulan.html" style="color:var(--red);font-weight:800">צפו בתעודת המנעולן שלי ›</a></p>
+      <p>אני מתקין ומחליף דלתות כניסה בירושלים, ומגיע בעצמו לכל עבודה, בלי מוקד ובלי קבלני משנה. מפרק את הדלת הישנה, מתקין את החדשה עם המשקוף והמנעול, ולא עוזב עד שהכל נסגר ונעול חלק.</p>
+      <p>לדלת כניסה יש משמעות אחת שאי אפשר להתפשר עליה, אבטחה. אני מתאים לכם דלת שמתאימה לפתח, לסגנון הבית ולרמת האבטחה שאתם רוצים, ומרכיב אותה כמו שצריך מהפעם הראשונה. <a href="tzuda-manulan.html" style="color:var(--red);font-weight:800">צפו בתעודת המנעולן שלי ›</a></p>
     </div>
   </div></section>
 
@@ -1244,5 +1252,6 @@ document.querySelectorAll('#cat-rotate .rotslot').forEach(function(sl){
 });
 })();
 </script>
+<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".vcard video").forEach(function(v){var f=v.closest(".vcard");if(!f)return;f.classList.add("vcard--vid");v.addEventListener("play",function(){f.classList.add("playing")});v.addEventListener("pause",function(){f.classList.remove("playing")});v.addEventListener("ended",function(){f.classList.remove("playing")});});});</script>
 </body>
 </html>

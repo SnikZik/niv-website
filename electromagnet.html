@@ -1104,6 +1104,14 @@
 .n6 .float .fr{background:#6D28D9;color:#fff}
 .n6 .float .fr:hover{background:#5B21B6}
 
+
+/* v23: video play overlay + no black */
+.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;background:#111;display:block}
+.n6 .vcard{position:relative}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
+
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
@@ -1260,5 +1268,6 @@ document.querySelectorAll('.faq__q').forEach(function(b){b.addEventListener('cli
 var bg=document.querySelector('.burger'),nv=document.getElementById('niv-mainnav');
 if(bg&&nv){bg.addEventListener('click',function(){var o=bg.getAttribute('aria-expanded')==='true';bg.setAttribute('aria-expanded',(!o).toString());nv.classList.toggle('open',!o);document.body.classList.toggle('navopen',!o);});}
 </script>
+<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".vcard video").forEach(function(v){var f=v.closest(".vcard");if(!f)return;f.classList.add("vcard--vid");v.addEventListener("play",function(){f.classList.add("playing")});v.addEventListener("pause",function(){f.classList.remove("playing")});v.addEventListener("ended",function(){f.classList.remove("playing")});});});</script>
 </body>
 </html>
