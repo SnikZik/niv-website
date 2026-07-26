@@ -1,0 +1,136 @@
+{
+ "broken_images": [],
+ "stock_about_images": [],
+ "missing_uniform_css": [],
+ "missing_blackgap_css": [],
+ "missing_playoverlay": [],
+ "third_person": [],
+ "reviews_with_workvideo": [],
+ "homepage_order": [
+  "hero",
+  "intro",
+  "reviews",
+  "areas",
+  "services",
+  "catalog",
+  "work"
+ ],
+ "service_reviews_index": [
+  {
+   "file": "pritzat-dlatot.html",
+   "idx": 2
+  },
+  {
+   "file": "tzilinder.html",
+   "idx": 2
+  },
+  {
+   "file": "tikun-dlatot.html",
+   "idx": 2
+  },
+  {
+   "file": "mamad.html",
+   "idx": 2
+  },
+  {
+   "file": "manul-hacham.html",
+   "idx": 2
+  },
+  {
+   "file": "mafteah-shavur.html",
+   "idx": 2
+  },
+  {
+   "file": "ksafot.html",
+   "idx": 2
+  },
+  {
+   "file": "manulan-herum.html",
+   "idx": 2
+  },
+  {
+   "file": "pladelet.html",
+   "idx": 2
+  },
+  {
+   "file": "yadiot-ledelet.html",
+   "idx": 2
+  },
+  {
+   "file": "hatkanat-manulim.html",
+   "idx": 2
+  },
+  {
+   "file": "electromagnet.html",
+   "idx": 2
+  },
+  {
+   "file": "mahzirei-delet.html",
+   "idx": 2
+  },
+  {
+   "file": "rav-bariach.html",
+   "idx": 2
+  },
+  {
+   "file": "tikun-mamad.html",
+   "idx": 2
+  },
+  {
+   "file": "kivun-dlatot-pnim.html",
+   "idx": 2
+  },
+  {
+   "file": "dlatot-hutz.html",
+   "idx": 2
+  },
+  {
+   "file": "hatkanat-mamad.html",
+   "idx": 2
+  },
+  {
+   "file": "hatkanat-ksafot.html",
+   "idx": 2
+  },
+  {
+   "file": "yadiyot-bahala.html",
+   "idx": 2
+  }
+ ],
+ "about_distinct_openings": 5,
+ "catalog_ok": {
+  "katalog-ksafot has catprod": true,
+  "katalog.html has ccard__img": true,
+  "katalog.html has services heading": true,
+  "product has complementary section": true,
+  "rotation_has cat-rotate id": true,
+  "rotation_rotslot count": 4,
+  "rotation_has var POOL": true
+ },
+ "footer_ok": {
+  "has ft__g": true,
+  "has v25 footer marker": true,
+  "has ft::before": true,
+  "embossed logo img/logo.png": true
+ },
+ "entrance_ok": {
+  "h1": "התקנת דלת כניסה בירושלים",
+  "h1_correct": true,
+  "lp-hero__top badge": true,
+  "lp-hero no whatsapp": true,
+  "lp-niv no img": true,
+  "gallery before before/after": true,
+  "gallery_pos": 313530,
+  "beforeafter_pos": 315129
+ },
+ "banned": [],
+ "dashes": [],
+ "live_image_status": {
+  "img/niv/intro-banner.jpg": 200,
+  "img/niv/niv-working-2.jpg": 200,
+  "img/work/entrance-niv.jpg": 200,
+  "img/work/entrance-green.jpg": 200,
+  "img/logo.png": 200,
+  "img/niv-certificate.jpg": 200
+ }
+}
