@@ -1084,6 +1084,26 @@
   .n6 .artcta a{width:100%;justify-content:center;display:flex}
 }
 
+
+/* v20: mobile header, keep 24/7 + cert link in flow (no overlap) */
+@media(max-width:980px){
+  .n6 .hd__cta{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+  .n6 .hd__cta .badge247{position:static!important;transform:none!important;margin-top:0!important;inset-inline-start:auto!important;inset-inline-end:auto!important}
+}
+@media(max-width:560px){
+  .n6 .hd__cta .badge247{padding:4px 8px}
+  .n6 .hd__cta .badge247 b{font-size:12px}
+  .n6 .hd__cta .badge247 em{font-size:8.5px}
+  .n6 .hd__cta a[href="tzuda-manulan.html"]{padding:4px 8px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] b{font-size:12px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] em{font-size:8.5px!important}
+}
+
+
+/* v20b: reviews float button */
+.n6 .float .fr{background:#6D28D9;color:#fff}
+.n6 .float .fr:hover{background:#5B21B6}
+
 </style>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
@@ -1205,6 +1225,7 @@
 <div class="float">
     <a class="fc" href="tel:+972508307269" aria-label="חייגו לניב"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></a>
     <a class="fw" href="https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91" target="_blank" rel="noopener" aria-label="שלחו WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 21l2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg></a>
+    <a class="fr" href="index.html#vreviews" onclick="var e=document.getElementById('vreviews');if(e){e.scrollIntoView({behavior:'smooth'});history.replaceState(null,'','#vreviews');return false;}" aria-label="לקוחות ממליצים" title="לקוחות ממליצים"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.9 6.2 21l1.1-6.5L2.6 9.9l6.5-.9z"/></svg></a>
   </div>
 
   

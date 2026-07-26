@@ -1063,3 +1063,21 @@
 .n6 .qa h3::before{content:"שאלה  ";color:var(--red);font-weight:800;font-size:13px}
 .n6 .qa p{font-size:15.5px;line-height:1.7;color:var(--iron);margin:0}
 @media(max-width:640px){ .n6 .qa{padding:14px 16px} .n6 .qa h3{font-size:16px} }
+
+/* v20: mobile header, keep 24/7 + cert link in flow (no overlap) */
+@media(max-width:980px){
+  .n6 .hd__cta{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+  .n6 .hd__cta .badge247{position:static!important;transform:none!important;margin-top:0!important;inset-inline-start:auto!important;inset-inline-end:auto!important}
+}
+@media(max-width:560px){
+  .n6 .hd__cta .badge247{padding:4px 8px}
+  .n6 .hd__cta .badge247 b{font-size:12px}
+  .n6 .hd__cta .badge247 em{font-size:8.5px}
+  .n6 .hd__cta a[href="tzuda-manulan.html"]{padding:4px 8px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] b{font-size:12px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] em{font-size:8.5px!important}
+}
+
+/* v20b: reviews float button */
+.n6 .float .fr{background:#6D28D9;color:#fff}
+.n6 .float .fr:hover{background:#5B21B6}
