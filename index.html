@@ -1095,8 +1095,9 @@
 
 
 /* v22: intro banner clean full-width */
-.n6 .introbox__img{width:100%!important;display:block;object-fit:cover}
-@media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}.n6 .introbox__img{height:180px!important}}
+.n6 .introbox__img{width:100%!important;height:auto!important;display:block;object-fit:contain}
+@media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}}
+@media(max-width:720px){.n6 .introbox{grid-template-columns:1fr!important}.n6 .introbox__img{max-width:280px;margin:0 auto}}
 
 
 /* v23: video play overlay + no black */
@@ -1185,12 +1186,12 @@
     <div class="badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg><b>ישירות<em>עם ניב</em></b></div>
   </div>
   <section class="sec sec--white" style="padding:46px 0 10px"><div class="wrap narrow">
-    <div class="defbox introbox" style="background:var(--white);border:1px solid var(--line);border-inline-start:4px solid var(--red);border-radius:12px;padding:0;box-shadow:var(--sh);overflow:hidden">
-      <img src="img/niv/intro-banner.jpg" alt="ניב, מנעולן לדלתות בירושלים, בעבודה" loading="lazy" style="width:100%;height:230px;object-fit:cover;object-position:center 30%;display:block" class="introbox__img">
-      <div style="padding:22px 24px"><h2 style="font-size:22px;margin-bottom:8px">מנעולן לדלתות בירושלים, מגיע תוך 20 דקות</h2>
+    <div class="defbox introbox" style="background:var(--white);border:1px solid var(--line);border-inline-start:4px solid var(--red);border-radius:12px;padding:22px 24px;box-shadow:var(--sh);display:grid;grid-template-columns:1fr 300px;gap:26px;align-items:center">
+      <div><h2 style="font-size:22px;margin-bottom:8px">מנעולן לדלתות בירושלים, מגיע תוך 20 דקות</h2>
       <p style="margin:0;font-size:16.5px">אני ניב, מנעולן לדלתות בירושלים והסביבה. פותח דלתות נעולות בזהירות, מחליף צילינדרים, מתקן מנגנונים ומתקין מנעולים חכמים, בבית ובעסק. זמין 24/7, מגיע בדרך כלל תוך כ-20 דקות בתוך העיר, והמחיר נסגר בטלפון לפני שאני יוצא. <a href="sherutim.html">כל השירותים</a> · <a href="mehiron.html">מחירון מלא</a></p>
     </div>
-  </div></section>
+      <img src="img/niv/niv-portrait.jpg" alt="ניב, מנעולן לדלתות בירושלים" loading="lazy" class="introbox__img" style="width:100%;height:auto;border-radius:12px;display:block">
+    </div></section>
   <section class="sec sec--sand" id="vreviews"><div class="wrap"><div class="sh sh--c"><h2>לקוחות ממליצים</h2></div><div class="vidgrid" style="max-width:760px;grid-template-columns:repeat(2,1fr)"><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/review-1.jpg"><source src="video/review-1.mp4" type="video/mp4"></video><figcaption>ביקורת של לקוח שהזמין מנעולן בירושלים</figcaption></figure><figure class="vcard"><video controls preload="none" playsinline poster="video/posters/review-2.jpg"><source src="video/review-2.mp4" type="video/mp4"></video><figcaption>ביקורת של לקוחה על מנעולן בירושלים</figcaption></figure></div></div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="narrow prose" style="margin-bottom:34px">
