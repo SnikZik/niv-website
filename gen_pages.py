@@ -37,6 +37,13 @@ extra='''
 .n6 .cway .btn{width:100%;justify-content:center}
 @media(max-width:640px){.n6 .cways{grid-template-columns:1fr}.n6 .phero h1{font-size:27px}}
 '''
+extra=extra+'''.n6 .scard--img{padding:0;overflow:hidden}
+.n6 .scard--img .scard__img{display:block;height:150px;overflow:hidden;background:#EEF1F4}
+.n6 .scard--img .scard__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .2s}
+.n6 .scard--img:hover .scard__img img{transform:scale(1.04)}
+.n6 .scard--img .scard__b{display:flex;flex-direction:column;gap:6px;padding:16px 18px}
+@media(max-width:640px){.n6 .scard--img .scard__img{height:120px}}
+'''
 style=style.replace('</style>',extra+'\n</style>')
 
 def shell(slug,title,meta,h1,intro,main,ld=None):
@@ -229,7 +236,7 @@ cards=[("pritzat-dlatot","פריצת דלתות","ננעלתם בחוץ, המפ�
 ("pladelet","דלת פלדלת + משקוף","התקנה והחלפה של פלדלת, כולל המשקוף."),
 ("rav-bariach","מנעול רב בריח","רב בריח שנתקע או התיישן בפלדלת."),
 ("manulan-herum","מנעולן חירום 24/7","מגיע בדרך כלל תוך כ-20 דקות, יום ולילה.")]
-scards="".join(f'<a class="scard" href="{s}.html"><h3>{t}</h3><p>{p}</p><span class="scard__l">לעמוד השירות ›</span></a>' for s,t,p in cards)
+scards="".join(f'<a class="scard scard--img" href="{s}.html"><span class="scard__img"><img src="img/{s}.jpg" alt="{t} בירושלים" loading="lazy"></span><span class="scard__b"><h3>{t}</h3><p>{p}</p><span class="scard__l">לעמוד השירות ›</span></span></a>' for s,t,p in cards)
 main=f'''
   <section class="sec sec--white" style="padding-top:34px"><div class="wrap">
     <div class="scards">{scards}</div>
