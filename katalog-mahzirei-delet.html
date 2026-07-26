@@ -1099,6 +1099,44 @@
 @media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}.n6 .introbox__img{height:180px!important}}
 
 
+/* v23: video play overlay + no black */
+.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;background:#111;display:block}
+.n6 .vcard{position:relative}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
+
+
+/* v23b: no black gaps in media grid */
+.n6 .vidgrid{align-items:start}
+.n6 .vcard{background:#fff}
+.n6 .vcard--vid{background:#111}
+
+
+/* v24: uniform media card size (img + video identical) */
+.n6 .vcard img,.n6 .vcard video{width:100%!important;aspect-ratio:3/4!important;max-height:none!important;object-fit:cover!important;display:block}
+
+
+/* v25: footer balanced + embossed logo */
+.n6 .ft{position:relative;overflow:hidden}
+.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
+.n6 .ft__g{position:relative;z-index:1}
+@media(min-width:901px){
+  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
+  .n6 .ft__brand{grid-column:auto!important}
+  .n6 .ft__brand p{max-width:300px}
+}
+@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
+
+
+/* v26: cap media card size on desktop (not huge) */
+@media(min-width:641px){
+  .n6 .vidgrid{grid-template-columns:repeat(auto-fill,minmax(180px,220px))!important;justify-content:center;gap:16px}
+  .n6 .vcard{max-width:220px;margin-inline:auto}
+  .n6 .vcard video,.n6 .vcard img{max-height:300px!important}
+}
+
+
 /* ===== v18: compact product cards, mobile 2-col ===== */
 .n6 .pcard__img{height:112px}
 @media(max-width:900px){
@@ -1152,18 +1190,6 @@ a.pcard{text-decoration:none}
   .n6 .phero h1{font-size:27px}
 }
 @media(max-width:560px){ .n6 .pgrid{grid-template-columns:1fr} }
-
-
-/* v25: footer balanced + embossed logo */
-.n6 .ft{position:relative;overflow:hidden}
-.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
-.n6 .ft__g{position:relative;z-index:1}
-@media(min-width:901px){
-  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
-  .n6 .ft__brand{grid-column:auto!important}
-  .n6 .ft__brand p{max-width:300px}
-}
-@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
 
 </style>
 </head>

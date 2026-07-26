@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re,json,sys
+import re,json,sys,os
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from services_deep import DEEP,T
 
@@ -11,8 +11,10 @@ footer=re.search(r'<footer class="ft">.*?</footer>',src,re.S).group(0)
 flt=re.search(r'<div class="float">.*?</div>\s*(?=<div class="smob">)',src,re.S).group(0)
 smob=re.search(r'<div class="smob">.*?</div>\s*(?=</div>)',src,re.S).group(0)
 js=re.search(r'<script>.*?</script>',src,re.S).group(0)
+js=js.replace('.vcard video','.vcard video, .shero__vid video')  # hero videos get play-overlay toggle too
 hero1=re.search(r'class="bighero__bg" src="(data:[^"]+)"',src).group(1)
-hero2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src).group(1)
+m2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src)
+hero2=m2.group(1) if m2 else 'img/niv/niv-portrait.jpg'  # site moved to real Niv photos (file paths)
 
 # service-page CSS (split hero with image + deep + reviews)
 extra_css='''
@@ -51,6 +53,12 @@ extra_css='''
   .n6 .scards--rel{grid-template-columns:1fr 1fr}
   .n6 .svcrev{grid-template-columns:1fr}
 }
+/* v27: service hero media (Niv video/real photo instead of stock) */
+.n6 .shero__img{position:relative}
+.n6 .shero__vid video{border-radius:18px;box-shadow:var(--sh2);width:100%;height:100%;object-fit:cover;max-height:420px;display:block;background:#111}
+.n6 .shero__vid.playing::after,.n6 .shero__vid.playing::before{opacity:0}
+.n6 .shero__vid::after{content:"";position:absolute;top:calc(50% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4);transition:opacity .2s}
+.n6 .shero__vid::before{content:"";position:absolute;top:calc(50% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
 /* availability line */
 .n6 .avail{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink);margin-bottom:14px}
 .n6 .avail .dot{width:10px;height:10px;border-radius:50%;background:#0A7536;box-shadow:0 0 0 3px rgba(10,117,54,.18);flex:none}
@@ -104,6 +112,26 @@ try:
 except ImportError:
     pass
 
+# service-page hero media: Niv video (preferred) or real photo, else stock img/<slug>.jpg
+HERO={
+ 'pritzat-dlatot':('v','lockout'),'tzilinder':('i','work/cylinder'),'tikun-dlatot':('v','repair-fire'),
+ 'mamad':('v','repair-shelter'),'manul-hacham':('v','smart-1'),'mafteah-shavur':('v','lockout'),
+ 'ksafot':('i','niv/niv-working-2'),'manulan-herum':('v','lockout'),'pladelet':('v','entrance-1'),
+ 'yadiot-ledelet':('i','work/extra-lock'),'hatkanat-manulim':('v','smart-1'),'electromagnet':('v','keypad-gate'),
+ 'mahzirei-delet':('i','niv/niv-working-1'),'rav-bariach':('i','niv/niv-working-2'),'tikun-mamad':('v','repair-shelter'),
+ 'kivun-dlatot-pnim':('v','repair-fire'),'dlatot-hutz':('v','entrance-1'),'hatkanat-mamad':('v','repair-shelter'),
+ 'hatkanat-ksafot':('i','niv/niv-working-2'),'yadiyot-bahala':('v','keypad-1'),
+}
+def hero_media(slug,dp):
+    alt=f"{dp['svc_type']} בירושלים, ניב המנעולן"
+    if slug in HERO:
+        typ,m=HERO[slug]
+        if typ=='v':
+            return (f'<div class="shero__img shero__vid"><video controls preload="metadata" playsinline '
+                    f'poster="video/posters/{m}.jpg"><source src="video/{m}.mp4" type="video/mp4"></video></div>')
+        return f'<div class="shero__img"><img src="img/{m}.jpg" alt="{alt}" loading="eager"></div>'
+    return f'<div class="shero__img"><img src="img/{slug}.jpg" alt="{alt}" loading="eager"></div>'
+
 def schema(slug,d,dp):
     url=f'{BASE}/{slug}.html'
     biz={"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269",
@@ -152,7 +180,7 @@ def page(slug,d):
       <div class="hchecks">{checks}</div>
       <p class="updated">מאת ניב, מנעולן מקצועי · עודכן ביולי 2026</p>
     </div>
-    <div class="shero__img"><img src="img/{slug}.jpg" alt="{dp['svc_type']} בירושלים, ניב המנעולן" loading="eager"></div>
+    {hero_media(slug,dp)}
   </div></section>
   <section class="sec sec--white"><div class="wrap narrow">
     <div class="defbox"><h2>{dp["def_h"]}</h2><p>{dp["def"]}</p></div>

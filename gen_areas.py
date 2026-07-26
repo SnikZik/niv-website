@@ -11,7 +11,8 @@ footer=re.search(r'<footer class="ft">.*?</footer>',src,re.S).group(0)
 flt=re.search(r'<div class="float">.*?</div>\s*(?=<div class="smob">)',src,re.S).group(0)
 smob=re.search(r'<div class="smob">.*?</div>\s*(?=</div>)',src,re.S).group(0)
 js=re.search(r'<script>.*?</script>',src,re.S).group(0)
-hero2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src).group(1)
+_m2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src)
+hero2=_m2.group(1) if _m2 else 'img/niv/niv-portrait.jpg'
 BASE='https://snikzik.github.io/niv-website'
 W='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 PH='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>'
@@ -97,7 +98,7 @@ def page(i,slug,d):
       <a class="btn btn--call btn--lg" href="tel:+972508307269">{PH}חייגו לניב עכשיו</a>
       <a class="btn btn--wa btn--lg" href="{W}" target="_blank" rel="noopener">{WA}שלחו צילום ב-WhatsApp</a>
     </div>
-    <div class="pchip" style="margin-top:16px"><b>פריצת דלת מ-300₪</b><span>המחיר נסגר בטלפון, לפני שאני יוצא</span></div>
+    <div class="pchip" style="margin-top:16px"><b>פריצת דלת מ-350₪</b><span>המחיר נסגר בטלפון, לפני שאני יוצא</span></div>
     <p class="sub">{d["sub"]}</p>
     <div class="hchecks" style="margin-top:16px">{checks}</div>
   </div></section>

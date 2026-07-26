@@ -1055,6 +1055,88 @@
 .n6 .herocta .btn--call{background:var(--red);color:#fff;font-size:17px;padding:15px 30px;box-shadow:0 10px 30px rgba(176,40,31,.4)}
 @media(min-width:901px){.n6 .herocta{display:flex}.n6 .bighero .herocta{justify-content:center}}
 
+/* video / customer reviews */
+.n6 .vidgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:900px;margin:0 auto}
+.n6 .vcard{margin:0;background:#000;border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+.n6 .vcard video{width:100%;max-height:520px;display:block;background:#000;aspect-ratio:auto}
+.n6 .vcard figcaption{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:11px 14px;text-align:center}
+@media(max-width:640px){.n6 .vidgrid{grid-template-columns:1fr 1fr;gap:10px}.n6 .vcard video{max-height:360px}}
+
+
+
+
+
+/* v20: mobile header, keep 24/7 + cert link in flow (no overlap) */
+@media(max-width:980px){
+  .n6 .hd__cta{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+  .n6 .hd__cta .badge247{position:static!important;transform:none!important;margin-top:0!important;inset-inline-start:auto!important;inset-inline-end:auto!important}
+}
+@media(max-width:560px){
+  .n6 .hd__cta .badge247{padding:4px 8px}
+  .n6 .hd__cta .badge247 b{font-size:12px}
+  .n6 .hd__cta .badge247 em{font-size:8.5px}
+  .n6 .hd__cta a[href="tzuda-manulan.html"]{padding:4px 8px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] b{font-size:12px!important}
+  .n6 .hd__cta a[href="tzuda-manulan.html"] em{font-size:8.5px!important}
+}
+
+
+/* v20b: reviews float button */
+.n6 .float .fr{background:#6D28D9;color:#fff}
+.n6 .float .fr:hover{background:#5B21B6}
+
+
+/* v21: homepage image fixes */
+.n6 #cat-rotate .pcard{overflow:hidden}
+.n6 #cat-rotate .pcard__img{height:150px!important;background:#fff;margin:-20px -20px 10px}
+.n6 #cat-rotate .pcard__img img{object-fit:contain!important;padding:10px}
+.n6 .about__img--wide{aspect-ratio:16/10!important;max-height:none!important}
+@media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}}
+
+
+/* v22: intro banner clean full-width */
+.n6 .introbox__img{width:100%!important;display:block;object-fit:cover}
+@media(max-width:640px){.n6 #cat-rotate .pcard__img{height:120px!important;margin:-12px -12px 8px}.n6 .introbox__img{height:180px!important}}
+
+
+/* v23: video play overlay + no black */
+.n6 .vcard video{width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;background:#111;display:block}
+.n6 .vcard{position:relative}
+.n6 .vcard--vid::after{content:"";position:absolute;top:calc(38% - 34px);inset-inline-start:calc(50% - 34px);width:68px;height:68px;border-radius:50%;background:rgba(176,40,31,.92);pointer-events:none;transition:opacity .2s,transform .2s;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.n6 .vcard--vid::before{content:"";position:absolute;top:calc(38% - 12px);inset-inline-start:calc(50% - 8px);border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff;pointer-events:none;z-index:4;transition:opacity .2s}
+.n6 .vcard--vid.playing::after,.n6 .vcard--vid.playing::before{opacity:0}
+
+
+/* v23b: no black gaps in media grid */
+.n6 .vidgrid{align-items:start}
+.n6 .vcard{background:#fff}
+.n6 .vcard--vid{background:#111}
+
+
+/* v24: uniform media card size (img + video identical) */
+.n6 .vcard img,.n6 .vcard video{width:100%!important;aspect-ratio:3/4!important;max-height:none!important;object-fit:cover!important;display:block}
+
+
+/* v25: footer balanced + embossed logo */
+.n6 .ft{position:relative;overflow:hidden}
+.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
+.n6 .ft__g{position:relative;z-index:1}
+@media(min-width:901px){
+  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
+  .n6 .ft__brand{grid-column:auto!important}
+  .n6 .ft__brand p{max-width:300px}
+}
+@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
+
+
+/* v26: cap media card size on desktop (not huge) */
+@media(min-width:641px){
+  .n6 .vidgrid{grid-template-columns:repeat(auto-fill,minmax(180px,220px))!important;justify-content:center;gap:16px}
+  .n6 .vcard{max-width:220px;margin-inline:auto}
+  .n6 .vcard video,.n6 .vcard img{max-height:300px!important}
+}
+
+
 .n6 .bc{background:#fff;border-bottom:1px solid var(--line);font-size:13.5px;padding:8px 0}
 .n6 .bc .wrap{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .n6 .bc a{color:var(--iron)} .n6 .bc b{color:var(--ink);font-weight:700}
@@ -1083,38 +1165,6 @@
 .n6 .scard--img:hover .scard__img img{transform:scale(1.04)}
 .n6 .scard--img .scard__b{display:flex;flex-direction:column;gap:6px;padding:16px 18px}
 @media(max-width:640px){.n6 .scard--img .scard__img{height:120px}}
-
-
-/* v20: mobile header, keep 24/7 + cert link in flow (no overlap) */
-@media(max-width:980px){
-  .n6 .hd__cta{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
-  .n6 .hd__cta .badge247{position:static!important;transform:none!important;margin-top:0!important;inset-inline-start:auto!important;inset-inline-end:auto!important}
-}
-@media(max-width:560px){
-  .n6 .hd__cta .badge247{padding:4px 8px}
-  .n6 .hd__cta .badge247 b{font-size:12px}
-  .n6 .hd__cta .badge247 em{font-size:8.5px}
-  .n6 .hd__cta a[href="tzuda-manulan.html"]{padding:4px 8px!important}
-  .n6 .hd__cta a[href="tzuda-manulan.html"] b{font-size:12px!important}
-  .n6 .hd__cta a[href="tzuda-manulan.html"] em{font-size:8.5px!important}
-}
-
-
-/* v20b: reviews float button */
-.n6 .float .fr{background:#6D28D9;color:#fff}
-.n6 .float .fr:hover{background:#5B21B6}
-
-
-/* v25: footer balanced + embossed logo */
-.n6 .ft{position:relative;overflow:hidden}
-.n6 .ft::before{content:"";position:absolute;inset-inline-end:6%;bottom:-40px;width:300px;height:280px;background:url("img/logo.png") center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}
-.n6 .ft__g{position:relative;z-index:1}
-@media(min-width:901px){
-  .n6 .ft__g{grid-template-columns:1.7fr 1fr 1fr 1fr 1fr!important;gap:40px 34px;align-items:start;max-width:1200px;margin-inline:auto;padding:52px 22px 30px}
-  .n6 .ft__brand{grid-column:auto!important}
-  .n6 .ft__brand p{max-width:300px}
-}
-@media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
 
 </style>
 </head>
@@ -1149,7 +1199,7 @@
   <section class="phero"><div class="wrap"><h1>שירותי מנעולן בירושלים</h1><p>כל תקלת דלת ומנעול, בבית ובעסק. לחצו על שירות למחירים ופרטים.</p></div></section>
 
   <section class="sec sec--white" style="padding-top:34px"><div class="wrap">
-    <div class="scards"><a class="scard scard--img" href="pritzat-dlatot.html"><span class="scard__img"><img src="img/pritzat-dlatot.jpg" alt="פריצת דלתות בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת דלתות</h3><p>ננעלתם בחוץ, המפתח אבד או נשבר בפנים.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="tzilinder.html"><span class="scard__img"><img src="img/tzilinder.jpg" alt="החלפת צילינדר בירושלים" loading="lazy"></span><span class="scard__b"><h3>החלפת צילינדר</h3><p>צילינדר תקוע, ישן, או אחרי מעבר דירה.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="tikun-dlatot.html"><span class="scard__img"><img src="img/tikun-dlatot.jpg" alt="תיקון דלתות בירושלים" loading="lazy"></span><span class="scard__b"><h3>תיקון דלתות</h3><p>דלת שלא ננעלת, ידית רפויה, מנגנון שנתקע.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="mamad.html"><span class="scard__img"><img src="img/mamad.jpg" alt="פריצת דלת ממ״ד בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת דלת ממ״ד</h3><p>דלת ממ״ד נעולה או מנגנון שנתקע.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="ksafot.html"><span class="scard__img"><img src="img/ksafot.jpg" alt="פריצת כספות בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת כספות</h3><p>כספת ביתית או עסקית שלא נפתחת.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="manul-hacham.html"><span class="scard__img"><img src="img/manul-hacham.jpg" alt="מנעול חכם בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעול חכם</h3><p>מנעול קוד, טביעת אצבע או אפליקציה.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="mahzirei-delet.html"><span class="scard__img"><img src="img/mahzirei-delet.jpg" alt="מחזירי דלת בירושלים" loading="lazy"></span><span class="scard__b"><h3>מחזירי דלת</h3><p>מחזיר עילי, נסתר או רצפתי, כולל כיוון.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="electromagnet.html"><span class="scard__img"><img src="img/electromagnet.jpg" alt="אלקטרומגנט בירושלים" loading="lazy"></span><span class="scard__b"><h3>אלקטרומגנט</h3><p>נעילה מגנטית לכניסות בניין ומשרד.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="yadiyot-bahala.html"><span class="scard__img"><img src="img/yadiyot-bahala.jpg" alt="ידיות בהלה בירושלים" loading="lazy"></span><span class="scard__b"><h3>ידיות בהלה</h3><p>יציאות חירום לפי תקן, לעסקים ומוסדות.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="pladelet.html"><span class="scard__img"><img src="img/pladelet.jpg" alt="דלת פלדלת + משקוף בירושלים" loading="lazy"></span><span class="scard__b"><h3>דלת פלדלת + משקוף</h3><p>התקנה והחלפה של פלדלת, כולל המשקוף.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="rav-bariach.html"><span class="scard__img"><img src="img/rav-bariach.jpg" alt="מנעול רב בריח בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעול רב בריח</h3><p>רב בריח שנתקע או התיישן בפלדלת.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="manulan-herum.html"><span class="scard__img"><img src="img/manulan-herum.jpg" alt="מנעולן חירום 24/7 בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעולן חירום 24/7</h3><p>מגיע בדרך כלל תוך כ-20 דקות, יום ולילה.</p><span class="scard__l">לעמוד השירות ›</span></span></a></div>
+    <div class="scards"><a class="scard scard--img" href="pritzat-dlatot.html"><span class="scard__img"><img src="img/pritzat-dlatot.jpg" alt="פריצת דלתות בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת דלתות</h3><p>ננעלתם בחוץ, המפתח אבד או נשבר בפנים.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="tzilinder.html"><span class="scard__img"><img src="img/tzilinder.jpg" alt="החלפת צילינדר בירושלים" loading="lazy"></span><span class="scard__b"><h3>החלפת צילינדר</h3><p>צילינדר תקוע, ישן, או אחרי מעבר דירה.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="tikun-dlatot.html"><span class="scard__img"><img src="img/tikun-dlatot.jpg" alt="תיקון דלתות בירושלים" loading="lazy"></span><span class="scard__b"><h3>תיקון דלתות</h3><p>דלת שלא ננעלת, ידית רפויה, מנגנון שנתקע.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="mamad.html"><span class="scard__img"><img src="img/mamad.jpg" alt="פריצת דלת ממ״ד בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת דלת ממ״ד</h3><p>דלת ממ״ד נעולה או מנגנון שנתקע.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="ksafot.html"><span class="scard__img"><img src="img/ksafot.jpg" alt="פריצת כספות בירושלים" loading="lazy"></span><span class="scard__b"><h3>פריצת כספות</h3><p>כספת ביתית או עסקית שלא נפתחת.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="manul-hacham.html"><span class="scard__img"><img src="img/manul-hacham.jpg" alt="מנעול חכם בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעול חכם</h3><p>מנעול קוד, טביעת אצבע או אפליקציה.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="mahzirei-delet.html"><span class="scard__img"><img src="img/mahzirei-delet.jpg" alt="מחזירי דלת בירושלים" loading="lazy"></span><span class="scard__b"><h3>מחזירי דלת</h3><p>מחזיר עילי, נסתר או רצפתי, כולל כיוון.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="electromagnet.html"><span class="scard__img"><img src="img/electromagnet.jpg" alt="אלקטרומגנט בירושלים" loading="lazy"></span><span class="scard__b"><h3>אלקטרומגנט</h3><p>נעילה מגנטית לכניסות בניין ומשרד.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="yadiyot-bahala.html"><span class="scard__img"><img src="img/yadiyot-bahala.jpg" alt="ידיות בהלה בירושלים" loading="lazy"></span><span class="scard__b"><h3>ידיות בהלה</h3><p>יציאות חירום לפי תקן, לעסקים ומוסדות.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="pladelet.html"><span class="scard__img"><img src="img/pladelet.jpg" alt="דלת פלדלת + משקוף בירושלים" loading="lazy"></span><span class="scard__b"><h3>דלת פלדלת + משקוף</h3><p>התקנה והחלפה של פלדלת, כולל המשקוף.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="rav-bariach.html"><span class="scard__img"><img src="img/rav-bariach.jpg" alt="מנעול רב בריח בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעול רב בריח</h3><p>רב בריח שנתקע או התיישן בפלדלת.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="manulan-herum.html"><span class="scard__img"><img src="img/manulan-herum.jpg" alt="מנעולן חירום 24/7 בירושלים" loading="lazy"></span><span class="scard__b"><h3>מנעולן חירום 24/7</h3><p>מגיע בדרך כלל תוך כ-20 דקות, יום ולילה.</p><span class="scard__l">לעמוד השירות ›</span></span></a><a class="scard scard--img" href="hatkanat-dlatot-knisa.html"><span class="scard__img"><img src="img/hatkanat-dlatot-knisa.jpg" alt="התקנת דלתות כניסה בירושלים" loading="lazy"></span><span class="scard__b"><h3>התקנת דלתות כניסה</h3><p>דלת כניסה חדשה, כולל משקוף, מנעול והתקנה.</p><span class="scard__l">לעמוד השירות ›</span></span></a></div>
   </div></section><section class="sec fcta" style="text-align:center;padding:48px 22px">
     <h2 style="font-size:26px;margin-bottom:10px">צריכים מנעולן בירושלים?</h2>
     <p style="margin-bottom:20px;font-size:17px">חייגו, תארו מה קרה, ותקבלו מחיר וזמן הגעה כבר בשיחה.</p>

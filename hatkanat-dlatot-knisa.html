@@ -1128,6 +1128,14 @@
 }
 @media(max-width:900px){.n6 .ft::before{width:200px;height:180px;opacity:.05}}
 
+
+/* v26: cap media card size on desktop (not huge) */
+@media(min-width:641px){
+  .n6 .vidgrid{grid-template-columns:repeat(auto-fill,minmax(180px,220px))!important;justify-content:center;gap:16px}
+  .n6 .vcard{max-width:220px;margin-inline:auto}
+  .n6 .vcard video,.n6 .vcard img{max-height:300px!important}
+}
+
 </style>
 <style>
 .lp-hero{position:relative;min-height:520px;display:flex;align-items:flex-end;overflow:hidden}
