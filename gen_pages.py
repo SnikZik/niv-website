@@ -240,7 +240,19 @@ cards=[("pritzat-dlatot","פריצת דלתות","ננעלתם בחוץ, המפ�
 ("rav-bariach","מנעול רב בריח","רב בריח שנתקע או התיישן בפלדלת."),
 ("manulan-herum","מנעולן חירום 24/7","מגיע בדרך כלל תוך כ-20 דקות, יום ולילה."),
 ("hatkanat-dlatot-knisa","התקנת דלתות כניסה","דלת כניסה חדשה, כולל משקוף, מנעול והתקנה.")]
-scards="".join(f'<a class="scard scard--img" href="{s}.html"><span class="scard__img"><img src="img/{s}.jpg" alt="{t} בירושלים" loading="lazy"></span><span class="scard__b"><h3>{t}</h3><p>{p}</p><span class="scard__l">לעמוד השירות ›</span></span></a>' for s,t,p in cards)
+# service-card images: real/matched photos where the stock was wrong or missing (else img/<slug>.jpg)
+CARDIMG={
+ 'pritzat-dlatot':'video/posters/lockout.jpg',      # מנעולן פותח דלת נעולה
+ 'tikun-dlatot':'video/posters/repair-fire.jpg',    # תיקון דלת בשטח
+ 'mamad':'video/posters/repair-shelter.jpg',        # דלת ממ״ד אמיתית
+ 'ksafot':'img/products/real/kspt-bitit-binonit.jpg',              # כספת מודרנית
+ 'electromagnet':'img/products/real/mgnt-soca-gl-200-220-chitzoni.jpg', # מנעול מגנטי
+ 'yadiyot-bahala':'img/products/real/idit-bhlh-accentra-7100.jpg',     # ידית בהלה אמיתית
+ 'pladelet':'img/work/entrance-green.jpg',          # דלת פלדלת מותקנת
+ 'hatkanat-dlatot-knisa':'img/work/entrance-niv.jpg', # ניב עם דלת כניסה (היה חסר)
+}
+def cimg(s): return CARDIMG.get(s, f'img/{s}.jpg')
+scards="".join(f'<a class="scard scard--img" href="{s}.html"><span class="scard__img"><img src="{cimg(s)}" alt="{t} בירושלים" loading="lazy"></span><span class="scard__b"><h3>{t}</h3><p>{p}</p><span class="scard__l">לעמוד השירות ›</span></span></a>' for s,t,p in cards)
 main=f'''
   <section class="sec sec--white" style="padding-top:34px"><div class="wrap">
     <div class="scards">{scards}</div>
