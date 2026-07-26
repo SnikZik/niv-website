@@ -5,6 +5,8 @@ from catalog_data import CATS
 from catalog_data2 import CATS2
 ALL={**CATS,**CATS2}
 RICH=json.load(open('/Users/s/niv-locksmith/products_rich.json',encoding='utf-8'))
+try: GEO=json.load(open('/Users/s/niv-locksmith/products_geo.json',encoding='utf-8'))
+except FileNotFoundError: GEO={}
 BASE='https://snikzik.github.io/niv-website'
 W='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
@@ -107,8 +109,19 @@ def page(cat_slug,cat,prod,idx,all_prods):
         specs_html='<ul style="margin:14px 0 0;padding-inline-start:20px">'+''.join(f'<li style="font-size:15px;line-height:1.65;margin-bottom:5px">{x}</li>' for x in R['specs'])+'</ul>'
     else:
         why=p['why'][idx%3]; fit=p['fit'][(idx+1)%3]; inst=p['install'][(idx+2)%3]; sku=''; specs_html=''
-    faqs=[fq[idx%5],fq[(idx+2)%5],fq[(idx+4)%5]]
-    faqh="".join(f'<div class="faq__i"><button class="faq__q" aria-expanded="false" aria-controls="pf{j}">{q}<span class="s" aria-hidden="true">+</span></button><div class="faq__a" id="pf{j}">{a}</div></div>' for j,(q,a) in enumerate(faqs,1))
+    G=GEO.get(name)
+    if G:
+        lead=G['lead']; sku=G.get('sku',sku)
+        if G.get('specs'):
+            specs_html='<ul style="margin:14px 0 0;padding-inline-start:20px">'+''.join(f'<li style="font-size:15px;line-height:1.65;margin-bottom:5px">{x}</li>' for x in G['specs'])+'</ul>'
+        geo_sections="".join(f'<h2>{sec["h"]}</h2><p>{sec["p"]}</p>' for sec in G['sections'])
+        faqs=G['faq']
+    else:
+        lead=desc
+        _why=(f'<h2>למה {name} בקטלוג שלי</h2><p>{why}</p>' if R else '')
+        geo_sections=f'{_why}<h2>התאמה לדלת ולצורך שלכם</h2><p>{fit}</p><h2>אספקה והתקנה בירושלים</h2><p>{inst}</p>'
+        faqs=[fq[idx%5],fq[(idx+2)%5],fq[(idx+4)%5]]
+    faqh_open="".join(f'<div class="qa"><h3>{q}</h3><p>{a}</p></div>' for q,a in faqs)
     rel=[x for x in all_prods if x['name']!=name][:4]
     relh="".join(f'<a class="pcard" href="mutzar-{slugify(x["name"])}.html"><span class="pcard__img"><img src="img/products/{img_for_final(cat_slug,x.get("tag",""),x["name"])}.jpg" alt="{x["name"]}" loading="lazy"></span><span class="tag">{x.get("tag","")}</span><b>{x["name"]}</b><p>{x["desc"]}</p><span class="ask">לעמוד המוצר ›</span></a>' for x in rel)
     title=f'{name} | {cat["h1"]} | ניב המנעולן'[:65]
@@ -151,8 +164,8 @@ def page(cat_slug,cat,prod,idx,all_prods):
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start" class="prodgrid">
       <div style="border-radius:14px;overflow:hidden;box-shadow:var(--sh)"><img src="img/products/{img}.jpg" alt="{name}, אספקה והתקנה בירושלים" style="width:100%;display:block" loading="eager"></div>
       <div>
-        <h2 style="font-size:21px;margin-bottom:8px">למה הדגם הזה בקטלוג שלי</h2>
-        <p style="font-size:15.5px;line-height:1.7;margin-bottom:14px">{why}</p>
+        <p style="font-size:16.5px;line-height:1.75;margin-bottom:14px;color:var(--ink)">{lead}</p>
+        <p style="color:var(--iron);font-size:13.5px;margin-bottom:14px">מאת ניב, מנעולן בירושלים · עודכן ביולי 2026</p>
         <div class="btnrow">
           <a class="btn btn--call" href="tel:+972508307269">התייעצות על הדגם, 050-8307269</a>
           <a class="btn btn--wa" href="{W}" target="_blank" rel="noopener">שלחו צילום דלת ב-WhatsApp</a>
@@ -161,11 +174,10 @@ def page(cat_slug,cat,prod,idx,all_prods):
     </div>
   </div></section>
   <div class="content" style="padding-top:20px">
+    {geo_sections}
     {'<h2>מפרט עיקרי</h2>'+specs_html if specs_html else ''}
-    <h2>התאמה לדלת ולצורך שלכם</h2><p>{fit}</p>
-    <h2>אספקה והתקנה בירושלים</h2><p>{inst}</p>
   </div>
-  <section class="sec sec--sand"><div class="wrap"><div class="sh sh--c"><h2>שאלות על {name}</h2></div><div class="faq">{faqh}</div></div></section>
+  <section class="sec sec--sand"><div class="wrap narrow"><div class="sh sh--c"><h2>שאלות ותשובות על {name}</h2></div><div class="qa-open">{faqh_open}</div></div></section>
   <section class="sec sec--white"><div class="wrap">
     <div class="sh sh--c"><h2>עוד מ{cat["h1"]}</h2></div>
     <div class="pgrid" style="grid-template-columns:repeat(4,1fr)">{relh}</div>

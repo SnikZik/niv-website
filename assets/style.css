@@ -1055,3 +1055,11 @@
   .n6 .pcard p{font-size:11.5px;line-height:1.45}
   .n6 .pcard .ask{font-size:12px}
 }
+
+/* open Q&A (visible, not accordion) */
+.n6 .qa-open{max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:14px}
+.n6 .qa{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--sh)}
+.n6 .qa h3{font-size:17.5px;line-height:1.4;margin:0 0 8px;color:var(--ink)}
+.n6 .qa h3::before{content:"שאלה  ";color:var(--red);font-weight:800;font-size:13px}
+.n6 .qa p{font-size:15.5px;line-height:1.7;color:var(--iron);margin:0}
+@media(max-width:640px){ .n6 .qa{padding:14px 16px} .n6 .qa h3{font-size:16px} }
