@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 import re,json,sys
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from catalog_data import CATS
@@ -151,8 +153,7 @@ for slug,d in CATS.items():
   {('<p style="max-width:900px;margin:0 auto 26px;padding:0 22px;font-size:16.5px;line-height:1.75">'+TOPUP[slug]+'</p>') if slug in TOPUP else ''}
   <section class="sec sec--sand"><div class="wrap"><div class="sh sh--c"><h2>שאלות על {d["h1"]}</h2></div><div class="faq">{faq}</div></div></section>'''
     ld={"@context":"https://schema.org","@graph":[
-     {"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269","url":BASE+"/",
-      "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"}},
+     BIZ,PERSON,
      {"@type":"ItemList","name":d["h1"],"numberOfItems":len(d["products"]),
       "itemListElement":[{"@type":"ListItem","position":i+1,"item":{"@type":"Product","name":p["name"],"description":p["desc"]}} for i,p in enumerate(d["products"])]},
      {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in d["faq"]]},

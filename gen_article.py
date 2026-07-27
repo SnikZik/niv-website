@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 import re,json,sys
 
 src=open('/Users/s/niv-locksmith/index.html',encoding='utf-8').read()
@@ -93,8 +95,7 @@ def article(a,ai=0):
     body_html=a["body"]
     faq_ld=[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":ans}} for q,ans in a.get("faq",[])]
     graph=[
-     {"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269","url":BASE+"/",
-      "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"}},
+     BIZ,PERSON,
      {"@type":"Article","headline":a["h1"],"description":a["meta"],"inLanguage":"he",
       "author":{"@type":"Person","name":"ניב","jobTitle":"מנעולן","worksFor":{"@id":BASE+"/#business"}},
       "publisher":{"@id":BASE+"/#business"},

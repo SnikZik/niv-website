@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 import re,json,sys,os
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from services_deep import DEEP,T
@@ -134,11 +136,7 @@ def hero_media(slug,dp):
 
 def schema(slug,d,dp):
     url=f'{BASE}/{slug}.html'
-    biz={"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269",
-     "url":BASE+"/", "image":BASE+"/logo.png","priceRange":"₪₪",
-     "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"},
-     "areaServed":[{"@type":"City","name":"ירושלים"},{"@type":"City","name":"גבעת זאב"},{"@type":"City","name":"מבשרת ציון"},{"@type":"City","name":"מעלה אדומים"}],
-     "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}
+    biz=BIZ
     svc={"@type":"Service","name":d["h1"],"serviceType":dp["svc_type"],"provider":{"@id":BASE+"/#business"},
      "areaServed":{"@type":"City","name":"ירושלים"},"url":url,"description":d["meta"]}
     faq={"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in d["faq"]]}
@@ -146,7 +144,7 @@ def schema(slug,d,dp):
      {"@type":"ListItem","position":1,"name":"בית","item":BASE+"/"},
      {"@type":"ListItem","position":2,"name":"שירותים","item":BASE+"/#services"},
      {"@type":"ListItem","position":3,"name":d["h1"],"item":url}]}
-    g={"@context":"https://schema.org","@graph":[biz,svc,faq,bc]}
+    g={"@context":"https://schema.org","@graph":[biz,PERSON,svc,faq,bc]}
     return '<script type="application/ld+json">'+json.dumps(g,ensure_ascii=False)+'</script>'
 
 def page(slug,d):

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 # premium pritzat-dlatot × area pages from agent JSON
 import re,json,sys,os,urllib.parse
 sys.path.insert(0,'/Users/s/niv-locksmith')
@@ -36,8 +38,7 @@ for ai,a in enumerate(ARTS):
     tb=' target="_blank" rel="noopener"' if 'wa.me' in bhref else ''
     adv=f'<section class="adv" style="background:{g}">{CAM}<b>{bt}</b><p>{bx}</p><a href="{bhref}"{tb}>{bcta}</a></section>'
     faq_ld=[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',ans)}} for q,ans in faqs]
-    graph=[{"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269","url":BASE+"/",
-      "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"}},
+    graph=[BIZ,PERSON,
      {"@type":"Service","name":a['h1'],"serviceType":"פריצת דלתות",
       "provider":{"@id":BASE+"/#business"},"areaServed":{"@type":"Place","name":f'{A}, ירושלים'},
       "url":f'{BASE}/{slug}.html'},

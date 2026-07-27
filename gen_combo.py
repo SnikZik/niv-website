@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 # service × area combo pages engine (8 services × 31 areas)
 import re,json,sys,os,hashlib,urllib.parse
 sys.path.insert(0,'/Users/s/niv-locksmith')
@@ -119,8 +121,7 @@ def build(ai,area_slug,d,si,svc_key,svc_name,premium=frozenset()):
     tb=' target="_blank" rel="noopener"' if 'wa.me' in bhref else ''
     adv=f'<section class="adv" style="background:{g}">{CAM}<b>{bt}</b><p>{bx}</p><a href="{bhref}"{tb}>{bcta}</a></section>'
     faq_ld=[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',a)}} for q,a in faqs]
-    graph=[{"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269","url":BASE+"/",
-      "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"}},
+    graph=[BIZ,PERSON,
      {"@type":"Service","name":f'{svc_name} ב{A}',"serviceType":svc_name,
       "provider":{"@id":BASE+"/#business"},"areaServed":{"@type":"Place","name":f'{A}, ירושלים'},
       "url":f'{BASE}/{slug}.html'},

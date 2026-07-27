@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import sys as _ssys; _ssys.path.insert(0,'/Users/s/niv-locksmith')
+from schema_business import BIZ, PERSON
 import re,json,sys
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from areas_data import AREAS
@@ -147,9 +149,7 @@ def page(i,slug,d):
     </div>
   </section>'''
     ld={"@context":"https://schema.org","@graph":[
-     {"@type":"Locksmith","@id":BASE+"/#business","name":"ניב המנעולן","telephone":"+972508307269","url":BASE+"/","priceRange":"₪₪",
-      "address":{"@type":"PostalAddress","addressLocality":"ירושלים","addressCountry":"IL"},
-      "areaServed":{"@type":"Place","name":d["name"]}},
+     BIZ,PERSON,
      {"@type":"Service","name":f'מנעולן ב{d["b"]}',"serviceType":"שירותי מנעולנות","provider":{"@id":BASE+"/#business"},
       "areaServed":{"@type":"Place","name":d["name"]},"url":f'{BASE}/{slug}.html',"description":d["meta"]},
      {"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in d["faq"]]},
