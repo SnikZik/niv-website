@@ -228,6 +228,7 @@ shell("madrichim","מדריכי מנעולנות | ניב המנעולן ירו�
 
 # ---------- 7. services hub ----------
 cards=[("pritzat-dlatot","פריצת דלתות","ננעלתם בחוץ, המפתח אבד או נשבר בפנים."),
+("manul-mechani","מנעול מכני לדלת","מנעול מכני חדש לדלת בית או בניין, כולל המנעול."),
 ("tzilinder","החלפת צילינדר","צילינדר תקוע, ישן, או אחרי מעבר דירה."),
 ("tikun-dlatot","תיקון דלתות","דלת שלא ננעלת, ידית רפויה, מנגנון שנתקע."),
 ("mamad","פריצת דלת ממ״ד","דלת ממ״ד נעולה או מנגנון שנתקע."),
@@ -242,6 +243,7 @@ cards=[("pritzat-dlatot","פריצת דלתות","ננעלתם בחוץ, המפ�
 ("hatkanat-dlatot-knisa","התקנת דלתות כניסה","דלת כניסה חדשה, כולל משקוף, מנעול והתקנה.")]
 # service-card images: real/matched photos where the stock was wrong or missing (else img/<slug>.jpg)
 CARDIMG={
+ 'manul-mechani':'video/posters/mechlock-house.jpg',
  'pritzat-dlatot':'video/posters/lockout.jpg',      # מנעולן פותח דלת נעולה
  'tikun-dlatot':'video/posters/repair-fire.jpg',    # תיקון דלת בשטח
  'mamad':'video/posters/repair-shelter.jpg',        # דלת ממ״ד אמיתית

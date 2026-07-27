@@ -106,7 +106,7 @@ ADV={
 ADVMAP={'pritzat-dlatot':'C','tzilinder':'F','tikun-dlatot':'D','mamad':'C','ksafot':'F','manul-hacham':'A',
  'mahzirei-delet':'D','electromagnet':'E','yadiyot-bahala':'B','pladelet':'E','rav-bariach':'C','manulan-herum':'B',
  'tikun-mamad':'D','kivun-dlatot-pnim':'C','dlatot-hutz':'E','hatkanat-mamad':'B','hatkanat-ksafot':'F',
- 'yadiot-ledelet':'D','mafteah-shavur':'C','hatkanat-manulim':'A'}
+ 'yadiot-ledelet':'D','mafteah-shavur':'C','hatkanat-manulim':'A','manul-mechani':'B'}
 try:
     from services_new import NEW
     for k,v in NEW.items():
@@ -119,7 +119,7 @@ HERO={
  'pritzat-dlatot':('v','lockout'),'tzilinder':('i','work/cylinder'),'tikun-dlatot':('v','repair-fire'),
  'mamad':('v','repair-shelter'),'manul-hacham':('v','smart-1'),'mafteah-shavur':('v','lockout'),
  'ksafot':('i','niv/niv-working-2'),'manulan-herum':('v','lockout'),'pladelet':('v','entrance-1'),
- 'yadiot-ledelet':('i','work/extra-lock'),'hatkanat-manulim':('v','smart-1'),'electromagnet':('v','keypad-gate'),
+ 'yadiot-ledelet':('i','work/extra-lock'),'hatkanat-manulim':('v','smart-1'),'manul-mechani':('v','mechlock-house'),'electromagnet':('v','keypad-gate'),
  'mahzirei-delet':('i','niv/niv-working-1'),'rav-bariach':('i','niv/niv-working-2'),'tikun-mamad':('v','repair-shelter'),
  'kivun-dlatot-pnim':('v','repair-fire'),'dlatot-hutz':('v','entrance-1'),'hatkanat-mamad':('v','repair-shelter'),
  'hatkanat-ksafot':('i','niv/niv-working-2'),'yadiyot-bahala':('v','keypad-1'),
@@ -261,10 +261,10 @@ DROP=[("פריצת דלתות בירושלים","/pritzat-dlatot.html"),("החל
 ("פריצת כספות בירושלים","/ksafot.html"),("התקנת מנעול חכם בירושלים","/manul-hacham.html"),
 ("התקנת מחזירי דלת","/mahzirei-delet.html"),("התקנת אלקטרומגנט","/electromagnet.html"),
 ("התקנת ידיות בהלה","/yadiyot-bahala.html"),("דלת פלדלת כולל משקוף","/pladelet.html"),
-("החלפת מנעול רב בריח","/rav-bariach.html"),("מנעולן חירום בירושלים","/manulan-herum.html")]
+("החלפת מנעול רב בריח","/rav-bariach.html"),("התקנת מנעול מכני לדלת","/manul-mechani.html"),("מנעולן חירום בירושלים","/manulan-herum.html")]
 FOOT=[("פריצת דלתות","/pritzat-dlatot.html"),("החלפת צילינדר","/tzilinder.html"),("תיקון דלתות","/tikun-dlatot.html"),
 ("פריצת דלת ממ״ד","/mamad.html"),("מנעול חכם","/manul-hacham.html"),("מחזירי דלת","/mahzirei-delet.html"),
-("אלקטרומגנט","/electromagnet.html"),("ידיות בהלה","/yadiyot-bahala.html"),("דלת פלדלת + משקוף","/pladelet.html")]
+("אלקטרומגנט","/electromagnet.html"),("ידיות בהלה","/yadiyot-bahala.html"),("דלת פלדלת + משקוף","/pladelet.html"),("מנעול מכני","/manul-mechani.html")]
 
 import re as _re
 for slug,d in S.items():
