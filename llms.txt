@@ -2,81 +2,81 @@
 > מנעולן מקומי בירושלים והסביבה, זמין 24/7. פריצת דלתות, החלפת צילינדר, תיקון דלתות, כספות ומנעולים חכמים. שיחה ישירה עם ניב, מחיר נסגר בטלפון. 050-8307269.
 
 ## עמודים מרכזיים
-- [דף הבית](https://snikzik.github.io/niv-website/): מנעולן לדלתות בירושלים, כל השירותים והמחירון
-- [פריצת דלתות בירושלים](https://snikzik.github.io/niv-website/pritzat-dlatot.html): פתיחת דלתות נעולות בלי נזק, מ-300₪
-- [פריצת דלתות בפסגת זאב](https://snikzik.github.io/niv-website/pritzat-dlatot-pisgat-zeev.html)
-- [פריצת דלתות ברמות](https://snikzik.github.io/niv-website/pritzat-dlatot-ramot.html)
-- [פריצת דלתות בגבעת זאב](https://snikzik.github.io/niv-website/pritzat-dlatot-givat-zeev.html)
-- [פריצת דלתות במבשרת ציון](https://snikzik.github.io/niv-website/pritzat-dlatot-mevaseret.html)
-- [פריצת דלתות בגילה](https://snikzik.github.io/niv-website/pritzat-dlatot-gilo.html)
-- [פריצת דלתות בהר חומה](https://snikzik.github.io/niv-website/pritzat-dlatot-har-homa.html)
-- [פריצת דלתות בקטמון](https://snikzik.github.io/niv-website/pritzat-dlatot-katamon.html)
-- [פריצת דלתות בבית הכרם](https://snikzik.github.io/niv-website/pritzat-dlatot-beit-hakerem.html)
-- [פריצת דלתות בתלפיות](https://snikzik.github.io/niv-website/pritzat-dlatot-talpiot.html)
-- [פריצת דלתות במעלה אדומים](https://snikzik.github.io/niv-website/pritzat-dlatot-maale-adumim.html)
-- [החלפת צילינדר](https://snikzik.github.io/niv-website/tzilinder.html): צילינדר לכל דלת, מ-300₪
-- [תיקון דלתות](https://snikzik.github.io/niv-website/tikun-dlatot.html): כיוון, ידיות ומנגנונים, מ-350₪
-- [דלת ממ״ד](https://snikzik.github.io/niv-website/mamad.html): פריצה ותיקון מנגנוני ממ״ד
-- [פריצת כספות](https://snikzik.github.io/niv-website/ksafot.html): פתיחת כספות לפי סוג, מ-350₪
-- [מנעול חכם](https://snikzik.github.io/niv-website/manul-hacham.html): קוד, טביעת אצבע ואפליקציה, מ-1,499₪
-- [מחזירי דלת](https://snikzik.github.io/niv-website/mahzirei-delet.html): עילי, נסתר ורצפתי
-- [אלקטרומגנט](https://snikzik.github.io/niv-website/electromagnet.html): נעילה מגנטית לכניסות בניין
-- [ידיות בהלה](https://snikzik.github.io/niv-website/yadiyot-bahala.html): יציאות חירום לפי תקן
-- [דלת פלדלת](https://snikzik.github.io/niv-website/pladelet.html): התקנה כולל משקוף
-- [רב בריח](https://snikzik.github.io/niv-website/rav-bariach.html): תיקון והחלפת מנגנונים
-- [מנעולן חירום 24/7](https://snikzik.github.io/niv-website/manulan-herum.html): הגעה כ-20 דקות בירושלים
-- [תיקון דלת ממ״ד](https://snikzik.github.io/niv-website/tikun-mamad.html): מנגנוני ממ״ד, מ-350₪
-- [התקנת דלת ממ״ד](https://snikzik.github.io/niv-website/hatkanat-mamad.html): לפי תקן, מ-650₪
-- [כיוון דלתות פנים](https://snikzik.github.io/niv-website/kivun-dlatot-pnim.html): מ-250₪
-- [התקנת דלתות חוץ](https://snikzik.github.io/niv-website/dlatot-hutz.html): חצר ומחסן
-- [התקנת כספות](https://snikzik.github.io/niv-website/hatkanat-ksafot.html): כולל עיגון, מ-499₪
-- [החלפת ידיות](https://snikzik.github.io/niv-website/yadiot-ledelet.html): מ-250₪
-- [חילוץ מפתח שבור](https://snikzik.github.io/niv-website/mafteah-shavur.html): מ-250₪, 24/7
-- [התקנת מנעולים](https://snikzik.github.io/niv-website/hatkanat-manulim.html): כל הסוגים
-- [קטלוג מוצרים](https://snikzik.github.io/niv-website/katalog.html): מנעולים, כספות, מחזירים ובקרת כניסה
-- [קטלוג מנעולים](https://snikzik.github.io/niv-website/katalog-manulim.html)
-- [קטלוג כספות](https://snikzik.github.io/niv-website/katalog-ksafot.html)
-- [קטלוג מחזירי דלת](https://snikzik.github.io/niv-website/katalog-mahzirei-delet.html)
-- [קטלוג בקרת כניסה](https://snikzik.github.io/niv-website/katalog-bakarat-knisa.html)
-- [קטלוג מנעולים חשמליים](https://snikzik.github.io/niv-website/katalog-manulim-hashmaliim.html)
-- [קטלוג ידיות בהלה](https://snikzik.github.io/niv-website/katalog-yadiyot-bahala.html)
-- [קטלוג אבטחה חכמה](https://snikzik.github.io/niv-website/katalog-avtacha-hachama.html)
-- [קטלוג פרזול אדריכלי](https://snikzik.github.io/niv-website/katalog-parzol-adrichali.html)
-- [קטלוג פותחי דלתות](https://snikzik.github.io/niv-website/katalog-potchei-dlatot.html)
-- [קטלוג מוצרים לבתי מלון](https://snikzik.github.io/niv-website/katalog-batei-malon.html)
+- [דף הבית](https://nivlocksmith.co.il/): מנעולן לדלתות בירושלים, כל השירותים והמחירון
+- [פריצת דלתות בירושלים](https://nivlocksmith.co.il/pritzat-dlatot.html): פתיחת דלתות נעולות בלי נזק, מ-300₪
+- [פריצת דלתות בפסגת זאב](https://nivlocksmith.co.il/pritzat-dlatot-pisgat-zeev.html)
+- [פריצת דלתות ברמות](https://nivlocksmith.co.il/pritzat-dlatot-ramot.html)
+- [פריצת דלתות בגבעת זאב](https://nivlocksmith.co.il/pritzat-dlatot-givat-zeev.html)
+- [פריצת דלתות במבשרת ציון](https://nivlocksmith.co.il/pritzat-dlatot-mevaseret.html)
+- [פריצת דלתות בגילה](https://nivlocksmith.co.il/pritzat-dlatot-gilo.html)
+- [פריצת דלתות בהר חומה](https://nivlocksmith.co.il/pritzat-dlatot-har-homa.html)
+- [פריצת דלתות בקטמון](https://nivlocksmith.co.il/pritzat-dlatot-katamon.html)
+- [פריצת דלתות בבית הכרם](https://nivlocksmith.co.il/pritzat-dlatot-beit-hakerem.html)
+- [פריצת דלתות בתלפיות](https://nivlocksmith.co.il/pritzat-dlatot-talpiot.html)
+- [פריצת דלתות במעלה אדומים](https://nivlocksmith.co.il/pritzat-dlatot-maale-adumim.html)
+- [החלפת צילינדר](https://nivlocksmith.co.il/tzilinder.html): צילינדר לכל דלת, מ-300₪
+- [תיקון דלתות](https://nivlocksmith.co.il/tikun-dlatot.html): כיוון, ידיות ומנגנונים, מ-350₪
+- [דלת ממ״ד](https://nivlocksmith.co.il/mamad.html): פריצה ותיקון מנגנוני ממ״ד
+- [פריצת כספות](https://nivlocksmith.co.il/ksafot.html): פתיחת כספות לפי סוג, מ-350₪
+- [מנעול חכם](https://nivlocksmith.co.il/manul-hacham.html): קוד, טביעת אצבע ואפליקציה, מ-1,499₪
+- [מחזירי דלת](https://nivlocksmith.co.il/mahzirei-delet.html): עילי, נסתר ורצפתי
+- [אלקטרומגנט](https://nivlocksmith.co.il/electromagnet.html): נעילה מגנטית לכניסות בניין
+- [ידיות בהלה](https://nivlocksmith.co.il/yadiyot-bahala.html): יציאות חירום לפי תקן
+- [דלת פלדלת](https://nivlocksmith.co.il/pladelet.html): התקנה כולל משקוף
+- [רב בריח](https://nivlocksmith.co.il/rav-bariach.html): תיקון והחלפת מנגנונים
+- [מנעולן חירום 24/7](https://nivlocksmith.co.il/manulan-herum.html): הגעה כ-20 דקות בירושלים
+- [תיקון דלת ממ״ד](https://nivlocksmith.co.il/tikun-mamad.html): מנגנוני ממ״ד, מ-350₪
+- [התקנת דלת ממ״ד](https://nivlocksmith.co.il/hatkanat-mamad.html): לפי תקן, מ-650₪
+- [כיוון דלתות פנים](https://nivlocksmith.co.il/kivun-dlatot-pnim.html): מ-250₪
+- [התקנת דלתות חוץ](https://nivlocksmith.co.il/dlatot-hutz.html): חצר ומחסן
+- [התקנת כספות](https://nivlocksmith.co.il/hatkanat-ksafot.html): כולל עיגון, מ-499₪
+- [החלפת ידיות](https://nivlocksmith.co.il/yadiot-ledelet.html): מ-250₪
+- [חילוץ מפתח שבור](https://nivlocksmith.co.il/mafteah-shavur.html): מ-250₪, 24/7
+- [התקנת מנעולים](https://nivlocksmith.co.il/hatkanat-manulim.html): כל הסוגים
+- [קטלוג מוצרים](https://nivlocksmith.co.il/katalog.html): מנעולים, כספות, מחזירים ובקרת כניסה
+- [קטלוג מנעולים](https://nivlocksmith.co.il/katalog-manulim.html)
+- [קטלוג כספות](https://nivlocksmith.co.il/katalog-ksafot.html)
+- [קטלוג מחזירי דלת](https://nivlocksmith.co.il/katalog-mahzirei-delet.html)
+- [קטלוג בקרת כניסה](https://nivlocksmith.co.il/katalog-bakarat-knisa.html)
+- [קטלוג מנעולים חשמליים](https://nivlocksmith.co.il/katalog-manulim-hashmaliim.html)
+- [קטלוג ידיות בהלה](https://nivlocksmith.co.il/katalog-yadiyot-bahala.html)
+- [קטלוג אבטחה חכמה](https://nivlocksmith.co.il/katalog-avtacha-hachama.html)
+- [קטלוג פרזול אדריכלי](https://nivlocksmith.co.il/katalog-parzol-adrichali.html)
+- [קטלוג פותחי דלתות](https://nivlocksmith.co.il/katalog-potchei-dlatot.html)
+- [קטלוג מוצרים לבתי מלון](https://nivlocksmith.co.il/katalog-batei-malon.html)
 
 ## עמודי שכונות (31)
-- [מנעולן בפסגת זאב](https://snikzik.github.io/niv-website/manulan-pisgat-zeev.html)
-- [מנעולן בנווה יעקב](https://snikzik.github.io/niv-website/manulan-neve-yaakov.html)
-- [מנעולן ברמות](https://snikzik.github.io/niv-website/manulan-ramot.html)
-- [מנעולן ברמת שלמה](https://snikzik.github.io/niv-website/manulan-ramat-shlomo.html)
-- [מנעולן בגבעה הצרפתית](https://snikzik.github.io/niv-website/manulan-french-hill.html)
-- [מנעולן ברמת אשכול](https://snikzik.github.io/niv-website/manulan-ramat-eshkol.html)
-- [מנעולן ברוממה](https://snikzik.github.io/niv-website/manulan-romema.html)
-- [מנעולן בגבעת שאול](https://snikzik.github.io/niv-website/manulan-givat-shaul.html)
-- [מנעולן בבית הכרם](https://snikzik.github.io/niv-website/manulan-beit-hakerem.html)
-- [מנעולן בקריית יובל](https://snikzik.github.io/niv-website/manulan-kiryat-yovel.html)
-- [מנעולן בקריית מנחם ועיר גנים](https://snikzik.github.io/niv-website/manulan-kiryat-menachem.html)
-- [מנעולן ברחביה](https://snikzik.github.io/niv-website/manulan-rehavia.html)
-- [מנעולן בנחלאות](https://snikzik.github.io/niv-website/manulan-nachlaot.html)
-- [מנעולן במרכז העיר](https://snikzik.github.io/niv-website/manulan-merkaz-hair.html)
-- [מנעולן בגאולה](https://snikzik.github.io/niv-website/manulan-geula.html)
-- [מנעולן בהר נוף](https://snikzik.github.io/niv-website/manulan-har-nof.html)
-- [מנעולן בגילה](https://snikzik.github.io/niv-website/manulan-gilo.html)
-- [מנעולן בהר חומה](https://snikzik.github.io/niv-website/manulan-har-homa.html)
-- [מנעולן בתלפיות](https://snikzik.github.io/niv-website/manulan-talpiot.html)
-- [מנעולן בארנונה](https://snikzik.github.io/niv-website/manulan-arnona.html)
-- [מנעולן בבקעה](https://snikzik.github.io/niv-website/manulan-baka.html)
-- [מנעולן בקטמון](https://snikzik.github.io/niv-website/manulan-katamon.html)
-- [מנעולן ברמת שרת](https://snikzik.github.io/niv-website/manulan-ramat-sharet.html)
-- [מנעולן במלחה](https://snikzik.github.io/niv-website/manulan-malha.html)
-- [מנעולן בגבעת מרדכי](https://snikzik.github.io/niv-website/manulan-givat-mordechai.html)
-- [מנעולן בעיר העתיקה](https://snikzik.github.io/niv-website/manulan-old-city.html)
-- [מנעולן בגבעת זאב](https://snikzik.github.io/niv-website/manulan-givat-zeev.html)
-- [מנעולן במבשרת ציון](https://snikzik.github.io/niv-website/manulan-mevaseret.html)
-- [מנעולן במעלה אדומים](https://snikzik.github.io/niv-website/manulan-maale-adumim.html)
-- [מנעולן באבו גוש](https://snikzik.github.io/niv-website/manulan-abu-gosh.html)
-- [מנעולן במוצא והראל](https://snikzik.github.io/niv-website/manulan-motza.html)
+- [מנעולן בפסגת זאב](https://nivlocksmith.co.il/manulan-pisgat-zeev.html)
+- [מנעולן בנווה יעקב](https://nivlocksmith.co.il/manulan-neve-yaakov.html)
+- [מנעולן ברמות](https://nivlocksmith.co.il/manulan-ramot.html)
+- [מנעולן ברמת שלמה](https://nivlocksmith.co.il/manulan-ramat-shlomo.html)
+- [מנעולן בגבעה הצרפתית](https://nivlocksmith.co.il/manulan-french-hill.html)
+- [מנעולן ברמת אשכול](https://nivlocksmith.co.il/manulan-ramat-eshkol.html)
+- [מנעולן ברוממה](https://nivlocksmith.co.il/manulan-romema.html)
+- [מנעולן בגבעת שאול](https://nivlocksmith.co.il/manulan-givat-shaul.html)
+- [מנעולן בבית הכרם](https://nivlocksmith.co.il/manulan-beit-hakerem.html)
+- [מנעולן בקריית יובל](https://nivlocksmith.co.il/manulan-kiryat-yovel.html)
+- [מנעולן בקריית מנחם ועיר גנים](https://nivlocksmith.co.il/manulan-kiryat-menachem.html)
+- [מנעולן ברחביה](https://nivlocksmith.co.il/manulan-rehavia.html)
+- [מנעולן בנחלאות](https://nivlocksmith.co.il/manulan-nachlaot.html)
+- [מנעולן במרכז העיר](https://nivlocksmith.co.il/manulan-merkaz-hair.html)
+- [מנעולן בגאולה](https://nivlocksmith.co.il/manulan-geula.html)
+- [מנעולן בהר נוף](https://nivlocksmith.co.il/manulan-har-nof.html)
+- [מנעולן בגילה](https://nivlocksmith.co.il/manulan-gilo.html)
+- [מנעולן בהר חומה](https://nivlocksmith.co.il/manulan-har-homa.html)
+- [מנעולן בתלפיות](https://nivlocksmith.co.il/manulan-talpiot.html)
+- [מנעולן בארנונה](https://nivlocksmith.co.il/manulan-arnona.html)
+- [מנעולן בבקעה](https://nivlocksmith.co.il/manulan-baka.html)
+- [מנעולן בקטמון](https://nivlocksmith.co.il/manulan-katamon.html)
+- [מנעולן ברמת שרת](https://nivlocksmith.co.il/manulan-ramat-sharet.html)
+- [מנעולן במלחה](https://nivlocksmith.co.il/manulan-malha.html)
+- [מנעולן בגבעת מרדכי](https://nivlocksmith.co.il/manulan-givat-mordechai.html)
+- [מנעולן בעיר העתיקה](https://nivlocksmith.co.il/manulan-old-city.html)
+- [מנעולן בגבעת זאב](https://nivlocksmith.co.il/manulan-givat-zeev.html)
+- [מנעולן במבשרת ציון](https://nivlocksmith.co.il/manulan-mevaseret.html)
+- [מנעולן במעלה אדומים](https://nivlocksmith.co.il/manulan-maale-adumim.html)
+- [מנעולן באבו גוש](https://nivlocksmith.co.il/manulan-abu-gosh.html)
+- [מנעולן במוצא והראל](https://nivlocksmith.co.il/manulan-motza.html)
 
 ## עובדות מפתח
 - טלפון: 050-8307269, עונה ניב עצמו, בלי מוקד
@@ -84,12 +84,12 @@
 - אזורי שירות: כל שכונות ירושלים, גבעת זאב, מבשרת ציון, מעלה אדומים
 - זמן הגעה: בדרך כלל כ-20 דקות בתוך ירושלים
 - מחירים: פריצת דלת מ-300₪, החלפת צילינדר מ-300₪, המחיר נסגר בטלפון מראש
-- [איך יודעים שצריך להחליף צילינדר](https://snikzik.github.io/niv-website/tzilinder-matay.html)
-- [כמה עולה מנעולן בירושלים](https://snikzik.github.io/niv-website/kama-ole-manulan.html)
-- [צילינדר מוגן מול רגיל](https://snikzik.github.io/niv-website/tzilinder-mugan-mul-ragil.html)
-- [מנעול חכם, מדריך קנייה](https://snikzik.github.io/niv-website/manul-hacham-madrich.html)
-- [דלת ממ״ד תקועה, מה עושים](https://snikzik.github.io/niv-website/mamad-takua.html)
-- [צ׳קליסט מנעולים במעבר דירה](https://snikzik.github.io/niv-website/checklist-maavar-dira.html)
-- [איך לא ליפול על מנעולן עוקץ](https://snikzik.github.io/niv-website/manulan-oketz.html)
-- [רב בריח נפתח קשה](https://snikzik.github.io/niv-website/rav-bariach-kashe.html)
-- [הדלת לא נסגרת טוב](https://snikzik.github.io/niv-website/delet-lo-nisgeret.html)
+- [איך יודעים שצריך להחליף צילינדר](https://nivlocksmith.co.il/tzilinder-matay.html)
+- [כמה עולה מנעולן בירושלים](https://nivlocksmith.co.il/kama-ole-manulan.html)
+- [צילינדר מוגן מול רגיל](https://nivlocksmith.co.il/tzilinder-mugan-mul-ragil.html)
+- [מנעול חכם, מדריך קנייה](https://nivlocksmith.co.il/manul-hacham-madrich.html)
+- [דלת ממ״ד תקועה, מה עושים](https://nivlocksmith.co.il/mamad-takua.html)
+- [צ׳קליסט מנעולים במעבר דירה](https://nivlocksmith.co.il/checklist-maavar-dira.html)
+- [איך לא ליפול על מנעולן עוקץ](https://nivlocksmith.co.il/manulan-oketz.html)
+- [רב בריח נפתח קשה](https://nivlocksmith.co.il/rav-bariach-kashe.html)
+- [הדלת לא נסגרת טוב](https://nivlocksmith.co.il/delet-lo-nisgeret.html)

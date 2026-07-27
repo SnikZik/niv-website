@@ -13,7 +13,7 @@ smob=re.search(r'<div class="smob">.*?</div>\s*(?=</div>)',src,re.S).group(0)
 js=re.search(r'<script>.*?</script>',src,re.S).group(0)
 _m2=re.search(r'src="(data:[^"]+)" alt="ניב, מנעולן בירושלים',src)
 hero2=_m2.group(1) if _m2 else 'img/niv/niv-portrait.jpg'
-BASE='https://snikzik.github.io/niv-website'
+BASE='https://nivlocksmith.co.il'
 WAURL='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
 extra='''

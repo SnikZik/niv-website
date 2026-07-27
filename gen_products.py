@@ -7,7 +7,7 @@ ALL={**CATS,**CATS2}
 RICH=json.load(open('/Users/s/niv-locksmith/products_rich.json',encoding='utf-8'))
 try: GEO=json.load(open('/Users/s/niv-locksmith/products_geo.json',encoding='utf-8'))
 except FileNotFoundError: GEO={}
-BASE='https://snikzik.github.io/niv-website'
+BASE='https://nivlocksmith.co.il'
 W='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
 # shared shell pieces from a light source (use catalog page, strip style -> external css)

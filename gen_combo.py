@@ -4,7 +4,7 @@ import re,json,sys,os,hashlib,urllib.parse
 sys.path.insert(0,'/Users/s/niv-locksmith')
 from areas_data import AREAS
 
-BASE='https://snikzik.github.io/niv-website'
+BASE='https://nivlocksmith.co.il'
 WAURL='https://wa.me/972508307269?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A0%D7%99%D7%91'
 
 src=open('/Users/s/niv-locksmith/manulan-rehavia.html',encoding='utf-8').read()

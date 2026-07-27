@@ -2,7 +2,7 @@
 # Phased publishing: stamp noindex on not-yet-released pages, keep sitemap/llms to live-only.
 # Re-run any time (idempotent). Run AFTER any generator so staging survives regeneration.
 import json,glob,re,datetime,subprocess,sys
-BASE='https://snikzik.github.io/niv-website'
+BASE='https://nivlocksmith.co.il'
 NOINDEX='<meta name="robots" content="noindex,follow">'
 
 sched=json.load(open('/Users/s/niv-locksmith/publish_schedule.json',encoding='utf-8'))
